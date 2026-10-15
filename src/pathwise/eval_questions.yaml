@@ -1,0 +1,162 @@
+# Evaluation set for Pathwise. Each question lists the source ids a good answer
+# must draw on. Retrieval is scored on the catalog and handbook ids; end-to-end
+# runs also check record and rule-check ids among the cited sources.
+# answerable: false means the catalog and handbook do not cover the question,
+# so the right behavior is to say so.
+
+questions:
+  # Named lookups: the student names the course.
+  - id: lookup-prereqs
+    category: lookup
+    question: What are the prerequisites for Compiler Design?
+    expect: [course:CS 350]
+  - id: lookup-internship
+    category: lookup
+    question: How many credits is the Industry Internship, and does it count toward a specialization?
+    expect: [course:CS 499, handbook:5.3]
+  - id: lookup-slot
+    category: lookup
+    question: Which timetable slot does OS meet in?
+    expect: [course:CS 260]
+
+  # Semantic: no course named, the meaning has to carry it.
+  - id: semantic-search-engines
+    category: semantic
+    question: Is there a course about how search engines work?
+    expect: [course:CS 420]
+  - id: semantic-neural-nets
+    category: semantic
+    question: Which course teaches neural networks and backpropagation?
+    expect: [course:CS 345]
+  - id: semantic-serverless
+    category: semantic
+    question: Where can I learn about containers and serverless?
+    expect: [course:CS 375]
+  - id: semantic-sql
+    category: semantic
+    question: Which course covers writing SQL queries and transactions?
+    expect: [course:CS 220]
+  - id: semantic-consensus
+    category: semantic
+    question: I want to learn how replicated systems agree on a value. What should I take?
+    expect: [course:CS 410]
+  - id: semantic-before-dl
+    category: semantic
+    question: What do I need to take before deep learning?
+    expect: [course:CS 345, course:CS 340]
+  - id: semantic-chatbot
+    category: semantic
+    question: I want to build a chatbot that understands what people type. Which class helps?
+    expect: [course:CS 380]
+  - id: semantic-photos
+    category: semantic
+    question: Is there a class on getting computers to recognize objects in photos?
+    expect: [course:CS 430]
+  - id: semantic-hackers
+    category: semantic
+    question: Which class teaches how to keep attackers out of a web app?
+    expect: [course:CS 385]
+  - id: semantic-production
+    category: semantic
+    question: Where would I learn to ship a trained model to production and watch it over time?
+    expect: [course:CS 460]
+  - id: semantic-rewards
+    category: semantic
+    question: I like agents that learn by trial and error from rewards. Is there a course on that?
+    expect: [course:CS 450]
+
+  # Handbook rules.
+  - id: rule-max-load
+    category: rule
+    question: What is the most credits I can register for in one semester?
+    expect: [handbook:2.1, handbook:2.2]
+  - id: rule-waiver
+    category: rule
+    question: Can a prerequisite be waived, and who decides?
+    expect: [handbook:4.2]
+  - id: rule-fail-core
+    category: rule
+    question: What happens if I fail a core course?
+    expect: [handbook:3.3]
+  - id: rule-electives
+    category: rule
+    question: How many electives do I need to graduate?
+    expect: [handbook:5.1]
+  - id: rule-specialization
+    category: rule
+    question: How do I get a specialization noted on my transcript?
+    expect: [handbook:5.2]
+  - id: rule-late-drop
+    category: rule
+    question: Can I drop a course in the fifth week of the semester?
+    expect: [handbook:6.3]
+  - id: rule-probation
+    category: rule
+    question: What CGPA puts a student on academic probation?
+    expect: [handbook:9]
+  - id: rule-same-slot
+    category: rule
+    question: Am I allowed to register for two courses that meet at the same time?
+    expect: [handbook:6.2]
+  - id: rule-sick
+    category: rule
+    question: I was sick for a month. Can I register for fewer credits this semester?
+    expect: [handbook:2.3]
+  - id: rule-registration-window
+    category: rule
+    question: When does registration for next semester open and close?
+    expect: [handbook:6.1]
+  - id: rule-passing-grade
+    category: rule
+    question: What is the lowest grade that still counts as passing?
+    expect: [handbook:3.1]
+
+  # Personal: the answer depends on the student's record and rule checks.
+  - id: personal-riya-clash
+    category: personal
+    student: riya
+    question: Can I take Deep Learning and NLP together next semester?
+    expect: [course:CS 345, course:CS 380, handbook:6.2, check:plan]
+  - id: personal-riya-overload
+    category: personal
+    student: riya
+    question: Am I allowed to take 24 credits next term?
+    expect: [handbook:2.2, record:riya]
+  - id: personal-kabir-os
+    category: personal
+    student: kabir
+    question: Can I take Operating Systems next semester?
+    expect: [course:CS 260, check:CS 260]
+  - id: personal-meera-track
+    category: personal
+    student: meera
+    question: How close am I to the AI and Machine Learning specialization?
+    expect: [handbook:5.2, record:meera]
+  - id: personal-dev-load
+    category: personal
+    student: dev
+    question: How many credits can I take while I am on probation?
+    expect: [handbook:9, record:dev]
+  - id: personal-meera-capstone
+    category: personal
+    student: meera
+    question: Can I start Capstone Project II next semester?
+    expect: [course:CS 492, check:CS 492]
+
+  # Out of scope: the right answer is that the catalog does not say.
+  - id: refuse-instructor
+    category: refusal
+    question: Who teaches Machine Learning this year?
+    answerable: false
+  - id: refuse-hostel
+    category: refusal
+    question: How much is the hostel fee per semester?
+    answerable: false
+  - id: refuse-quantum
+    category: refusal
+    question: Is there a course on quantum computing?
+    answerable: false
+  - id: refuse-exam-date
+    category: refusal
+    question: When is the final exam for Database Systems?
+    answerable: false

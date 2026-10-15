@@ -1,0 +1,95 @@
+# Fictional demo students for the Pathwise advisor. Not real people.
+# Each record lists finished courses with grades and the courses in progress now.
+# They are built to cover different advising situations.
+
+students:
+  - id: riya
+    name: Riya Sharma
+    year: 3
+    semester: 1
+    note: Strong student in Year 3, choosing her first electives.
+    completed:
+      CS 101: O
+      MA 101: A+
+      PH 101: A
+      EN 101: A+
+      CS 102: O
+      MA 102: A
+      EE 101: A
+      CS 201: A+
+      CS 220: O
+      CS 230: A
+      CS 250: A+
+      CS 260: A
+      CS 270: B+
+      MA 201: A
+    in_progress: [CS 340, CS 350, CS 360]
+
+  - id: kabir
+    name: Kabir Nair
+    year: 2
+    semester: 2
+    note: Failed MA 102 in Year 1 and is repeating it, so Operating Systems moved to next year (both meet in slot B).
+    completed:
+      CS 101: B+
+      MA 101: C
+      PH 101: B
+      EN 101: A
+      CS 102: B
+      MA 102: F
+      EE 101: B+
+      CS 201: C
+      CS 220: B+
+      CS 230: B
+    in_progress: [CS 250, CS 270, MA 102]
+
+  - id: meera
+    name: Meera Pillai
+    year: 4
+    semester: 1
+    note: Final year, doing the capstone and close to an AI and Machine Learning specialization.
+    completed:
+      CS 101: A
+      MA 101: A
+      PH 101: B+
+      EN 101: O
+      CS 102: A+
+      MA 102: B+
+      EE 101: A
+      CS 201: A
+      CS 220: A+
+      CS 230: B+
+      CS 250: A
+      CS 260: B+
+      CS 270: A
+      MA 201: A+
+      CS 340: O
+      CS 350: B+
+      CS 360: A
+      CS 370: B+
+      CS 345: A+
+      CS 385: A
+      CS 375: B+
+    in_progress: [CS 491, CS 420, CS 430]
+
+  - id: dev
+    name: Dev Rao
+    year: 3
+    semester: 1
+    note: On academic probation after failing two Year 2 courses.
+    completed:
+      CS 101: C
+      MA 101: P
+      PH 101: C
+      EN 101: B
+      CS 102: P
+      MA 102: P
+      EE 101: C
+      CS 201: P
+      CS 220: C
+      CS 230: P
+      CS 250: F
+      CS 260: P
+      CS 270: C
+      MA 201: F
+    in_progress: [CS 360]

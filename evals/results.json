@@ -1,0 +1,3087 @@
+{
+  "k": 6,
+  "questions": 35,
+  "retrieval": {
+    "bm25": {
+      "hit": 0.968,
+      "recall": 0.952,
+      "mrr": 0.825,
+      "rows": [
+        {
+          "id": "lookup-prereqs",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 350",
+            "course:CS 360",
+            "course:CS 250",
+            "course:CS 491",
+            "course:CS 340",
+            "course:MA 101"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "lookup-internship",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 499",
+            "handbook:5.3",
+            "handbook:5.2",
+            "course:CS 410",
+            "handbook:4.1",
+            "handbook:1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "lookup-slot",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 260",
+            "handbook:6.2",
+            "handbook:8",
+            "handbook:9",
+            "course:MA 101",
+            "course:PH 101"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-search-engines",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 420",
+            "course:CS 260",
+            "handbook:3.3",
+            "handbook:4.2",
+            "handbook:6.3",
+            "handbook:8"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-neural-nets",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 345",
+            "handbook:3.3",
+            "course:CS 270",
+            "handbook:4.2",
+            "course:CS 410",
+            "course:CS 375"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-serverless",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 375",
+            "course:CS 101"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-sql",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 220",
+            "course:EN 101",
+            "handbook:3.3",
+            "handbook:4.2",
+            "handbook:6.3",
+            "handbook:8"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-consensus",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 101",
+            "course:CS 410",
+            "course:CS 440",
+            "course:CS 385",
+            "course:CS 260",
+            "course:CS 375"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "semantic-before-dl",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 430",
+            "handbook:6.1",
+            "handbook:2.2",
+            "handbook:9",
+            "course:CS 450"
+          ],
+          "hit": true,
+          "recall": 0.5,
+          "rr": 1.0,
+          "missing": [
+            "course:CS 340"
+          ]
+        },
+        {
+          "id": "semantic-chatbot",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 491"
+          ],
+          "hit": false,
+          "recall": 0.0,
+          "rr": 0.0,
+          "missing": [
+            "course:CS 380"
+          ]
+        },
+        {
+          "id": "semantic-photos",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 430"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-hackers",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 385",
+            "course:CS 410",
+            "course:CS 270"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-production",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 460",
+            "handbook:3.2",
+            "course:CS 101",
+            "course:CS 345",
+            "handbook:3.3",
+            "course:CS 220"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-rewards",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 450",
+            "course:CS 101",
+            "handbook:4.2",
+            "handbook:1",
+            "handbook:3.3",
+            "handbook:3.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-max-load",
+          "category": "rule",
+          "ranked": [
+            "handbook:9",
+            "handbook:6.2",
+            "handbook:2.1",
+            "handbook:1",
+            "handbook:6.1",
+            "handbook:2.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.3333333333333333,
+          "missing": []
+        },
+        {
+          "id": "rule-waiver",
+          "category": "rule",
+          "ranked": [
+            "handbook:4.2",
+            "handbook:4.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-fail-core",
+          "category": "rule",
+          "ranked": [
+            "handbook:3.1",
+            "handbook:3.3",
+            "handbook:4.2",
+            "handbook:8",
+            "handbook:6.3",
+            "course:CS 101"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "rule-electives",
+          "category": "rule",
+          "ranked": [
+            "handbook:8",
+            "course:CS 410",
+            "handbook:5.2",
+            "handbook:1",
+            "handbook:5.1",
+            "handbook:6.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.2,
+          "missing": []
+        },
+        {
+          "id": "rule-specialization",
+          "category": "rule",
+          "ranked": [
+            "handbook:5.2",
+            "handbook:6.3",
+            "handbook:5.3",
+            "handbook:1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-late-drop",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.1",
+            "handbook:3.3",
+            "handbook:6.3",
+            "handbook:6.2",
+            "handbook:1",
+            "course:CS 101"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.3333333333333333,
+          "missing": []
+        },
+        {
+          "id": "rule-probation",
+          "category": "rule",
+          "ranked": [
+            "handbook:9",
+            "handbook:10",
+            "handbook:8",
+            "handbook:7",
+            "handbook:3.2",
+            "handbook:2.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-same-slot",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.2",
+            "handbook:9",
+            "handbook:5.2",
+            "handbook:3.3",
+            "handbook:8",
+            "handbook:4.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-sick",
+          "category": "rule",
+          "ranked": [
+            "handbook:2.3",
+            "handbook:2.1",
+            "handbook:3.3",
+            "handbook:9",
+            "handbook:4.1",
+            "handbook:6.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-registration-window",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.1",
+            "handbook:2.2",
+            "handbook:3.3",
+            "handbook:6.2",
+            "handbook:10",
+            "handbook:2.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-passing-grade",
+          "category": "rule",
+          "ranked": [
+            "handbook:4.1",
+            "handbook:5.3",
+            "handbook:5.2",
+            "handbook:3.2",
+            "handbook:3.1",
+            "handbook:3.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.2,
+          "missing": []
+        },
+        {
+          "id": "personal-riya-clash",
+          "category": "personal",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 380",
+            "course:CS 430",
+            "handbook:6.1",
+            "handbook:4.2",
+            "handbook:6.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-riya-overload",
+          "category": "personal",
+          "ranked": [
+            "handbook:2.2",
+            "handbook:6.1",
+            "handbook:3.3",
+            "handbook:6.2",
+            "handbook:2.1",
+            "handbook:8"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-kabir-os",
+          "category": "personal",
+          "ranked": [
+            "course:CS 260",
+            "handbook:6.1",
+            "course:CS 410",
+            "course:CS 440",
+            "course:CS 385",
+            "course:CS 375"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-meera-track",
+          "category": "personal",
+          "ranked": [
+            "course:CS 340",
+            "handbook:5.2",
+            "course:CS 450",
+            "course:CS 345",
+            "course:CS 460",
+            "course:CS 380"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "personal-dev-load",
+          "category": "personal",
+          "ranked": [
+            "handbook:9",
+            "course:CS 410",
+            "handbook:10",
+            "handbook:2.1",
+            "handbook:8",
+            "course:CS 499"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-meera-capstone",
+          "category": "personal",
+          "ranked": [
+            "course:CS 492",
+            "handbook:7",
+            "handbook:4.2",
+            "course:CS 491",
+            "handbook:6.1",
+            "handbook:3.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        }
+      ]
+    },
+    "dense": {
+      "hit": 1.0,
+      "recall": 0.989,
+      "mrr": 0.944,
+      "rows": [
+        {
+          "id": "lookup-prereqs",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 350",
+            "course:CS 101",
+            "course:CS 360",
+            "course:CS 250",
+            "course:CS 102",
+            "course:CS 370"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "lookup-internship",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 499",
+            "handbook:5.3",
+            "handbook:5.2",
+            "handbook:2.3",
+            "handbook:7",
+            "course:CS 420"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "lookup-slot",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 260",
+            "handbook:6.2",
+            "course:CS 230",
+            "course:CS 410",
+            "handbook:6.1",
+            "course:CS 102"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-search-engines",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 420",
+            "course:CS 380",
+            "course:CS 450",
+            "course:CS 340",
+            "course:CS 345",
+            "handbook:5.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-neural-nets",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 450",
+            "course:CS 340",
+            "course:CS 430",
+            "course:CS 380",
+            "course:CS 460"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-serverless",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 375",
+            "course:CS 410",
+            "course:CS 230",
+            "course:CS 270",
+            "course:CS 102",
+            "course:CS 370"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-sql",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 220",
+            "course:CS 440",
+            "course:CS 380",
+            "course:EN 101",
+            "course:CS 101",
+            "course:CS 420"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-consensus",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 410",
+            "course:CS 450",
+            "course:MA 201",
+            "course:CS 440",
+            "course:CS 370",
+            "course:CS 250"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-before-dl",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 430",
+            "course:CS 450",
+            "course:CS 340",
+            "handbook:5.2",
+            "course:CS 460"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-chatbot",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 380",
+            "course:CS 345",
+            "course:CS 340",
+            "course:CS 450",
+            "course:EN 101",
+            "course:CS 430"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-photos",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 430",
+            "course:CS 345",
+            "course:CS 340",
+            "course:CS 420",
+            "course:CS 230",
+            "course:CS 460"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-hackers",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 385",
+            "course:CS 450",
+            "course:CS 250",
+            "course:CS 270",
+            "course:CS 102",
+            "course:CS 410"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-production",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 450",
+            "handbook:5.2",
+            "course:CS 460",
+            "course:CS 340",
+            "course:CS 430"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.25,
+          "missing": []
+        },
+        {
+          "id": "semantic-rewards",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 450",
+            "handbook:5.2",
+            "course:CS 345",
+            "course:CS 340",
+            "handbook:4.1",
+            "course:CS 380"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-max-load",
+          "category": "rule",
+          "ranked": [
+            "handbook:2.1",
+            "handbook:5.1",
+            "handbook:2.2",
+            "handbook:8",
+            "handbook:2.3",
+            "handbook:6.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-waiver",
+          "category": "rule",
+          "ranked": [
+            "handbook:4.2",
+            "handbook:4.1",
+            "handbook:2.3",
+            "handbook:2.2",
+            "handbook:6.3",
+            "course:CS 230"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-fail-core",
+          "category": "rule",
+          "ranked": [
+            "handbook:3.3",
+            "handbook:6.3",
+            "handbook:4.1",
+            "handbook:3.1",
+            "handbook:8",
+            "handbook:9"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-electives",
+          "category": "rule",
+          "ranked": [
+            "handbook:5.1",
+            "handbook:8",
+            "handbook:5.2",
+            "handbook:2.3",
+            "handbook:2.1",
+            "handbook:2.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-specialization",
+          "category": "rule",
+          "ranked": [
+            "handbook:5.2",
+            "handbook:4.1",
+            "course:EN 101",
+            "handbook:5.3",
+            "handbook:2.3",
+            "handbook:8"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-late-drop",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.3",
+            "handbook:3.3",
+            "handbook:6.1",
+            "handbook:9",
+            "handbook:5.1",
+            "handbook:4.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-probation",
+          "category": "rule",
+          "ranked": [
+            "handbook:9",
+            "handbook:2.2",
+            "handbook:3.2",
+            "handbook:6.3",
+            "handbook:3.3",
+            "handbook:8"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-same-slot",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.2",
+            "handbook:4.1",
+            "handbook:4.2",
+            "handbook:6.1",
+            "handbook:2.3",
+            "handbook:2.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-sick",
+          "category": "rule",
+          "ranked": [
+            "handbook:2.3",
+            "handbook:6.3",
+            "handbook:2.2",
+            "handbook:2.1",
+            "handbook:9",
+            "handbook:6.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-registration-window",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.1",
+            "handbook:6.2",
+            "handbook:9",
+            "handbook:2.2",
+            "handbook:4.1",
+            "handbook:2.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-passing-grade",
+          "category": "rule",
+          "ranked": [
+            "handbook:3.1",
+            "handbook:4.1",
+            "handbook:5.1",
+            "handbook:3.2",
+            "handbook:9",
+            "handbook:3.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-riya-clash",
+          "category": "personal",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 380",
+            "handbook:5.2",
+            "course:CS 340",
+            "course:CS 450",
+            "course:CS 430"
+          ],
+          "hit": true,
+          "recall": 0.6666666666666666,
+          "rr": 1.0,
+          "missing": [
+            "handbook:6.2"
+          ]
+        },
+        {
+          "id": "personal-riya-overload",
+          "category": "personal",
+          "ranked": [
+            "handbook:5.1",
+            "handbook:2.2",
+            "handbook:2.1",
+            "handbook:6.3",
+            "handbook:4.1",
+            "handbook:2.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "personal-kabir-os",
+          "category": "personal",
+          "ranked": [
+            "course:CS 260",
+            "course:CS 410",
+            "course:CS 440",
+            "course:CS 375",
+            "handbook:6.1",
+            "handbook:5.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-meera-track",
+          "category": "personal",
+          "ranked": [
+            "course:CS 340",
+            "handbook:5.2",
+            "course:CS 345",
+            "course:CS 460",
+            "course:CS 430",
+            "course:CS 380"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "personal-dev-load",
+          "category": "personal",
+          "ranked": [
+            "handbook:9",
+            "handbook:5.1",
+            "handbook:2.2",
+            "handbook:8",
+            "handbook:2.1",
+            "handbook:6.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-meera-capstone",
+          "category": "personal",
+          "ranked": [
+            "course:CS 492",
+            "handbook:7",
+            "handbook:4.2",
+            "course:CS 491",
+            "handbook:6.1",
+            "handbook:6.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        }
+      ]
+    },
+    "hybrid": {
+      "hit": 1.0,
+      "recall": 0.989,
+      "mrr": 0.919,
+      "rows": [
+        {
+          "id": "lookup-prereqs",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 350",
+            "course:CS 360",
+            "course:CS 250",
+            "course:CS 491",
+            "course:EN 101",
+            "course:CS 340"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "lookup-internship",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 499",
+            "handbook:5.3",
+            "handbook:5.2",
+            "handbook:2.3",
+            "handbook:4.1",
+            "course:CS 491"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "lookup-slot",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 260",
+            "handbook:6.2",
+            "course:CS 230",
+            "course:CS 410",
+            "course:EN 101",
+            "course:CS 492"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-search-engines",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 420",
+            "handbook:4.1",
+            "course:CS 101",
+            "handbook:6.2",
+            "handbook:1",
+            "course:CS 260"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-neural-nets",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 430",
+            "course:CS 410",
+            "course:CS 101",
+            "handbook:3.3",
+            "course:CS 450"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-serverless",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 375",
+            "course:CS 101",
+            "course:CS 410",
+            "course:CS 230",
+            "course:CS 270",
+            "course:CS 102"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-sql",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 220",
+            "course:EN 101",
+            "course:CS 101",
+            "handbook:1",
+            "course:CS 440",
+            "handbook:3.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-consensus",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 410",
+            "course:CS 440",
+            "course:CS 375",
+            "course:CS 220",
+            "course:CS 360",
+            "course:CS 230"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-before-dl",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 430",
+            "course:CS 450",
+            "course:CS 340",
+            "course:CS 460",
+            "course:CS 380"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-chatbot",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 491",
+            "course:CS 380",
+            "course:CS 345",
+            "course:CS 340",
+            "course:CS 450",
+            "course:EN 101"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "semantic-photos",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 430",
+            "course:CS 345",
+            "course:CS 340",
+            "course:CS 420",
+            "course:CS 230",
+            "course:CS 460"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-hackers",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 385",
+            "course:CS 270",
+            "course:CS 410",
+            "course:CS 450",
+            "course:CS 250",
+            "course:CS 102"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-production",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 460",
+            "course:CS 345",
+            "course:CS 101",
+            "handbook:3.3",
+            "handbook:3.2",
+            "course:CS 450"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-rewards",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 450",
+            "handbook:4.1",
+            "handbook:3.3",
+            "handbook:4.2",
+            "handbook:5.2",
+            "course:CS 345"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-max-load",
+          "category": "rule",
+          "ranked": [
+            "handbook:2.1",
+            "handbook:9",
+            "handbook:2.2",
+            "handbook:6.1",
+            "handbook:5.1",
+            "handbook:4.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-waiver",
+          "category": "rule",
+          "ranked": [
+            "handbook:4.2",
+            "handbook:4.1",
+            "handbook:2.3",
+            "handbook:2.2",
+            "handbook:6.3",
+            "course:CS 230"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-fail-core",
+          "category": "rule",
+          "ranked": [
+            "handbook:3.3",
+            "handbook:3.1",
+            "handbook:6.3",
+            "handbook:8",
+            "handbook:4.1",
+            "handbook:4.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-electives",
+          "category": "rule",
+          "ranked": [
+            "handbook:8",
+            "handbook:5.1",
+            "handbook:5.2",
+            "course:CS 410",
+            "handbook:1",
+            "handbook:2.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "rule-specialization",
+          "category": "rule",
+          "ranked": [
+            "handbook:5.2",
+            "handbook:5.3",
+            "handbook:6.3",
+            "handbook:4.1",
+            "course:EN 101",
+            "handbook:1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-late-drop",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.1",
+            "handbook:6.3",
+            "handbook:3.3",
+            "handbook:4.2",
+            "handbook:6.2",
+            "handbook:9"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "rule-probation",
+          "category": "rule",
+          "ranked": [
+            "handbook:9",
+            "handbook:2.2",
+            "handbook:3.2",
+            "handbook:10",
+            "handbook:8",
+            "handbook:6.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-same-slot",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.2",
+            "handbook:4.1",
+            "handbook:3.3",
+            "handbook:5.2",
+            "handbook:9",
+            "handbook:6.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-sick",
+          "category": "rule",
+          "ranked": [
+            "handbook:2.3",
+            "handbook:2.1",
+            "handbook:9",
+            "handbook:3.3",
+            "handbook:6.3",
+            "handbook:4.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-registration-window",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.1",
+            "handbook:2.2",
+            "handbook:6.2",
+            "handbook:9",
+            "handbook:2.1",
+            "handbook:10"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-passing-grade",
+          "category": "rule",
+          "ranked": [
+            "handbook:4.1",
+            "handbook:3.1",
+            "handbook:3.2",
+            "handbook:3.3",
+            "handbook:5.2",
+            "handbook:6.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "personal-riya-clash",
+          "category": "personal",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 380",
+            "course:CS 430",
+            "course:CS 340",
+            "course:CS 450",
+            "handbook:6.1"
+          ],
+          "hit": true,
+          "recall": 0.6666666666666666,
+          "rr": 1.0,
+          "missing": [
+            "handbook:6.2"
+          ]
+        },
+        {
+          "id": "personal-riya-overload",
+          "category": "personal",
+          "ranked": [
+            "handbook:2.2",
+            "handbook:2.1",
+            "handbook:6.1",
+            "handbook:5.1",
+            "handbook:3.3",
+            "handbook:6.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-kabir-os",
+          "category": "personal",
+          "ranked": [
+            "course:CS 260",
+            "course:CS 410",
+            "handbook:6.1",
+            "course:CS 440",
+            "course:CS 375",
+            "course:CS 230"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-meera-track",
+          "category": "personal",
+          "ranked": [
+            "course:CS 340",
+            "handbook:5.2",
+            "course:CS 345",
+            "course:CS 460",
+            "course:CS 450",
+            "course:CS 380"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "personal-dev-load",
+          "category": "personal",
+          "ranked": [
+            "handbook:9",
+            "handbook:2.1",
+            "handbook:8",
+            "handbook:5.1",
+            "course:CS 410",
+            "handbook:6.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-meera-capstone",
+          "category": "personal",
+          "ranked": [
+            "course:CS 492",
+            "handbook:7",
+            "handbook:4.2",
+            "course:CS 491",
+            "handbook:6.1",
+            "course:CS 360"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        }
+      ]
+    },
+    "rerank": {
+      "hit": 0.968,
+      "recall": 0.968,
+      "mrr": 0.903,
+      "rows": [
+        {
+          "id": "lookup-prereqs",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 350",
+            "course:CS 250",
+            "course:CS 340",
+            "course:CS 360",
+            "course:CS 220",
+            "course:CS 491"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "lookup-internship",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 499",
+            "handbook:5.3",
+            "handbook:5.2",
+            "handbook:2.3",
+            "handbook:8",
+            "handbook:1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "lookup-slot",
+          "category": "lookup",
+          "ranked": [
+            "course:CS 260",
+            "handbook:6.2",
+            "course:CS 410",
+            "course:CS 375",
+            "course:CS 230",
+            "course:EN 101"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-search-engines",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 420",
+            "course:CS 101",
+            "course:CS 380",
+            "course:CS 260",
+            "handbook:4.1",
+            "course:CS 345"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-neural-nets",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 430",
+            "course:CS 270",
+            "course:CS 450",
+            "course:CS 385",
+            "course:CS 410"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-serverless",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 375",
+            "course:CS 440",
+            "course:CS 410",
+            "course:CS 101",
+            "course:CS 340",
+            "course:CS 370"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-sql",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 220",
+            "course:EN 101",
+            "course:CS 101",
+            "course:CS 440",
+            "course:CS 420",
+            "course:CS 380"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-consensus",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 410",
+            "course:CS 450",
+            "course:MA 201",
+            "course:CS 260",
+            "course:CS 385",
+            "course:CS 420"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-before-dl",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 430",
+            "handbook:2.2",
+            "course:CS 450",
+            "handbook:5.2",
+            "course:CS 340"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-chatbot",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 430",
+            "handbook:5.2",
+            "course:CS 345",
+            "course:CS 450",
+            "course:EE 101",
+            "course:EN 101"
+          ],
+          "hit": false,
+          "recall": 0.0,
+          "rr": 0.0,
+          "missing": [
+            "course:CS 380"
+          ]
+        },
+        {
+          "id": "semantic-photos",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 430",
+            "course:CS 230",
+            "course:CS 201",
+            "course:CS 380",
+            "course:CS 345",
+            "course:CS 260"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-hackers",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 385",
+            "course:CS 101",
+            "course:CS 270",
+            "course:CS 345",
+            "course:CS 450",
+            "course:CS 250"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-production",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 460",
+            "course:CS 345",
+            "course:CS 340",
+            "course:CS 380",
+            "course:CS 450",
+            "course:CS 430"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "semantic-rewards",
+          "category": "semantic",
+          "ranked": [
+            "course:CS 450",
+            "handbook:3.3",
+            "handbook:6.3",
+            "handbook:4.1",
+            "handbook:6.2",
+            "handbook:5.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-max-load",
+          "category": "rule",
+          "ranked": [
+            "handbook:2.1",
+            "handbook:2.2",
+            "handbook:9",
+            "handbook:5.1",
+            "handbook:4.1",
+            "handbook:6.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-waiver",
+          "category": "rule",
+          "ranked": [
+            "handbook:4.2",
+            "handbook:4.1",
+            "course:CS 370",
+            "course:CS 250",
+            "course:CS 492",
+            "course:CS 230"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-fail-core",
+          "category": "rule",
+          "ranked": [
+            "handbook:3.3",
+            "handbook:8",
+            "handbook:3.1",
+            "handbook:1",
+            "handbook:6.3",
+            "course:CS 101"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-electives",
+          "category": "rule",
+          "ranked": [
+            "handbook:8",
+            "handbook:5.1",
+            "handbook:5.2",
+            "handbook:1",
+            "handbook:5.3",
+            "course:CS 499"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "rule-specialization",
+          "category": "rule",
+          "ranked": [
+            "handbook:5.2",
+            "handbook:5.3",
+            "handbook:6.3",
+            "handbook:1",
+            "handbook:4.1",
+            "handbook:8"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-late-drop",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.3",
+            "handbook:3.3",
+            "handbook:6.1",
+            "handbook:9",
+            "handbook:6.2",
+            "handbook:5.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-probation",
+          "category": "rule",
+          "ranked": [
+            "handbook:9",
+            "handbook:2.2",
+            "handbook:10",
+            "handbook:3.2",
+            "handbook:6.3",
+            "handbook:3.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-same-slot",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.2",
+            "handbook:4.1",
+            "handbook:2.3",
+            "handbook:9",
+            "handbook:5.2",
+            "handbook:6.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-sick",
+          "category": "rule",
+          "ranked": [
+            "handbook:2.1",
+            "handbook:2.3",
+            "handbook:2.2",
+            "handbook:9",
+            "handbook:6.1",
+            "handbook:6.3"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "rule-registration-window",
+          "category": "rule",
+          "ranked": [
+            "handbook:6.1",
+            "handbook:2.2",
+            "handbook:6.2",
+            "handbook:9",
+            "handbook:4.1",
+            "handbook:2.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "rule-passing-grade",
+          "category": "rule",
+          "ranked": [
+            "handbook:4.1",
+            "handbook:3.1",
+            "handbook:3.2",
+            "handbook:3.3",
+            "handbook:5.2",
+            "handbook:9"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "personal-riya-clash",
+          "category": "personal",
+          "ranked": [
+            "course:CS 345",
+            "course:CS 380",
+            "course:CS 430",
+            "handbook:6.2",
+            "handbook:6.1",
+            "course:CS 450"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-riya-overload",
+          "category": "personal",
+          "ranked": [
+            "handbook:2.2",
+            "handbook:5.1",
+            "handbook:2.3",
+            "handbook:2.1",
+            "course:CS 499",
+            "handbook:4.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-kabir-os",
+          "category": "personal",
+          "ranked": [
+            "course:CS 260",
+            "course:CS 410",
+            "course:CS 375",
+            "course:CS 440",
+            "course:CS 385",
+            "handbook:6.1"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-meera-track",
+          "category": "personal",
+          "ranked": [
+            "course:CS 340",
+            "handbook:5.2",
+            "course:CS 345",
+            "course:CS 450",
+            "course:CS 430",
+            "course:CS 460"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 0.5,
+          "missing": []
+        },
+        {
+          "id": "personal-dev-load",
+          "category": "personal",
+          "ranked": [
+            "handbook:9",
+            "handbook:2.3",
+            "handbook:2.1",
+            "handbook:5.1",
+            "handbook:2.2",
+            "handbook:10"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        },
+        {
+          "id": "personal-meera-capstone",
+          "category": "personal",
+          "ranked": [
+            "course:CS 492",
+            "handbook:7",
+            "course:CS 491",
+            "handbook:4.2",
+            "handbook:6.1",
+            "handbook:6.2"
+          ],
+          "hit": true,
+          "recall": 1.0,
+          "rr": 1.0,
+          "missing": []
+        }
+      ]
+    }
+  },
+  "context_mode": "hybrid",
+  "context": {
+    "recall": 1.0,
+    "avg_sources": 7.452,
+    "rows": [
+      {
+        "id": "lookup-prereqs",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "lookup-internship",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "lookup-slot",
+        "shown": 7,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "semantic-search-engines",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "semantic-neural-nets",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "semantic-serverless",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "semantic-sql",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "semantic-consensus",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "semantic-before-dl",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "semantic-chatbot",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.5,
+        "missing": []
+      },
+      {
+        "id": "semantic-photos",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "semantic-hackers",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "semantic-production",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "semantic-rewards",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "rule-max-load",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "rule-waiver",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "rule-fail-core",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "rule-electives",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.5,
+        "missing": []
+      },
+      {
+        "id": "rule-specialization",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "rule-late-drop",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.5,
+        "missing": []
+      },
+      {
+        "id": "rule-probation",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "rule-same-slot",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "rule-sick",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "rule-registration-window",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "rule-passing-grade",
+        "shown": 6,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.5,
+        "missing": []
+      },
+      {
+        "id": "personal-riya-clash",
+        "shown": 16,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.14285714285714285,
+        "missing": []
+      },
+      {
+        "id": "personal-riya-overload",
+        "shown": 7,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "personal-kabir-os",
+        "shown": 17,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.5,
+        "missing": []
+      },
+      {
+        "id": "personal-meera-track",
+        "shown": 18,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "personal-dev-load",
+        "shown": 9,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 1.0,
+        "missing": []
+      },
+      {
+        "id": "personal-meera-capstone",
+        "shown": 13,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.5,
+        "missing": []
+      }
+    ]
+  },
+  "model": "claude-opus-5-5, claude-code CLI, hybrid retrieval",
+  "answers": {
+    "citation_rate": 1.0,
+    "supported_rate": 1.0,
+    "source_recall": 1.0,
+    "refusal_accuracy": 1.0,
+    "errors": 0,
+    "rows": [
+      {
+        "id": "lookup-prereqs",
+        "category": "lookup",
+        "seconds": 5.7,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 2,
+        "verified": 2,
+        "statements": 2,
+        "supported": 2,
+        "cited": [
+          "course:CS 350",
+          "course:CS 250"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "Compiler Design (CS 350) has one prerequisite: CS 250 Design and Analysis of Algorithms.",
+          "CS 250 Design and Analysis of Algorithms has its own prerequisites: CS 102 Data Structures and CS 201 Discrete Mathematics."
+        ]
+      },
+      {
+        "id": "lookup-internship",
+        "category": "lookup",
+        "seconds": 4.8,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 4,
+        "verified": 4,
+        "statements": 3,
+        "supported": 3,
+        "cited": [
+          "course:CS 499",
+          "handbook:5.3",
+          "handbook:5.2"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "The Industry Internship (CS 499) is worth 6 credits and counts as an elective.",
+          "It does not count toward a specialization because it does not belong to any track.",
+          "A specialization requires passing at least three electives from the same track: AI and Machine Learning, Data Science, or Systems."
+        ]
+      },
+      {
+        "id": "lookup-slot",
+        "category": "lookup",
+        "seconds": 3.9,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 2,
+        "verified": 2,
+        "statements": 1,
+        "supported": 1,
+        "cited": [
+          "course:CS 260"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "OS is CS 260 Operating Systems, and it meets in timetable slot B."
+        ]
+      },
+      {
+        "id": "semantic-search-engines",
+        "category": "semantic",
+        "seconds": 6.1,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 7,
+        "verified": 7,
+        "statements": 6,
+        "supported": 6,
+        "cited": [
+          "course:CS 420",
+          "handbook:4.1"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "Yes, CS 420 Information Retrieval (also called IR) covers how search engines work.",
+          "Its topics are indexing, ranking, BM25, vector search, and how to evaluate search.",
+          "CS 420 is a 3-credit elective in the Data Science track and the AI and Machine Learning track.",
+          "It runs only in Year 4, Semester 1, in timetable slot B.",
+          "To take it, you need CS 220 Database Systems and MA 201 Probability and Statistics.",
+          "You have to pass each prerequisite with a grade of P or better before you register, and courses still in progress do not count."
+        ]
+      },
+      {
+        "id": "semantic-neural-nets",
+        "category": "semantic",
+        "seconds": 9.9,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 4,
+        "verified": 4,
+        "statements": 4,
+        "supported": 4,
+        "cited": [
+          "course:CS 345"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "CS 345 Deep Learning is the course that teaches neural networks and backpropagation.",
+          "The course goes from backpropagation through convolutional networks and transformers, and students train models in PyTorch.",
+          "CS 345 is a 4-credit elective in the AI and Machine Learning track, offered in Year 3, Semester 2, in timetable slot D.",
+          "Its prerequisite is CS 340 Machine Learning."
+        ]
+      },
+      {
+        "id": "semantic-serverless",
+        "category": "semantic",
+        "seconds": 7.5,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 5,
+        "verified": 5,
+        "statements": 5,
+        "supported": 5,
+        "cited": [
+          "course:CS 375",
+          "course:CS 270"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "CS 375 Cloud Computing is the course that covers containers and serverless.",
+          "The course is about running software in the cloud using containers, managed services and serverless functions.",
+          "CS 375 is a 3-credit Systems-track elective offered in Year 3, Semester 2, in timetable slot E.",
+          "Before taking CS 375, you need to have completed CS 260 Operating Systems and CS 270 Computer Networks.",
+          "CS 270 Computer Networks has its own prerequisite, CS 230 Computer Organization."
+        ]
+      },
+      {
+        "id": "semantic-sql",
+        "category": "semantic",
+        "seconds": 5.9,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 3,
+        "verified": 3,
+        "statements": 3,
+        "supported": 3,
+        "cited": [
+          "course:CS 220"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "CS 220 Database Systems (also called DBMS) is the course that covers writing SQL queries and transactions.",
+          "The course teaches students to design relational databases and query them with SQL, going from normalization through to transactions and indexes.",
+          "CS 220 is a 4-credit core course offered in Year 2, Semester 1, in timetable slot B, and its prerequisite is CS 102 Data Structures."
+        ]
+      },
+      {
+        "id": "semantic-consensus",
+        "category": "semantic",
+        "seconds": 7.0,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 4,
+        "verified": 4,
+        "statements": 4,
+        "supported": 4,
+        "cited": [
+          "course:CS 410"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "CS 410 Distributed Systems is the course that covers how replicated systems agree on a value, since its topics include replication and consensus.",
+          "CS 410 is a 3-credit Systems-track elective offered in Year 4, Semester 1, in timetable slot A.",
+          "Before you can take CS 410, you need to complete CS 260 Operating Systems and CS 270 Computer Networks.",
+          "You haven't shared your student record, so I can't check whether you have already completed these prerequisites."
+        ]
+      },
+      {
+        "id": "semantic-before-dl",
+        "category": "semantic",
+        "seconds": 7.0,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 6,
+        "verified": 6,
+        "statements": 4,
+        "supported": 4,
+        "cited": [
+          "course:CS 345",
+          "course:CS 340"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "The only direct prerequisite for CS 345 Deep Learning is CS 340 Machine Learning.",
+          "CS 340 Machine Learning has its own prerequisites: CS 250 Design and Analysis of Algorithms and MA 201 Probability and Statistics. This means you need to finish those two courses before you can take CS 340.",
+          "CS 340 is a core course offered in Year 3, Semester 1, and CS 345 is offered in Year 3, Semester 2, so CS 340 comes the semester before Deep Learning.",
+          "You have not shared your student record, so this answer cannot confirm which of these prerequisites you have already completed."
+        ]
+      },
+      {
+        "id": "semantic-chatbot",
+        "category": "semantic",
+        "seconds": 10.0,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 6,
+        "verified": 6,
+        "statements": 5,
+        "supported": 5,
+        "cited": [
+          "course:CS 380",
+          "course:CS 345"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "CS 380 Natural Language Processing is the course most directly about understanding typed text, covering language technology up to large language models.",
+          "CS 380 covers text processing, word embeddings, language models, retrieval-augmented generation, and evaluation.",
+          "CS 380 is a 4-credit elective in the AI and Machine Learning and Data Science tracks, offered in Year 3, Semester 2.",
+          "Before taking CS 380, you need CS 340 Machine Learning.",
+          "CS 345 Deep Learning also covers sequence models and transformers, but it runs in the same timetable slot D as CS 380 in Year 3, Semester 2."
+        ]
+      },
+      {
+        "id": "semantic-photos",
+        "category": "semantic",
+        "seconds": 8.6,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 7,
+        "verified": 7,
+        "statements": 6,
+        "supported": 6,
+        "cited": [
+          "course:CS 430",
+          "course:CS 345",
+          "course:CS 340"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "Yes, CS 430 Computer Vision (also called CV) teaches computers to understand images, including how to detect objects in them.",
+          "Topics in CS 430 include feature detection, convolutional networks, object detection, and segmentation.",
+          "CS 430 is a 4-credit elective in the AI and Machine Learning track, offered in Year 4, Semester 1, in timetable slot C.",
+          "To take CS 430 you must first complete CS 345 Deep Learning.",
+          "CS 345 Deep Learning, offered in Year 3, Semester 2, also covers convolutional networks, and its own prerequisite is CS 340 Machine Learning.",
+          "CS 340 Machine Learning is a core course offered in Year 3, Semester 1, and requires CS 250 Design and Analysis of Algorithms and MA 201 Probability and Statistics."
+        ]
+      },
+      {
+        "id": "semantic-hackers",
+        "category": "semantic",
+        "seconds": 9.0,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 5,
+        "verified": 5,
+        "statements": 5,
+        "supported": 5,
+        "cited": [
+          "course:CS 385",
+          "course:CS 270"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "CS 385 Computer Security is the course that teaches how web systems are attacked and defended, including labs on web security and authentication.",
+          "Its topics include threat modeling, web security, authentication, and secure coding.",
+          "CS 385 is a 3-credit Systems-track elective offered in Year 3, Semester 2, in timetable slot F.",
+          "To take CS 385, you need to have completed CS 260 Operating Systems and CS 270 Computer Networks first.",
+          "CS 270 Computer Networks also covers network security basics, but only as an introduction."
+        ]
+      },
+      {
+        "id": "semantic-production",
+        "category": "semantic",
+        "seconds": 6.5,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 4,
+        "verified": 4,
+        "statements": 4,
+        "supported": 4,
+        "cited": [
+          "course:CS 460"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "CS 460 Machine Learning Operations (MLOps) teaches you how to take trained models to production and keep track of them over time.",
+          "Its topics include model deployment, monitoring, data drift, experiment tracking and ML pipelines.",
+          "CS 460 is a 3-credit elective in the AI and Machine Learning and Data Science tracks, offered in Year 4, Semester 2, in timetable slot B.",
+          "To take CS 460, you first need CS 340 Machine Learning and CS 360 Software Engineering."
+        ]
+      },
+      {
+        "id": "semantic-rewards",
+        "category": "semantic",
+        "seconds": 6.1,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 6,
+        "verified": 6,
+        "statements": 5,
+        "supported": 5,
+        "cited": [
+          "course:CS 450",
+          "handbook:4.1"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "Yes, CS 450 Reinforcement Learning is about agents that learn by trial and reward.",
+          "CS 450 covers Markov decision processes, dynamic programming, Q-learning, and policy gradients.",
+          "CS 450 is a 3-credit elective in the AI and Machine Learning track, offered in Year 4, Semester 2, in timetable slot A.",
+          "To take CS 450, you need CS 340 Machine Learning and MA 201 Probability and Statistics first.",
+          "You can register only after you pass every prerequisite with a grade of P or better, and courses you are still taking do not count."
+        ]
+      },
+      {
+        "id": "rule-max-load",
+        "category": "rule",
+        "seconds": 7.9,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 6,
+        "verified": 6,
+        "statements": 5,
+        "supported": 5,
+        "cited": [
+          "handbook:2.1",
+          "handbook:2.2",
+          "handbook:9"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "Without overload approval, the most you can register for in one semester is 20 credits.",
+          "If your CGPA is 8.0 or higher, you can request an overload of up to 24 credits, which is the highest load the handbook allows.",
+          "An overload needs written approval from your faculty advisor before registration closes, and students with a CGPA below 8.0 cannot overload.",
+          "If you are on academic probation because your CGPA fell below 5.0, your limit is 16 credits, and you must meet your faculty advisor before registering.",
+          "You haven't shared your record, so I can't tell which of these limits (16, 20 or 24 credits) applies to you, because that depends on your CGPA."
+        ]
+      },
+      {
+        "id": "rule-waiver",
+        "category": "rule",
+        "seconds": 8.1,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 6,
+        "verified": 6,
+        "statements": 5,
+        "supported": 5,
+        "cited": [
+          "handbook:4.2",
+          "handbook:4.1"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "Yes, a prerequisite can be waived, but only in limited cases.",
+          "The waiver decision is made jointly by the instructor of the course and the head of department.",
+          "A waiver is available only to students who show equivalent preparation.",
+          "Waivers are rare, and they are never granted for Capstone Project II.",
+          "Without a waiver, you must pass every prerequisite with a grade of P or better before registering, and a course you are still taking does not count as passed."
+        ]
+      },
+      {
+        "id": "rule-fail-core",
+        "category": "rule",
+        "seconds": 7.0,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 6,
+        "verified": 6,
+        "statements": 6,
+        "supported": 6,
+        "cited": [
+          "handbook:3.1",
+          "handbook:3.3",
+          "handbook:4.1",
+          "handbook:8"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "A failed course gets an F, which counts as 0 grade points and earns no credits.",
+          "You have to repeat a failed core course the next time it is offered, which is the same semester in the following year.",
+          "When you pass the course on a later attempt, the new grade replaces the F in your CGPA.",
+          "Until you pass the failed course, you cannot register for any course that lists it as a prerequisite, because a prerequisite needs a grade of P or better.",
+          "To graduate, you must pass every core course in the catalog, so you will need to pass the failed core course eventually.",
+          "You haven't shared your student record, so this is the general rule, and I can't say how a failed course would affect your own credits or CGPA."
+        ]
+      },
+      {
+        "id": "rule-electives",
+        "category": "rule",
+        "seconds": 7.7,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 4,
+        "verified": 4,
+        "statements": 4,
+        "supported": 4,
+        "cited": [
+          "handbook:5.1",
+          "handbook:8"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "To graduate, you need to pass at least four elective courses, and together they must total at least 13 credits.",
+          "Meeting the elective requirement is one of the graduation requirements, along with passing every core course, earning at least 86 total credits, and finishing with a CGPA of at least 5.0.",
+          "Electives are offered in Year 3 Semester 2 and in Year 4.",
+          "You have not shared your student record, so this is the general rule and does not count electives you may already have passed."
+        ]
+      },
+      {
+        "id": "rule-specialization",
+        "category": "rule",
+        "seconds": 7.7,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 5,
+        "verified": 5,
+        "statements": 5,
+        "supported": 5,
+        "cited": [
+          "handbook:5.2",
+          "handbook:5.3",
+          "handbook:1"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "To get a specialization noted on your transcript, you need to pass at least three electives from the same track.",
+          "There are three tracks to choose from: AI and Machine Learning, Data Science, and Systems.",
+          "Some electives belong to two tracks, and those electives count toward every track they belong to, but only once toward the elective requirement.",
+          "The Industry Internship (CS 499) counts as an elective, but it does not count toward a specialization because it belongs to no track.",
+          "Electives start in Year 3, and that is when you can work toward a specialization by focusing your electives on one track."
+        ]
+      },
+      {
+        "id": "rule-late-drop",
+        "category": "rule",
+        "seconds": 5.1,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 3,
+        "verified": 3,
+        "statements": 3,
+        "supported": 3,
+        "cited": [
+          "handbook:6.3"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "Yes, you can drop a course in the fifth week, but it is past the two-week window for dropping without penalty.",
+          "Because you would be dropping after the first two weeks, the course will show on your transcript as W (withdrawn) and you will earn no credits for it.",
+          "A W grade does not affect your CGPA."
+        ]
+      },
+      {
+        "id": "rule-probation",
+        "category": "rule",
+        "seconds": 4.4,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 3,
+        "verified": 3,
+        "statements": 3,
+        "supported": 3,
+        "cited": [
+          "handbook:9"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "A student is placed on academic probation if their CGPA falls below 5.0 at the end of a semester.",
+          "Probation ends once the student's CGPA is 5.0 or higher at the end of a semester.",
+          "While on probation, a student may register for at most 16 credits and must meet the faculty advisor before registering."
+        ]
+      },
+      {
+        "id": "rule-same-slot",
+        "category": "rule",
+        "seconds": 4.9,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 3,
+        "verified": 3,
+        "statements": 3,
+        "supported": 3,
+        "cited": [
+          "handbook:6.2"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "No, you can't register for two courses that meet in the same timetable slot in the same semester.",
+          "Each course meets in a single timetable slot, so two courses meet at the same time when they share a slot.",
+          "If two electives you want clash, you have to choose one of them, and the other may be offered again the next year."
+        ]
+      },
+      {
+        "id": "rule-sick",
+        "category": "rule",
+        "seconds": 14.0,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 6,
+        "verified": 6,
+        "statements": 6,
+        "supported": 6,
+        "cited": [
+          "handbook:2.3",
+          "handbook:2.1",
+          "handbook:6.3",
+          "handbook:9"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "Yes. You can register for fewer than 9 credits, but you need approval from the head of department, and illness is one of the usual reasons for it.",
+          "A load between 9 and 20 credits is a normal load, so if you stay at 9 credits or more you are not underloading.",
+          "Taking fewer than 9 credits may delay your graduation.",
+          "If you are already registered and want to cut back, dropping a course in the first two weeks of the semester carries no penalty.",
+          "After the first two weeks, a dropped course shows as W on your transcript and earns no credits, but it does not affect your CGPA.",
+          "You haven't shared your student record, so I can't check your standing. If you are on academic probation, you must meet your faculty advisor before you register."
+        ]
+      },
+      {
+        "id": "rule-registration-window",
+        "category": "rule",
+        "seconds": 3.7,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 2,
+        "verified": 2,
+        "statements": 2,
+        "supported": 2,
+        "cited": [
+          "handbook:6.1"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "Registration for the next semester opens four weeks before the current semester ends.",
+          "Registration closes one week after the next semester starts."
+        ]
+      },
+      {
+        "id": "rule-passing-grade",
+        "category": "rule",
+        "seconds": 4.0,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 3,
+        "verified": 3,
+        "statements": 2,
+        "supported": 2,
+        "cited": [
+          "handbook:3.1"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "The lowest passing grade is P, which is worth 4 grade points.",
+          "Any grade below P is an F, which is a fail and earns no credits."
+        ]
+      },
+      {
+        "id": "personal-riya-clash",
+        "category": "personal",
+        "seconds": 13.0,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 13,
+        "verified": 13,
+        "statements": 7,
+        "supported": 7,
+        "cited": [
+          "check:plan",
+          "handbook:6.2",
+          "check:CS 345",
+          "check:CS 380",
+          "record:riya",
+          "course:CS 345",
+          "course:CS 380",
+          "course:CS 430",
+          "handbook:6.1"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "No, you cannot take Deep Learning (CS 345) and NLP (CS 380) together next semester, because the two courses clash in the timetable.",
+          "The handbook does not let a student register for two courses that meet in the same slot in the same semester. When two electives you want clash, you have to pick one.",
+          "Both courses require CS 340 Machine Learning, which you are taking now. You can only register for either one after you pass CS 340.",
+          "Credits are not the problem: the two courses add up to 8 credits, and your limit next term is 20.",
+          "Both courses count toward the AI and Machine Learning track. You have not passed any electives for that track yet and need 3.",
+          "Deep Learning is a prerequisite for CS 430 Computer Vision, an AI and Machine Learning elective.",
+          "Your faculty advisor gives final approval for what you register for."
+        ]
+      },
+      {
+        "id": "personal-riya-overload",
+        "category": "personal",
+        "seconds": 9.9,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 6,
+        "verified": 6,
+        "statements": 4,
+        "supported": 4,
+        "cited": [
+          "handbook:2.1",
+          "record:riya",
+          "handbook:2.2",
+          "handbook:6.1"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "Taking more than 20 credits counts as an overload, and you can't register for that many without overload approval.",
+          "Your CGPA is 8.71, so you meet the overload requirement of 8.0 or higher. That means you can ask to take up to 24 credits next term.",
+          "The 24 credits aren't automatic. Your faculty advisor gives final approval and must approve the overload in writing before registration closes.",
+          "Registration closes one week after next semester starts, so you need the written approval by then."
+        ]
+      },
+      {
+        "id": "personal-kabir-os",
+        "category": "personal",
+        "seconds": 8.4,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 7,
+        "verified": 7,
+        "statements": 4,
+        "supported": 4,
+        "cited": [
+          "check:CS 260",
+          "record:kabir",
+          "course:CS 260",
+          "handbook:1"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "No, you can't take CS 260 Operating Systems next term, because your next term is Year 3, Semester 1 and CS 260 is only offered in Semester 2.",
+          "The catalog places CS 260 in Year 2, Semester 2, and each course is offered only in its listed semester.",
+          "Timing is the only problem: you have already passed both prerequisites for CS 260, which are CS 102 Data Structures and CS 230 Computer Organization.",
+          "Your faculty advisor gives final approval on what you register for."
+        ]
+      },
+      {
+        "id": "personal-meera-track",
+        "category": "personal",
+        "seconds": 15.3,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 11,
+        "verified": 11,
+        "statements": 6,
+        "supported": 6,
+        "cited": [
+          "handbook:5.2",
+          "record:meera",
+          "course:CS 345",
+          "check:CS 450",
+          "course:CS 450",
+          "check:CS 460",
+          "course:CS 460"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "To earn a specialization, you must pass at least three electives from the same track, and AI and Machine Learning is one of the tracks.",
+          "You have passed one of the three AI and Machine Learning electives you need: CS 345 Deep Learning.",
+          "You are taking two more electives that count toward this track this semester, CS 420 Information Retrieval and CS 430 Computer Vision, so passing both would give you the three electives you need.",
+          "If you want a backup next term, you meet every requirement for CS 450 Reinforcement Learning, and it counts toward the AI and Machine Learning track.",
+          "You also meet every requirement for CS 460 Machine Learning Operations next term, and it counts toward both the AI and Machine Learning track and the Data Science track.",
+          "Your faculty advisor gives final approval on what you register for."
+        ]
+      },
+      {
+        "id": "personal-dev-load",
+        "category": "personal",
+        "seconds": 6.1,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 6,
+        "verified": 6,
+        "statements": 4,
+        "supported": 4,
+        "cited": [
+          "record:dev",
+          "handbook:9",
+          "handbook:2.1"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "You are on probation, so next term (Year 3, Semester 2) you can take at most 16 credits.",
+          "The handbook caps every student on probation at 16 credits, which is lower than the normal maximum of 20 credits.",
+          "Because you are on probation, you must meet your faculty advisor before you register, and the advisor gives final approval of your registration.",
+          "Your CGPA is 3.85, and probation ends only when your CGPA is 5.0 or higher at the end of a semester."
+        ]
+      },
+      {
+        "id": "personal-meera-capstone",
+        "category": "personal",
+        "seconds": 10.6,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 8,
+        "verified": 8,
+        "statements": 6,
+        "supported": 6,
+        "cited": [
+          "check:CS 492",
+          "record:meera",
+          "handbook:4.1",
+          "handbook:7",
+          "course:CS 492",
+          "handbook:4.2",
+          "handbook:6.1"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "You can't register for Capstone Project II (CS 492) yet, because its prerequisite, CS 491 Capstone Project I, is still in progress for you.",
+          "The handbook says courses in progress do not count as passed for prerequisites.",
+          "CS 492 requires a pass in CS 491 in the same academic year, so you need to pass CS 491 this semester before you can take CS 492.",
+          "CS 492 is offered next term, Year 4, Semester 2. It is a 6-credit core course in timetable slot E.",
+          "A waiver of the CS 491 prerequisite is not an option, because waivers are never granted for Capstone Project II.",
+          "Your faculty advisor gives final approval on what you register for next term."
+        ]
+      },
+      {
+        "id": "refuse-instructor",
+        "category": "refusal",
+        "seconds": 3.7,
+        "answerable": false,
+        "refusal_ok": true,
+        "citations": 1,
+        "verified": 1,
+        "statements": 1,
+        "supported": 1,
+        "cited": [
+          "course:CS 340"
+        ],
+        "source_recall": null,
+        "missing": [],
+        "answer": [
+          "The catalog and handbook do not say who teaches Machine Learning this year; the CS 340 catalog entry gives only its credits, offering term, timetable slot, prerequisites, and topics, with no instructor named."
+        ]
+      },
+      {
+        "id": "refuse-hostel",
+        "category": "refusal",
+        "seconds": 5.7,
+        "answerable": false,
+        "refusal_ok": true,
+        "citations": 1,
+        "verified": 1,
+        "statements": 1,
+        "supported": 1,
+        "cited": [
+          "handbook:1"
+        ],
+        "source_recall": null,
+        "missing": [],
+        "answer": [
+          "The catalog and handbook do not say anything about hostel fees, so I can't tell you how much the hostel costs per semester; the handbook sections I have cover only academic matters such as the program structure."
+        ]
+      },
+      {
+        "id": "refuse-quantum",
+        "category": "refusal",
+        "seconds": 4.3,
+        "answerable": false,
+        "refusal_ok": true,
+        "citations": 1,
+        "verified": 1,
+        "statements": 1,
+        "supported": 1,
+        "cited": [
+          "course:CS 370"
+        ],
+        "source_recall": null,
+        "missing": [],
+        "answer": [
+          "The catalog and handbook sources I have don't list any course on quantum computing, so I can't confirm that one exists; the closest course is CS 370 Theory of Computation, which covers automata and Turing machines."
+        ]
+      },
+      {
+        "id": "refuse-exam-date",
+        "category": "refusal",
+        "seconds": 6.3,
+        "answerable": false,
+        "refusal_ok": true,
+        "citations": 1,
+        "verified": 1,
+        "statements": 1,
+        "supported": 1,
+        "cited": [
+          "course:CS 220"
+        ],
+        "source_recall": null,
+        "missing": [],
+        "answer": [
+          "The catalog and handbook don't give a final exam date for CS 220 Database Systems. They only say it is offered in Year 2, Semester 1, in timetable slot B."
+        ]
+      }
+    ]
+  }
+}

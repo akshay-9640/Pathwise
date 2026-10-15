@@ -1,0 +1,33 @@
+[project]
+name = "pathwise"
+version = "0.1.0"
+description = "A course advisor that answers from the catalog and handbook, with every statement cited and every quote verified."
+readme = "README.md"
+authors = [
+    { name = "akshay-9640", email = "67995033+akshay-9640@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=1.15.0",
+    "fastapi>=0.143.2",
+    "fastembed>=0.9.0",
+    "mcp>=2.3.0",
+    "pydantic>=2.14.1",
+    "pyyaml>=6.0.3",
+    "rank-bm25>=0.2.2",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+pathwise = "pathwise:main"
+pathwise-eval = "pathwise.eval:main"
+
+[build-system]
+requires = ["uv_build>=0.11.7,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+]

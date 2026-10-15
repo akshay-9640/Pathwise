@@ -1,0 +1,357 @@
+# Pathwise demo catalog: a fictional B.Tech Computer Science and Engineering program.
+# Not a real university's catalog. Each course runs in one semester of one year and
+# meets in one timetable slot; two courses in the same slot and semester clash.
+
+program: B.Tech Computer Science and Engineering
+institution: Pathwise Institute of Technology (fictional)
+
+courses:
+  # Year 1
+  - code: CS 101
+    title: Programming in Python
+    credits: 4
+    year: 1
+    semester: 1
+    kind: core
+    slot: A
+    prerequisites: []
+    topics: [variables and types, control flow, functions, lists and dictionaries, files, debugging]
+    description: "First programming course. Students write, test, and debug small Python programs and learn to break problems into functions."
+  - code: MA 101
+    title: Engineering Mathematics I
+    credits: 4
+    year: 1
+    semester: 1
+    kind: core
+    slot: B
+    prerequisites: []
+    topics: [limits, differentiation, integration, sequences and series, matrices]
+    description: "Single-variable calculus and an introduction to matrices for engineering students."
+  - code: PH 101
+    title: Engineering Physics
+    credits: 3
+    year: 1
+    semester: 1
+    kind: core
+    slot: C
+    prerequisites: []
+    topics: [mechanics, waves, optics, semiconductors]
+    description: "Physics foundations for engineers, ending with the semiconductor physics behind modern electronics."
+  - code: EN 101
+    title: Technical Communication
+    credits: 2
+    year: 1
+    semester: 1
+    kind: core
+    slot: D
+    prerequisites: []
+    topics: [technical writing, presentations, reports, documentation]
+    description: "Writing clear reports and documentation and giving short technical presentations."
+  - code: CS 102
+    title: Data Structures
+    aliases: [DSA]
+    credits: 4
+    year: 1
+    semester: 2
+    kind: core
+    slot: A
+    prerequisites: [CS 101]
+    topics: [arrays, linked lists, stacks and queues, trees, hashing, graphs, complexity]
+    description: "Core data structures, their costs, and how to choose between them, implemented in Python."
+  - code: MA 102
+    title: Engineering Mathematics II
+    credits: 4
+    year: 1
+    semester: 2
+    kind: core
+    slot: B
+    prerequisites: [MA 101]
+    topics: [multivariable calculus, differential equations, linear algebra, eigenvalues]
+    description: "Multivariable calculus, differential equations, and the linear algebra used later in machine learning."
+  - code: EE 101
+    title: Basic Electrical Engineering
+    credits: 3
+    year: 1
+    semester: 2
+    kind: core
+    slot: C
+    prerequisites: []
+    topics: [circuits, Kirchhoff's laws, AC circuits, digital logic basics]
+    description: "Circuit analysis and an introduction to digital logic, preparing for computer organization."
+
+  # Year 2
+  - code: CS 201
+    title: Discrete Mathematics
+    credits: 3
+    year: 2
+    semester: 1
+    kind: core
+    slot: A
+    prerequisites: [MA 101]
+    topics: [logic, proofs, sets, relations, combinatorics, graph theory]
+    description: "The mathematics of computer science: logic, proof techniques, counting, and graphs."
+  - code: CS 220
+    title: Database Systems
+    aliases: [DBMS]
+    credits: 4
+    year: 2
+    semester: 1
+    kind: core
+    slot: B
+    prerequisites: [CS 102]
+    topics: [relational model, SQL, joins, normalization, transactions, indexing]
+    description: "Designing relational databases and querying them with SQL, from normalization to transactions and indexes."
+  - code: CS 230
+    title: Computer Organization
+    aliases: [COA]
+    credits: 3
+    year: 2
+    semester: 1
+    kind: core
+    slot: C
+    prerequisites: [EE 101]
+    topics: [number systems, CPU datapath, assembly, memory hierarchy, caches]
+    description: "How a computer executes programs, from instructions and the datapath to caches and memory."
+  - code: CS 250
+    title: Design and Analysis of Algorithms
+    aliases: [DAA]
+    credits: 4
+    year: 2
+    semester: 2
+    kind: core
+    slot: A
+    prerequisites: [CS 102, CS 201]
+    topics: [divide and conquer, greedy algorithms, dynamic programming, graph algorithms, NP-completeness]
+    description: "Designing algorithms and proving their correctness and running time."
+  - code: CS 260
+    title: Operating Systems
+    aliases: [OS]
+    credits: 4
+    year: 2
+    semester: 2
+    kind: core
+    slot: B
+    prerequisites: [CS 102, CS 230]
+    topics: [processes and threads, scheduling, synchronization, memory management, file systems]
+    description: "How operating systems share a machine between programs, with hands-on work on threads and memory."
+  - code: CS 270
+    title: Computer Networks
+    aliases: [CN]
+    credits: 3
+    year: 2
+    semester: 2
+    kind: core
+    slot: C
+    prerequisites: [CS 230]
+    topics: [layered models, TCP and UDP, routing, HTTP, network security basics]
+    description: "How data moves across networks, from links and routing to TCP and the web."
+  - code: MA 201
+    title: Probability and Statistics
+    credits: 3
+    year: 2
+    semester: 2
+    kind: core
+    slot: D
+    prerequisites: [MA 102]
+    topics: [probability, random variables, distributions, estimation, hypothesis testing, regression]
+    description: "Probability and statistics for computing, the mathematical base for machine learning and data courses."
+
+  # Year 3
+  - code: CS 340
+    title: Machine Learning
+    aliases: [ML]
+    credits: 4
+    year: 3
+    semester: 1
+    kind: core
+    slot: A
+    prerequisites: [CS 250, MA 201]
+    topics: [supervised and unsupervised learning, regression, overfitting and regularization, evaluation metrics, decision trees, k-nearest neighbors]
+    description: "Foundations of machine learning, from linear models and evaluation to trees and nearest neighbors."
+  - code: CS 350
+    title: Compiler Design
+    aliases: [compilers]
+    credits: 3
+    year: 3
+    semester: 1
+    kind: core
+    slot: B
+    prerequisites: [CS 250]
+    topics: [lexical analysis, parsing, semantic analysis, code generation, optimization]
+    description: "How source code becomes machine code, building a small compiler in stages."
+  - code: CS 360
+    title: Software Engineering
+    credits: 3
+    year: 3
+    semester: 1
+    kind: core
+    slot: C
+    prerequisites: [CS 220]
+    topics: [requirements, design patterns, testing, version control, agile delivery]
+    description: "Building software in teams: requirements, design, testing, and delivery on a semester project."
+  - code: CS 370
+    title: Theory of Computation
+    aliases: [TOC]
+    credits: 3
+    year: 3
+    semester: 2
+    kind: core
+    slot: A
+    prerequisites: [CS 201]
+    topics: [automata, regular languages, context-free grammars, Turing machines, decidability]
+    description: "What can and cannot be computed, from finite automata to Turing machines."
+  - code: CS 345
+    title: Deep Learning
+    aliases: [DL]
+    credits: 4
+    year: 3
+    semester: 2
+    kind: elective
+    tracks: [AI and Machine Learning]
+    slot: D
+    prerequisites: [CS 340]
+    topics: [neural networks, backpropagation, convolutional networks, sequence models, transformers]
+    description: "Neural networks from backpropagation to convolutional networks and transformers, trained in PyTorch."
+  - code: CS 380
+    title: Natural Language Processing
+    aliases: [NLP]
+    credits: 4
+    year: 3
+    semester: 2
+    kind: elective
+    tracks: [AI and Machine Learning, Data Science]
+    slot: D
+    prerequisites: [CS 340]
+    topics: [text processing, word embeddings, language models, retrieval-augmented generation, evaluation]
+    description: "Language technology from text processing and embeddings to large language models and retrieval-augmented generation."
+  - code: CS 375
+    title: Cloud Computing
+    credits: 3
+    year: 3
+    semester: 2
+    kind: elective
+    tracks: [Systems]
+    slot: E
+    prerequisites: [CS 260, CS 270]
+    topics: [virtualization, containers, cloud services, serverless, cost and scaling]
+    description: "Running software in the cloud with containers, managed services, and serverless functions."
+  - code: CS 385
+    title: Computer Security
+    aliases: [cybersecurity]
+    credits: 3
+    year: 3
+    semester: 2
+    kind: elective
+    tracks: [Systems]
+    slot: F
+    prerequisites: [CS 260, CS 270]
+    topics: [threat modeling, cryptography basics, web security, authentication, secure coding]
+    description: "How systems are attacked and defended, with labs on web security and authentication."
+
+  # Year 4
+  - code: CS 410
+    title: Distributed Systems
+    credits: 3
+    year: 4
+    semester: 1
+    kind: elective
+    tracks: [Systems]
+    slot: A
+    prerequisites: [CS 260, CS 270]
+    topics: [replication, consensus, consistency models, fault tolerance]
+    description: "Building systems that keep working across many machines and partial failures."
+  - code: CS 420
+    title: Information Retrieval
+    aliases: [IR]
+    credits: 3
+    year: 4
+    semester: 1
+    kind: elective
+    tracks: [Data Science, AI and Machine Learning]
+    slot: B
+    prerequisites: [CS 220, MA 201]
+    topics: [indexing, ranking, BM25, vector search, evaluation of search]
+    description: "How search engines index and rank documents, from BM25 to vector search, and how to measure search quality."
+  - code: CS 430
+    title: Computer Vision
+    aliases: [CV]
+    credits: 4
+    year: 4
+    semester: 1
+    kind: elective
+    tracks: [AI and Machine Learning]
+    slot: C
+    prerequisites: [CS 345]
+    topics: [image formation, feature detection, convolutional networks, object detection, segmentation]
+    description: "Teaching computers to understand images, from classic features to deep object detection."
+  - code: CS 440
+    title: Big Data Systems
+    credits: 3
+    year: 4
+    semester: 1
+    kind: elective
+    tracks: [Data Science, Systems]
+    slot: D
+    prerequisites: [CS 220, CS 260]
+    topics: [distributed storage, batch processing, stream processing, data warehouses]
+    description: "Storing and processing data too large for one machine, with batch and streaming pipelines."
+  - code: CS 491
+    title: Capstone Project I
+    aliases: [capstone]
+    credits: 4
+    year: 4
+    semester: 1
+    kind: core
+    slot: E
+    prerequisites: [CS 360]
+    min_credits: 70
+    topics: [problem definition, research, design, prototyping]
+    description: "First half of the year-long team capstone: define a real problem, research it, and build a working prototype."
+  - code: CS 450
+    title: Reinforcement Learning
+    aliases: [RL]
+    credits: 3
+    year: 4
+    semester: 2
+    kind: elective
+    tracks: [AI and Machine Learning]
+    slot: A
+    prerequisites: [CS 340, MA 201]
+    topics: [Markov decision processes, dynamic programming, Q-learning, policy gradients]
+    description: "Learning by trial and reward, from Markov decision processes to policy gradient methods."
+  - code: CS 460
+    title: Machine Learning Operations
+    aliases: [MLOps]
+    credits: 3
+    year: 4
+    semester: 2
+    kind: elective
+    tracks: [AI and Machine Learning, Data Science]
+    slot: B
+    prerequisites: [CS 340, CS 360]
+    topics: [experiment tracking, model deployment, monitoring, data drift, ML pipelines]
+    description: "Taking models to production: deployment, monitoring, and keeping them accurate as data changes."
+  - code: CS 492
+    title: Capstone Project II
+    aliases: [capstone]
+    credits: 6
+    year: 4
+    semester: 2
+    kind: core
+    slot: E
+    prerequisites: [CS 491]
+    topics: [implementation, evaluation, deployment, final report]
+    description: "Second half of the capstone: finish, evaluate, and present the project with a final report."
+  - code: CS 499
+    title: Industry Internship
+    aliases: [internship]
+    credits: 6
+    year: 4
+    semester: 2
+    kind: elective
+    tracks: []
+    slot: F
+    prerequisites: []
+    min_credits: 70
+    topics: [industry project, professional practice, internship report]
+    description: "A supervised internship of at least 12 weeks with an approved company, assessed by report and presentation."
