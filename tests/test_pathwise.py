@@ -217,3 +217,30 @@ def test_partial_plan_check_does_not_flag_underload():
     from pathwise.advisor import check_sources
     plan = next(s for s in check_sources("Deep Learning and NLP together?", CAT.students["riya"], CAT, []) if s.id == "check:plan")
     assert "slot D" in plan.text and "minimum" not in plan.text
+
+
+def test_quote_span_points_at_the_original_text():
+    from pathwise.advisor import quote_span
+    text = "Students with a CGPA of 8.0 or higher may request an overload of up to 24 credits in one semester."
+    a, b = quote_span("cgpa of 8.0 or higher  may request", text)
+    assert text[a:b] == "CGPA of 8.0 or higher may request"
+    a, b = quote_span("Students with a CGPA of 8.0 or higher may request overload of up to 24 credits", text)
+    assert text[a:b].startswith("Students with") and "24" in text[a:b]
+    assert quote_span("CGPA of 7.0", text) is None
+
+
+# Web app
+def test_app_answers_with_spans_and_rejects_bad_input():
+    from fastapi.testclient import TestClient
+    from pathwise.app import create_app
+    draft = Draft(answerable=True, statements=[Statement(text="CS 345 needs CS 340.", citations=[Citation(source="course:CS 345", quote="Prerequisites: CS 340 Machine Learning")])])
+    client = TestClient(create_app(Advisor(CAT, retriever(), llm=FakeLLM(draft))))
+    assert client.get("/").status_code == 200 and "Pathwise" in client.get("/").text
+    meta = client.get("/api/meta").json()
+    assert {s["id"] for s in meta["students"]} == set(CAT.students) and meta["suggestions"]["riya"]
+    r = client.post("/api/ask", json={"question": "What do I need before CS 345?", "student": "riya"}).json()
+    c = r["statements"][0]["citations"][0]
+    src = next(s for s in r["sources"] if s["id"] == "course:CS 345")
+    assert c["verified"] and src["text"][c["span"][0]:c["span"][1]] == "Prerequisites: CS 340 Machine Learning"
+    assert client.post("/api/ask", json={"question": "hi?", "student": "nobody"}).status_code == 404
+    assert client.post("/api/ask", json={"question": "x"}).status_code == 422

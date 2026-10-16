@@ -9,7 +9,8 @@ A RAG course advisor for a (fictional) B.Tech CSE program. Students ask question
 - **Catalog**: 31 courses, a 10-section handbook, and 4 demo students, all fictional (`src/pathwise/catalog/`).
 - **Retrieval**: BM25 plus local bge-small embeddings, merged with reciprocal rank fusion. Courses a question names (by code, title, or abbreviation like NLP) are always included, along with their direct prerequisites. Runs fully local.
 - **Rules**: eligibility, prerequisites, load limits, overload, probation, and timetable clashes are checked in code, and every check names the handbook rule it applies.
-- **Answering**: Claude gets the sources and returns a structured draft; `verify()` checks every quote and numbers the cited sources as footnotes.
+- **Answering**: Claude gets the sources and returns a structured draft; `verify()` checks every quote, records where it sits in the source, and numbers the cited sources as footnotes.
+- **Web app**: pick a demo student (or none), ask a question, and read the answer as cited statements. The sources panel shows each cited source in full with the quoted passages highlighted; hovering a footnote or a statement lights up the exact quote it rests on.
 
 ## Evaluation
 
@@ -34,6 +35,7 @@ uv run pytest                       # offline, no model calls
 uv run pathwise-eval                # retrieval evals, free and local
 export ANTHROPIC_API_KEY=...        # or PATHWISE_BACKEND=claude-code to use the Claude Code CLI
 uv run pathwise-eval --answers
+uv run pathwise                     # web app on http://127.0.0.1:8765
 ```
 
-Work in progress: web app with citation footnotes and a sources panel, and an MCP server.
+Work in progress: an MCP server.

@@ -1,2 +1,3 @@
 def main() -> None:
-    print("Hello from pathwise!")
+    from .app import main as run
+    run()

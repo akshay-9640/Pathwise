@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pathwise</title>
+  <meta name="description" content="A course advisor that answers from the catalog and handbook, with every statement cited and every quote verified.">
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-row">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">P</span>
+        <span class="name">Pathwise</span>
+        <span class="tag">Course advisor</span>
+      </div>
+      <p class="program" id="program"></p>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <section class="ask-col" aria-label="Ask a question">
+      <div class="card">
+        <div class="who">
+          <span class="label" id="who-label">Asking as</span>
+          <div class="segmented" id="students" role="radiogroup" aria-labelledby="who-label"></div>
+          <p class="record" id="record"></p>
+        </div>
+
+        <form id="ask" class="ask">
+          <label for="question" class="sr">Your question</label>
+          <textarea id="question" rows="2" maxlength="500" placeholder="Ask about courses, prerequisites, credits, or the rules" required></textarea>
+          <div class="ask-row">
+            <div class="chips" id="suggestions" aria-label="Suggested questions"></div>
+            <button type="submit" class="btn" id="ask-btn">Ask</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="answer" class="card answer" hidden aria-live="polite"></div>
+    </section>
+
+    <aside class="src-col" aria-label="Sources">
+      <div class="card sources">
+        <div class="src-head">
+          <h2>Sources</h2>
+          <span class="count" id="src-count"></span>
+        </div>
+        <div id="sources">
+          <div class="empty">
+            <p>Every statement in an answer links to a numbered source here, with the quoted passage highlighted.</p>
+            <p>Quotes are checked word for word against the source before they are shown. A statement without a verified quote is marked as unsupported.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Fictional catalog, handbook, and students, made for this demo. Answers are written by Claude from the sources shown and checked against them in code.</p>
+  </footer>
+</body>
+</html>

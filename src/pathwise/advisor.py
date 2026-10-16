@@ -48,6 +48,7 @@ class CheckedCitation(BaseModel):
     quote: str
     verified: bool
     number: int | None = None   # footnote number, shared by every citation of the same source
+    span: list[int] | None = None   # [start, end] of the quote in the source text, for highlighting
 
 
 class CheckedStatement(BaseModel):
@@ -86,25 +87,48 @@ How to answer:
   gives final approval only when the student is deciding what to register for."""
 
 
-def _norm(s: str) -> str:
-    s = s.lower().replace("’", "'").replace("“", '"').replace("”", '"')
-    return re.sub(r"[^a-z0-9.+%' ]+", " ", re.sub(r"\s+", " ", s)).strip()
+_KEEP = re.compile(r"[a-z0-9.+%']")
+_SAME = {"’": "'", "‘": "'"}
+
+
+def _norm_map(s: str) -> tuple[str, list[int]]:
+    """Lowercases, turns punctuation into spaces, and collapses spaces, remembering for every
+    character of the result where it came from in the original, so a match maps back to it."""
+    out, where = [], []
+    for i, ch in enumerate(s):
+        c = _SAME.get(ch, ch.lower())
+        c = c if _KEEP.match(c) else " "
+        if c == " " and (not out or out[-1] == " "):
+            continue
+        out.append(c)
+        where.append(i)
+    while out and out[-1] == " ":
+        out.pop(), where.pop()
+    return "".join(out), where
+
+
+def quote_span(quote: str, text: str) -> tuple[int, int] | None:
+    """Where the quote appears in the text (start, end in the original text), ignoring case,
+    spacing, and punctuation. Allows a near match (one or two words off) for quotes of 6 words
+    or more. None when the quote is not there."""
+    t, where = _norm_map(text)
+    q = _norm_map(quote)[0].strip(" .'")
+    if not q or not t:
+        return None
+    pos = t.find(q)
+    if pos < 0:
+        if len(q.split()) < 6:
+            return None
+        m = SequenceMatcher(None, t, q, autojunk=False).find_longest_match(0, len(t), 0, len(q))
+        pos = max(0, m.a - m.b)
+        if SequenceMatcher(None, t[pos: pos + len(q) + 10], q, autojunk=False).ratio() < 0.9:
+            return None
+    end = min(len(t), pos + len(q)) - 1
+    return where[pos], where[end] + 1
 
 
 def quote_found(quote: str, text: str) -> bool:
-    """True when the quote appears in the text, ignoring case, spacing, and punctuation.
-    Allows a near match (one or two words off) for quotes of 6 words or more."""
-    q, t = _norm(quote).strip(" .'\""), _norm(text)
-    if not q:
-        return False
-    if q in t:
-        return True
-    words = q.split()
-    if len(words) < 6:
-        return False
-    m = SequenceMatcher(None, t, q, autojunk=False).find_longest_match(0, len(t), 0, len(q))
-    window = t[max(0, m.a - m.b): m.a - m.b + len(q) + 10]
-    return SequenceMatcher(None, window, q, autojunk=False).ratio() >= 0.9
+    return quote_span(quote, text) is not None
 
 
 def record_source(student: Student, catalog: Catalog) -> Source:
@@ -204,12 +228,13 @@ def verify(question: str, student: Student | None, draft: Draft, sources: list[S
         checked = []
         for c in st.citations:
             src = by_id.get(c.source)
-            ok = bool(src) and quote_found(c.quote, src.text)
+            span = quote_span(c.quote, src.text) if src else None
+            ok = span is not None
             total += 1
             good += ok
             if ok:
                 numbers.setdefault(c.source, len(numbers) + 1)
-            checked.append(CheckedCitation(source=c.source, quote=c.quote, verified=ok, number=numbers.get(c.source) if ok else None))
+            checked.append(CheckedCitation(source=c.source, quote=c.quote, verified=ok, number=numbers.get(c.source) if ok else None, span=list(span) if span else None))
         statements.append(CheckedStatement(text=st.text, citations=checked, supported=any(c.verified for c in checked)))
     cited = sorted(numbers, key=numbers.get)
     return Answer(question=question, student=student.id if student else None, answerable=draft.answerable,
