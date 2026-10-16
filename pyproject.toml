@@ -21,6 +21,7 @@ dependencies = [
 [project.scripts]
 pathwise = "pathwise:main"
 pathwise-eval = "pathwise.eval:main"
+pathwise-mcp = "pathwise.mcp_server:main"
 
 [build-system]
 requires = ["uv_build>=0.11.7,<0.12.0"]

@@ -38,4 +38,20 @@ uv run pathwise-eval --answers
 uv run pathwise                     # web app on http://127.0.0.1:8765
 ```
 
-Work in progress: an MCP server.
+## MCP server
+
+`pathwise-mcp` exposes the advisor to Claude Desktop or Claude Code. `ask` returns a full answer with numbered sources and verified quotes (one Claude call). The rest are free and local: `search_catalog`, `get_source`, `list_students`, `check_course`, `check_plan`, `student_progress`, and `eligible_courses`, each naming the handbook rule it applies.
+
+```json
+{
+  "mcpServers": {
+    "pathwise": {
+      "command": "uv",
+      "args": ["run", "--directory", "/path/to/pathwise", "pathwise-mcp"],
+      "env": { "PATHWISE_BACKEND": "claude-code" }
+    }
+  }
+}
+```
+
+For Claude Code: `claude mcp add pathwise -- uv run --directory /path/to/pathwise pathwise-mcp`.

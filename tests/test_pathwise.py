@@ -244,3 +244,18 @@ def test_app_answers_with_spans_and_rejects_bad_input():
     assert c["verified"] and src["text"][c["span"][0]:c["span"][1]] == "Prerequisites: CS 340 Machine Learning"
     assert client.post("/api/ask", json={"question": "hi?", "student": "nobody"}).status_code == 404
     assert client.post("/api/ask", json={"question": "x"}).status_code == 422
+
+
+# MCP server
+def test_mcp_tools_run_offline_and_explain_bad_input():
+    from mcp.server.mcpserver.exceptions import ToolError
+    from pathwise import mcp_server as m
+    assert m.search_catalog("cs420 ranking", k=1, mode="bm25")[0]["id"] == "course:CS 420"
+    assert m.get_source("course:cs345")["label"] == "CS 345 Deep Learning" and "Riya Sharma" in m.get_source("record:riya")["text"]
+    assert m.check_course("kabir", "cs260")["issues"][0]["rule"] == "handbook:1"
+    plan = m.check_plan("riya", ["CS 345", "CS 380"])
+    assert any(i["rule"] == "handbook:6.2" for i in plan["issues"])
+    assert {s["id"] for s in m.list_students()} == set(CAT.students) and m.student_progress("meera")["progress"]["tracks"]
+    for bad in (lambda: m.check_course("nobody", "CS 345"), lambda: m.get_source("course:XX 999"), lambda: m.search_catalog("x", mode="magic")):
+        with pytest.raises(ToolError):
+            bad()
