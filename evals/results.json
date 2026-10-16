@@ -1,6 +1,6 @@
 {
   "k": 6,
-  "questions": 35,
+  "questions": 36,
   "retrieval": {
     "bm25": {
       "hit": 0.968,
@@ -2005,7 +2005,7 @@
   "context_mode": "hybrid",
   "context": {
     "recall": 1.0,
-    "avg_sources": 7.452,
+    "avg_sources": 8.156,
     "rows": [
       {
         "id": "lookup-prereqs",
@@ -2209,31 +2209,39 @@
       },
       {
         "id": "personal-riya-clash",
-        "shown": 16,
+        "shown": 18,
         "hit": true,
         "recall": 1.0,
-        "rr": 0.14285714285714285,
+        "rr": 0.125,
         "missing": []
       },
       {
         "id": "personal-riya-overload",
-        "shown": 7,
+        "shown": 10,
         "hit": true,
         "recall": 1.0,
         "rr": 1.0,
         "missing": []
       },
       {
-        "id": "personal-kabir-os",
-        "shown": 17,
+        "id": "personal-riya-ai-electives",
+        "shown": 15,
         "hit": true,
         "recall": 1.0,
         "rr": 0.5,
         "missing": []
       },
       {
+        "id": "personal-kabir-os",
+        "shown": 19,
+        "hit": true,
+        "recall": 1.0,
+        "rr": 0.3333333333333333,
+        "missing": []
+      },
+      {
         "id": "personal-meera-track",
-        "shown": 18,
+        "shown": 21,
         "hit": true,
         "recall": 1.0,
         "rr": 1.0,
@@ -2241,7 +2249,7 @@
       },
       {
         "id": "personal-dev-load",
-        "shown": 9,
+        "shown": 12,
         "hit": true,
         "recall": 1.0,
         "rr": 1.0,
@@ -2249,10 +2257,10 @@
       },
       {
         "id": "personal-meera-capstone",
-        "shown": 13,
+        "shown": 15,
         "hit": true,
         "recall": 1.0,
-        "rr": 0.5,
+        "rr": 0.3333333333333333,
         "missing": []
       }
     ]
@@ -2268,13 +2276,13 @@
       {
         "id": "lookup-prereqs",
         "category": "lookup",
-        "seconds": 5.7,
+        "seconds": 7.7,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 2,
-        "verified": 2,
-        "statements": 2,
-        "supported": 2,
+        "citations": 4,
+        "verified": 4,
+        "statements": 3,
+        "supported": 3,
         "cited": [
           "course:CS 350",
           "course:CS 250"
@@ -2282,18 +2290,19 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "Compiler Design (CS 350) has one prerequisite: CS 250 Design and Analysis of Algorithms.",
-          "CS 250 Design and Analysis of Algorithms has its own prerequisites: CS 102 Data Structures and CS 201 Discrete Mathematics."
+          "CS 350 Compiler Design has one prerequisite: CS 250 Design and Analysis of Algorithms.",
+          "CS 250 has its own prerequisites, CS 102 Data Structures and CS 201 Discrete Mathematics, so you need to finish those before you can take CS 250.",
+          "CS 350 is a 3-credit core course offered in Year 3, Semester 1, in timetable slot B."
         ]
       },
       {
         "id": "lookup-internship",
         "category": "lookup",
-        "seconds": 4.8,
+        "seconds": 12.8,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 4,
-        "verified": 4,
+        "citations": 3,
+        "verified": 3,
         "statements": 3,
         "supported": 3,
         "cited": [
@@ -2304,15 +2313,15 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "The Industry Internship (CS 499) is worth 6 credits and counts as an elective.",
-          "It does not count toward a specialization because it does not belong to any track.",
-          "A specialization requires passing at least three electives from the same track: AI and Machine Learning, Data Science, or Systems."
+          "The Industry Internship (CS 499) is worth 6 credits and is an elective.",
+          "It does not count toward a specialization, because it counts as an elective but belongs to no track.",
+          "A specialization requires passing at least three electives from the same track, so you would need three track electives in addition to the internship to earn one."
         ]
       },
       {
         "id": "lookup-slot",
         "category": "lookup",
-        "seconds": 3.9,
+        "seconds": 7.2,
         "answerable": true,
         "refusal_ok": true,
         "citations": 2,
@@ -2325,19 +2334,19 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "OS is CS 260 Operating Systems, and it meets in timetable slot B."
+          "OS is CS 260 Operating Systems, and it meets in timetable slot B in Year 2, Semester 2."
         ]
       },
       {
         "id": "semantic-search-engines",
         "category": "semantic",
-        "seconds": 6.1,
+        "seconds": 8.9,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 7,
-        "verified": 7,
-        "statements": 6,
-        "supported": 6,
+        "citations": 6,
+        "verified": 6,
+        "statements": 5,
+        "supported": 5,
         "cited": [
           "course:CS 420",
           "handbook:4.1"
@@ -2345,18 +2354,17 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "Yes, CS 420 Information Retrieval (also called IR) covers how search engines work.",
-          "Its topics are indexing, ranking, BM25, vector search, and how to evaluate search.",
-          "CS 420 is a 3-credit elective in the Data Science track and the AI and Machine Learning track.",
-          "It runs only in Year 4, Semester 1, in timetable slot B.",
-          "To take it, you need CS 220 Database Systems and MA 201 Probability and Statistics.",
-          "You have to pass each prerequisite with a grade of P or better before you register, and courses still in progress do not count."
+          "Yes, CS 420 Information Retrieval (also called IR) is about how search engines work.",
+          "Its topics include indexing, ranking, BM25, vector search, and evaluation of search.",
+          "CS 420 is a 3-credit elective in the Data Science and AI and Machine Learning tracks, offered in Year 4, Semester 1, in timetable slot B.",
+          "Its prerequisites are CS 220 Database Systems and MA 201 Probability and Statistics.",
+          "You can register for it only after passing both prerequisites with a grade of P or better, and courses still in progress do not count as passed."
         ]
       },
       {
         "id": "semantic-neural-nets",
         "category": "semantic",
-        "seconds": 9.9,
+        "seconds": 7.8,
         "answerable": true,
         "refusal_ok": true,
         "citations": 4,
@@ -2370,43 +2378,41 @@
         "missing": [],
         "answer": [
           "CS 345 Deep Learning is the course that teaches neural networks and backpropagation.",
-          "The course goes from backpropagation through convolutional networks and transformers, and students train models in PyTorch.",
           "CS 345 is a 4-credit elective in the AI and Machine Learning track, offered in Year 3, Semester 2, in timetable slot D.",
-          "Its prerequisite is CS 340 Machine Learning."
+          "The prerequisite for CS 345 is CS 340 Machine Learning.",
+          "The course covers neural networks from backpropagation up to convolutional networks and transformers, and students train them in PyTorch."
         ]
       },
       {
         "id": "semantic-serverless",
         "category": "semantic",
-        "seconds": 7.5,
+        "seconds": 9.7,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 5,
-        "verified": 5,
-        "statements": 5,
-        "supported": 5,
+        "citations": 4,
+        "verified": 4,
+        "statements": 4,
+        "supported": 4,
         "cited": [
-          "course:CS 375",
-          "course:CS 270"
+          "course:CS 375"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "CS 375 Cloud Computing is the course that covers containers and serverless.",
-          "The course is about running software in the cloud using containers, managed services and serverless functions.",
-          "CS 375 is a 3-credit Systems-track elective offered in Year 3, Semester 2, in timetable slot E.",
-          "Before taking CS 375, you need to have completed CS 260 Operating Systems and CS 270 Computer Networks.",
-          "CS 270 Computer Networks has its own prerequisite, CS 230 Computer Organization."
+          "CS 375 Cloud Computing is the course that covers containers and serverless computing.",
+          "The course teaches you how to run software in the cloud using containers, managed services, and serverless functions.",
+          "CS 375 is a 3-credit elective in the Systems track, offered in Year 3, Semester 2, in timetable slot E.",
+          "Before taking CS 375, you need to complete CS 260 Operating Systems and CS 270 Computer Networks."
         ]
       },
       {
         "id": "semantic-sql",
         "category": "semantic",
-        "seconds": 5.9,
+        "seconds": 8.4,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 3,
-        "verified": 3,
+        "citations": 4,
+        "verified": 4,
         "statements": 3,
         "supported": 3,
         "cited": [
@@ -2415,43 +2421,44 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "CS 220 Database Systems (also called DBMS) is the course that covers writing SQL queries and transactions.",
-          "The course teaches students to design relational databases and query them with SQL, going from normalization through to transactions and indexes.",
+          "CS 220 Database Systems (also called DBMS) is the course that covers SQL and transactions.",
+          "The course teaches students to design relational databases and query them with SQL, covering normalization, transactions, and indexes.",
           "CS 220 is a 4-credit core course offered in Year 2, Semester 1, in timetable slot B, and its prerequisite is CS 102 Data Structures."
         ]
       },
       {
         "id": "semantic-consensus",
         "category": "semantic",
-        "seconds": 7.0,
+        "seconds": 8.9,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 4,
-        "verified": 4,
-        "statements": 4,
-        "supported": 4,
+        "citations": 5,
+        "verified": 5,
+        "statements": 5,
+        "supported": 5,
         "cited": [
           "course:CS 410"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "CS 410 Distributed Systems is the course that covers how replicated systems agree on a value, since its topics include replication and consensus.",
+          "CS 410 Distributed Systems is the course for this, because its topics include replication and consensus.",
+          "CS 410 teaches how to build systems that keep working when they run on many machines and some parts fail.",
           "CS 410 is a 3-credit Systems-track elective offered in Year 4, Semester 1, in timetable slot A.",
-          "Before you can take CS 410, you need to complete CS 260 Operating Systems and CS 270 Computer Networks.",
-          "You haven't shared your student record, so I can't check whether you have already completed these prerequisites."
+          "Before taking CS 410, you need to have passed CS 260 Operating Systems and CS 270 Computer Networks.",
+          "You haven't shared your record, so I can't check whether you have completed those prerequisites."
         ]
       },
       {
         "id": "semantic-before-dl",
         "category": "semantic",
-        "seconds": 7.0,
+        "seconds": 8.4,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 6,
-        "verified": 6,
-        "statements": 4,
-        "supported": 4,
+        "citations": 5,
+        "verified": 5,
+        "statements": 3,
+        "supported": 3,
         "cited": [
           "course:CS 345",
           "course:CS 340"
@@ -2459,22 +2466,21 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "The only direct prerequisite for CS 345 Deep Learning is CS 340 Machine Learning.",
-          "CS 340 Machine Learning has its own prerequisites: CS 250 Design and Analysis of Algorithms and MA 201 Probability and Statistics. This means you need to finish those two courses before you can take CS 340.",
-          "CS 340 is a core course offered in Year 3, Semester 1, and CS 345 is offered in Year 3, Semester 2, so CS 340 comes the semester before Deep Learning.",
-          "You have not shared your student record, so this answer cannot confirm which of these prerequisites you have already completed."
+          "The only listed prerequisite for CS 345 Deep Learning is CS 340 Machine Learning.",
+          "CS 340 Machine Learning in turn requires CS 250 Design and Analysis of Algorithms and MA 201 Probability and Statistics, so you need those before CS 340.",
+          "CS 340 is a core course offered in Year 3, Semester 1, and CS 345 is offered in Year 3, Semester 2."
         ]
       },
       {
         "id": "semantic-chatbot",
         "category": "semantic",
-        "seconds": 10.0,
+        "seconds": 10.3,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 6,
-        "verified": 6,
-        "statements": 5,
-        "supported": 5,
+        "citations": 7,
+        "verified": 7,
+        "statements": 6,
+        "supported": 6,
         "cited": [
           "course:CS 380",
           "course:CS 345"
@@ -2482,21 +2488,22 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "CS 380 Natural Language Processing is the course most directly about understanding typed text, covering language technology up to large language models.",
-          "CS 380 covers text processing, word embeddings, language models, retrieval-augmented generation, and evaluation.",
+          "CS 380 Natural Language Processing is the course that matches building a chatbot that understands typed text.",
+          "It covers text processing, word embeddings, language models, retrieval-augmented generation, and evaluation.",
           "CS 380 is a 4-credit elective in the AI and Machine Learning and Data Science tracks, offered in Year 3, Semester 2.",
           "Before taking CS 380, you need CS 340 Machine Learning.",
-          "CS 345 Deep Learning also covers sequence models and transformers, but it runs in the same timetable slot D as CS 380 in Year 3, Semester 2."
+          "CS 345 Deep Learning can also help, because it covers sequence models and transformers.",
+          "CS 345 runs in the same timetable slot as CS 380 (Year 3, Semester 2, slot D), so the two courses clash."
         ]
       },
       {
         "id": "semantic-photos",
         "category": "semantic",
-        "seconds": 8.6,
+        "seconds": 9.1,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 7,
-        "verified": 7,
+        "citations": 6,
+        "verified": 6,
         "statements": 6,
         "supported": 6,
         "cited": [
@@ -2507,22 +2514,22 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "Yes, CS 430 Computer Vision (also called CV) teaches computers to understand images, including how to detect objects in them.",
-          "Topics in CS 430 include feature detection, convolutional networks, object detection, and segmentation.",
+          "Yes, CS 430 Computer Vision teaches computers to understand images, including object detection.",
+          "Its topics include image formation, feature detection, convolutional networks, object detection, and segmentation.",
           "CS 430 is a 4-credit elective in the AI and Machine Learning track, offered in Year 4, Semester 1, in timetable slot C.",
-          "To take CS 430 you must first complete CS 345 Deep Learning.",
-          "CS 345 Deep Learning, offered in Year 3, Semester 2, also covers convolutional networks, and its own prerequisite is CS 340 Machine Learning.",
-          "CS 340 Machine Learning is a core course offered in Year 3, Semester 1, and requires CS 250 Design and Analysis of Algorithms and MA 201 Probability and Statistics."
+          "To take CS 430 you first need CS 345 Deep Learning.",
+          "CS 345 Deep Learning in turn requires CS 340 Machine Learning, and it also covers convolutional networks.",
+          "CS 340 Machine Learning requires CS 250 Design and Analysis of Algorithms and MA 201 Probability and Statistics."
         ]
       },
       {
         "id": "semantic-hackers",
         "category": "semantic",
-        "seconds": 9.0,
+        "seconds": 8.4,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 5,
-        "verified": 5,
+        "citations": 6,
+        "verified": 6,
         "statements": 5,
         "supported": 5,
         "cited": [
@@ -2532,17 +2539,17 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "CS 385 Computer Security is the course that teaches how web systems are attacked and defended, including labs on web security and authentication.",
-          "Its topics include threat modeling, web security, authentication, and secure coding.",
-          "CS 385 is a 3-credit Systems-track elective offered in Year 3, Semester 2, in timetable slot F.",
-          "To take CS 385, you need to have completed CS 260 Operating Systems and CS 270 Computer Networks first.",
-          "CS 270 Computer Networks also covers network security basics, but only as an introduction."
+          "CS 385 Computer Security, also called cybersecurity, is the course that covers web security.",
+          "The course teaches how systems are attacked and how they are defended, with labs on web security and authentication.",
+          "CS 385 is a 3-credit elective in the Systems track, offered in Year 3, Semester 2, in timetable slot F.",
+          "To take CS 385, you must first complete CS 260 Operating Systems and CS 270 Computer Networks.",
+          "CS 270 Computer Networks, a core course, also covers HTTP and the basics of network security."
         ]
       },
       {
         "id": "semantic-production",
         "category": "semantic",
-        "seconds": 6.5,
+        "seconds": 7.7,
         "answerable": true,
         "refusal_ok": true,
         "citations": 4,
@@ -2555,22 +2562,22 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "CS 460 Machine Learning Operations (MLOps) teaches you how to take trained models to production and keep track of them over time.",
-          "Its topics include model deployment, monitoring, data drift, experiment tracking and ML pipelines.",
-          "CS 460 is a 3-credit elective in the AI and Machine Learning and Data Science tracks, offered in Year 4, Semester 2, in timetable slot B.",
-          "To take CS 460, you first need CS 340 Machine Learning and CS 360 Software Engineering."
+          "You would learn to ship a trained model to production and watch it over time in CS 460 Machine Learning Operations (MLOps), which teaches deployment, monitoring, and keeping models accurate as data changes.",
+          "CS 460 covers experiment tracking, model deployment, monitoring, data drift, and ML pipelines.",
+          "CS 460 is a 3-credit elective in the AI and Machine Learning and Data Science tracks. It is offered in Year 4, Semester 2, in timetable slot B.",
+          "To take CS 460, you first need CS 340 Machine Learning and CS 360 Software Engineering. Your record wasn't shared, so I can't check whether you've completed them."
         ]
       },
       {
         "id": "semantic-rewards",
         "category": "semantic",
-        "seconds": 6.1,
+        "seconds": 6.0,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 6,
-        "verified": 6,
-        "statements": 5,
-        "supported": 5,
+        "citations": 5,
+        "verified": 5,
+        "statements": 4,
+        "supported": 4,
         "cited": [
           "course:CS 450",
           "handbook:4.1"
@@ -2578,17 +2585,16 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "Yes, CS 450 Reinforcement Learning is about agents that learn by trial and reward.",
-          "CS 450 covers Markov decision processes, dynamic programming, Q-learning, and policy gradients.",
-          "CS 450 is a 3-credit elective in the AI and Machine Learning track, offered in Year 4, Semester 2, in timetable slot A.",
-          "To take CS 450, you need CS 340 Machine Learning and MA 201 Probability and Statistics first.",
-          "You can register only after you pass every prerequisite with a grade of P or better, and courses you are still taking do not count."
+          "Yes, CS 450 Reinforcement Learning (RL) covers learning by trial and reward.",
+          "Its topics are Markov decision processes, dynamic programming, Q-learning and policy gradients.",
+          "CS 450 is a 3-credit elective in the AI and Machine Learning track. It is offered in Year 4, Semester 2, in timetable slot A.",
+          "Before taking CS 450, you need to pass CS 340 Machine Learning and MA 201 Probability and Statistics."
         ]
       },
       {
         "id": "rule-max-load",
         "category": "rule",
-        "seconds": 7.9,
+        "seconds": 6.8,
         "answerable": true,
         "refusal_ok": true,
         "citations": 6,
@@ -2603,23 +2609,23 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "Without overload approval, the most you can register for in one semester is 20 credits.",
-          "If your CGPA is 8.0 or higher, you can request an overload of up to 24 credits, which is the highest load the handbook allows.",
-          "An overload needs written approval from your faculty advisor before registration closes, and students with a CGPA below 8.0 cannot overload.",
-          "If you are on academic probation because your CGPA fell below 5.0, your limit is 16 credits, and you must meet your faculty advisor before registering.",
-          "You haven't shared your record, so I can't tell which of these limits (16, 20 or 24 credits) applies to you, because that depends on your CGPA."
+          "Without special approval, the most you can register for is 20 credits in a semester, because a normal load is 9 to 20 credits.",
+          "If your CGPA is 8.0 or higher, you can ask for an overload of up to 24 credits in one semester.",
+          "An overload needs written approval from your faculty advisor before registration closes.",
+          "If your CGPA is below 8.0, you cannot overload, so your limit stays at 20 credits.",
+          "If you are on academic probation because your CGPA fell below 5.0, you can register for at most 16 credits, and you must meet your faculty advisor before registering."
         ]
       },
       {
         "id": "rule-waiver",
         "category": "rule",
-        "seconds": 8.1,
+        "seconds": 6.0,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 6,
-        "verified": 6,
-        "statements": 5,
-        "supported": 5,
+        "citations": 5,
+        "verified": 5,
+        "statements": 4,
+        "supported": 4,
         "cited": [
           "handbook:4.2",
           "handbook:4.1"
@@ -2627,17 +2633,16 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "Yes, a prerequisite can be waived, but only in limited cases.",
-          "The waiver decision is made jointly by the instructor of the course and the head of department.",
+          "Yes, a prerequisite can be waived, but the decision is made jointly by the course's instructor and the head of department.",
           "A waiver is available only to students who show equivalent preparation.",
-          "Waivers are rare, and they are never granted for Capstone Project II.",
-          "Without a waiver, you must pass every prerequisite with a grade of P or better before registering, and a course you are still taking does not count as passed."
+          "Waivers are rare, and Capstone Project II never gets one.",
+          "Without a waiver, you can register for a course only after passing every listed prerequisite with a grade of P or better, and courses still in progress don't count as passed."
         ]
       },
       {
         "id": "rule-fail-core",
         "category": "rule",
-        "seconds": 7.0,
+        "seconds": 12.1,
         "answerable": true,
         "refusal_ok": true,
         "citations": 6,
@@ -2653,18 +2658,18 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "A failed course gets an F, which counts as 0 grade points and earns no credits.",
-          "You have to repeat a failed core course the next time it is offered, which is the same semester in the following year.",
+          "If you fail a core course, you get an F, which is worth 0 grade points and earns no credits.",
+          "You have to repeat a failed core course the next time it is offered, which is the same semester of the following year.",
           "When you pass the course on a later attempt, the new grade replaces the F in your CGPA.",
-          "Until you pass the failed course, you cannot register for any course that lists it as a prerequisite, because a prerequisite needs a grade of P or better.",
-          "To graduate, you must pass every core course in the catalog, so you will need to pass the failed core course eventually.",
-          "You haven't shared your student record, so this is the general rule, and I can't say how a failed course would affect your own credits or CGPA."
+          "Until you pass the failed course, you cannot register for any course that lists it as a prerequisite, because prerequisites must be passed with a grade of P or better.",
+          "You must pass every core course before you can graduate.",
+          "You haven't shared your record, so this is the general rule and not a check of your own courses."
         ]
       },
       {
         "id": "rule-electives",
         "category": "rule",
-        "seconds": 7.7,
+        "seconds": 5.4,
         "answerable": true,
         "refusal_ok": true,
         "citations": 4,
@@ -2673,46 +2678,48 @@
         "supported": 4,
         "cited": [
           "handbook:5.1",
-          "handbook:8"
+          "handbook:8",
+          "handbook:5.2"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "To graduate, you need to pass at least four elective courses, and together they must total at least 13 credits.",
-          "Meeting the elective requirement is one of the graduation requirements, along with passing every core course, earning at least 86 total credits, and finishing with a CGPA of at least 5.0.",
+          "To graduate, you need to pass at least four elective courses that add up to at least 13 credits.",
+          "Meeting this elective requirement is one of the graduation conditions, along with passing every core course, earning at least 86 credits in total, and finishing with a CGPA of at least 5.0.",
           "Electives are offered in Year 3 Semester 2 and in Year 4.",
-          "You have not shared your student record, so this is the general rule and does not count electives you may already have passed."
+          "If you also want a specialization noted on your transcript, at least three of your passed electives must come from the same track."
         ]
       },
       {
         "id": "rule-specialization",
         "category": "rule",
-        "seconds": 7.7,
+        "seconds": 8.2,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 5,
-        "verified": 5,
-        "statements": 5,
-        "supported": 5,
+        "citations": 6,
+        "verified": 6,
+        "statements": 6,
+        "supported": 6,
         "cited": [
           "handbook:5.2",
-          "handbook:5.3",
-          "handbook:1"
+          "handbook:1",
+          "handbook:5.3"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "To get a specialization noted on your transcript, you need to pass at least three electives from the same track.",
+          "To get a specialization noted on your transcript, you must pass at least three electives from the same track.",
           "There are three tracks to choose from: AI and Machine Learning, Data Science, and Systems.",
-          "Some electives belong to two tracks, and those electives count toward every track they belong to, but only once toward the elective requirement.",
-          "The Industry Internship (CS 499) counts as an elective, but it does not count toward a specialization because it belongs to no track.",
-          "Electives start in Year 3, and that is when you can work toward a specialization by focusing your electives on one track."
+          "Some electives belong to two tracks; each one counts only once toward the elective requirement, but it counts toward every track it belongs to.",
+          "Electives start in Year 3, when you can earn a specialization by focusing your electives on one track.",
+          "The Industry Internship (CS 499) counts as an elective but belongs to no track, so it does not count toward a specialization.",
+          "You have not shared your student record, so I can't check how many track electives you have already passed."
         ]
       },
       {
         "id": "rule-late-drop",
         "category": "rule",
-        "seconds": 5.1,
+        "seconds": 4.4,
         "answerable": true,
         "refusal_ok": true,
         "citations": 3,
@@ -2725,36 +2732,38 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "Yes, you can drop a course in the fifth week, but it is past the two-week window for dropping without penalty.",
-          "Because you would be dropping after the first two weeks, the course will show on your transcript as W (withdrawn) and you will earn no credits for it.",
-          "A W grade does not affect your CGPA."
+          "Yes, you can still drop a course in week five, but you can only drop without penalty during the first two weeks of the semester.",
+          "Week five is after that two-week window, so the dropped course will show on your transcript as W (withdrawn).",
+          "A course marked W earns no credits, but it does not affect your CGPA."
         ]
       },
       {
         "id": "rule-probation",
         "category": "rule",
-        "seconds": 4.4,
+        "seconds": 7.7,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 3,
-        "verified": 3,
-        "statements": 3,
-        "supported": 3,
+        "citations": 4,
+        "verified": 4,
+        "statements": 4,
+        "supported": 4,
         "cited": [
-          "handbook:9"
+          "handbook:9",
+          "handbook:3.2"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "A student is placed on academic probation if their CGPA falls below 5.0 at the end of a semester.",
-          "Probation ends once the student's CGPA is 5.0 or higher at the end of a semester.",
-          "While on probation, a student may register for at most 16 credits and must meet the faculty advisor before registering."
+          "A student goes on academic probation when their CGPA is below 5.0 at the end of a semester.",
+          "While on probation, a student can register for at most 16 credits and has to meet the faculty advisor before registering.",
+          "Probation ends once the CGPA is 5.0 or higher at the end of a semester.",
+          "The CGPA is the credit-weighted average of grade points over all graded courses taken so far, and failed attempts count until a pass replaces them."
         ]
       },
       {
         "id": "rule-same-slot",
         "category": "rule",
-        "seconds": 4.9,
+        "seconds": 5.4,
         "answerable": true,
         "refusal_ok": true,
         "citations": 3,
@@ -2767,42 +2776,39 @@
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "No, you can't register for two courses that meet in the same timetable slot in the same semester.",
-          "Each course meets in a single timetable slot, so two courses meet at the same time when they share a slot.",
-          "If two electives you want clash, you have to choose one of them, and the other may be offered again the next year."
+          "No. You cannot register for two courses that meet in the same timetable slot in the same semester.",
+          "Every course meets in one timetable slot, so two courses meeting at the same time are in the same slot.",
+          "If two electives you want clash, you have to pick one of them. The other one may be offered again next year."
         ]
       },
       {
         "id": "rule-sick",
         "category": "rule",
-        "seconds": 14.0,
+        "seconds": 10.3,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 6,
-        "verified": 6,
-        "statements": 6,
-        "supported": 6,
+        "citations": 5,
+        "verified": 5,
+        "statements": 4,
+        "supported": 4,
         "cited": [
           "handbook:2.3",
           "handbook:2.1",
-          "handbook:6.3",
-          "handbook:9"
+          "handbook:6.3"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "Yes. You can register for fewer than 9 credits, but you need approval from the head of department, and illness is one of the usual reasons for it.",
-          "A load between 9 and 20 credits is a normal load, so if you stay at 9 credits or more you are not underloading.",
-          "Taking fewer than 9 credits may delay your graduation.",
-          "If you are already registered and want to cut back, dropping a course in the first two weeks of the semester carries no penalty.",
-          "After the first two weeks, a dropped course shows as W on your transcript and earns no credits, but it does not affect your CGPA.",
-          "You haven't shared your student record, so I can't check your standing. If you are on academic probation, you must meet your faculty advisor before you register."
+          "Yes, you can register for fewer than 9 credits for medical reasons, but you need approval from the head of department.",
+          "Taking this lighter load may delay your graduation.",
+          "If you register for 9 credits or more, that is still a normal load, so you do not need this approval.",
+          "If you want to drop a course you are already registered for, you can do so without penalty only during the first two weeks of the semester. After that, the course shows as W (withdrawn) on your transcript and earns no credits, but it does not affect your CGPA."
         ]
       },
       {
         "id": "rule-registration-window",
         "category": "rule",
-        "seconds": 3.7,
+        "seconds": 6.1,
         "answerable": true,
         "refusal_ok": true,
         "citations": 2,
@@ -2822,33 +2828,35 @@
       {
         "id": "rule-passing-grade",
         "category": "rule",
-        "seconds": 4.0,
+        "seconds": 5.4,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 3,
-        "verified": 3,
-        "statements": 2,
-        "supported": 2,
+        "citations": 4,
+        "verified": 4,
+        "statements": 3,
+        "supported": 3,
         "cited": [
-          "handbook:3.1"
+          "handbook:3.1",
+          "handbook:4.1"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
           "The lowest passing grade is P, which is worth 4 grade points.",
-          "Any grade below P is an F, which is a fail and earns no credits."
+          "A grade of F is a fail and earns no credits.",
+          "A grade of P or better also meets the requirement for passing a prerequisite."
         ]
       },
       {
         "id": "personal-riya-clash",
         "category": "personal",
-        "seconds": 13.0,
+        "seconds": 8.0,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 13,
-        "verified": 13,
-        "statements": 7,
-        "supported": 7,
+        "citations": 11,
+        "verified": 11,
+        "statements": 6,
+        "supported": 6,
         "cited": [
           "check:plan",
           "handbook:6.2",
@@ -2858,104 +2866,139 @@
           "course:CS 345",
           "course:CS 380",
           "course:CS 430",
-          "handbook:6.1"
+          "handbook:10"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "No, you cannot take Deep Learning (CS 345) and NLP (CS 380) together next semester, because the two courses clash in the timetable.",
-          "The handbook does not let a student register for two courses that meet in the same slot in the same semester. When two electives you want clash, you have to pick one.",
-          "Both courses require CS 340 Machine Learning, which you are taking now. You can only register for either one after you pass CS 340.",
-          "Credits are not the problem: the two courses add up to 8 credits, and your limit next term is 20.",
-          "Both courses count toward the AI and Machine Learning track. You have not passed any electives for that track yet and need 3.",
-          "Deep Learning is a prerequisite for CS 430 Computer Vision, an AI and Machine Learning elective.",
-          "Your faculty advisor gives final approval for what you register for."
+          "No, you cannot take CS 345 Deep Learning and CS 380 Natural Language Processing together next semester because both meet in timetable slot D, so you must choose one.",
+          "Whichever one you do not take may be offered again the next year.",
+          "Both courses are only conditional for you, because each requires CS 340 Machine Learning, which you are taking now and which counts only once you pass it.",
+          "If you are working toward the AI and Machine Learning specialization, either course counts toward it, and CS 380 also counts toward the Data Science track.",
+          "CS 345 Deep Learning is the prerequisite for CS 430 Computer Vision, so taking it would keep that course open to you later.",
+          "Your faculty advisor gives final approval on what you register for and can talk through your elective choice with you."
         ]
       },
       {
         "id": "personal-riya-overload",
         "category": "personal",
-        "seconds": 9.9,
+        "seconds": 13.9,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 6,
-        "verified": 6,
-        "statements": 4,
-        "supported": 4,
+        "citations": 14,
+        "verified": 14,
+        "statements": 8,
+        "supported": 8,
         "cited": [
-          "handbook:2.1",
           "record:riya",
           "handbook:2.2",
-          "handbook:6.1"
+          "handbook:6.1",
+          "check:options",
+          "handbook:6.2",
+          "handbook:10"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "Taking more than 20 credits counts as an overload, and you can't register for that many without overload approval.",
-          "Your CGPA is 8.71, so you meet the overload requirement of 8.0 or higher. That means you can ask to take up to 24 credits next term.",
-          "The 24 credits aren't automatic. Your faculty advisor gives final approval and must approve the overload in writing before registration closes.",
-          "Registration closes one week after next semester starts, so you need the written approval by then."
+          "Yes, you can request a 24-credit overload next term, but it needs your faculty advisor's approval. Without that approval your limit is 20 credits.",
+          "You qualify to ask for an overload because your CGPA is 8.71, and the handbook allows overloads for students with a CGPA of 8.0 or higher.",
+          "Your faculty advisor must give the overload approval in writing before registration closes.",
+          "Registration closes one week after the next semester starts.",
+          "However, the courses offered to you next term add up to only 17 credits: CS 370 (3), CS 345 (4), CS 375 (3), CS 380 (4) and CS 385 (3).",
+          "CS 345 and CS 380 both meet in slot D, so you cannot register for both.",
+          "CS 345 and CS 380 are also conditional: each needs CS 340 Machine Learning, which you are still taking, and it counts only once you pass it.",
+          "Your faculty advisor approves overloads and gives final approval on what you register for."
+        ]
+      },
+      {
+        "id": "personal-riya-ai-electives",
+        "category": "personal",
+        "seconds": 15.0,
+        "answerable": true,
+        "refusal_ok": true,
+        "citations": 11,
+        "verified": 11,
+        "statements": 7,
+        "supported": 7,
+        "cited": [
+          "check:options",
+          "record:riya",
+          "handbook:4.1",
+          "handbook:5.2",
+          "check:CS 430",
+          "check:CS 420",
+          "handbook:10"
+        ],
+        "source_recall": 1.0,
+        "missing": [],
+        "answer": [
+          "Next term, two AI and Machine Learning electives are offered to you: CS 345 Deep Learning and CS 380 Natural Language Processing.",
+          "For you, both are conditional, because each needs CS 340 Machine Learning, which you are taking now and which only counts once you pass it.",
+          "Courses in progress don't count as passed, so you can register for either one only after you pass CS 340.",
+          "Both CS 345 and CS 380 are in timetable slot D.",
+          "CS 380 counts toward both the AI and Machine Learning track and the Data Science track.",
+          "Other AI electives, CS 430 Computer Vision and CS 420 Information Retrieval, are not open to you next term because they are only offered in Semester 1.",
+          "Your faculty advisor gives final approval on what you register for."
         ]
       },
       {
         "id": "personal-kabir-os",
         "category": "personal",
-        "seconds": 8.4,
+        "seconds": 13.5,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 7,
-        "verified": 7,
+        "citations": 8,
+        "verified": 8,
         "statements": 4,
         "supported": 4,
         "cited": [
           "check:CS 260",
-          "record:kabir",
           "course:CS 260",
-          "handbook:1"
+          "handbook:1",
+          "record:kabir",
+          "check:CS 440",
+          "check:CS 410",
+          "check:CS 375"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "No, you can't take CS 260 Operating Systems next term, because your next term is Year 3, Semester 1 and CS 260 is only offered in Semester 2.",
-          "The catalog places CS 260 in Year 2, Semester 2, and each course is offered only in its listed semester.",
-          "Timing is the only problem: you have already passed both prerequisites for CS 260, which are CS 102 Data Structures and CS 230 Computer Organization.",
-          "Your faculty advisor gives final approval on what you register for."
+          "No. You can't take CS 260 Operating Systems next term, Year 3 Semester 1, because it is only offered in Semester 2.",
+          "CS 260 is scheduled for Year 2, Semester 2, and each course runs only in its own semester.",
+          "CS 260 requires CS 102 Data Structures and CS 230 Computer Organization, and your record shows you have passed both.",
+          "You haven't taken CS 260 yet, and you need it before you can take CS 410 Distributed Systems, CS 440 Big Data Systems or CS 375 Cloud Computing."
         ]
       },
       {
         "id": "personal-meera-track",
         "category": "personal",
-        "seconds": 15.3,
+        "seconds": 9.4,
         "answerable": true,
         "refusal_ok": true,
-        "citations": 11,
-        "verified": 11,
-        "statements": 6,
-        "supported": 6,
+        "citations": 8,
+        "verified": 8,
+        "statements": 5,
+        "supported": 5,
         "cited": [
           "handbook:5.2",
           "record:meera",
-          "course:CS 345",
-          "check:CS 450",
-          "course:CS 450",
-          "check:CS 460",
-          "course:CS 460"
+          "handbook:4.1",
+          "check:options"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "To earn a specialization, you must pass at least three electives from the same track, and AI and Machine Learning is one of the tracks.",
-          "You have passed one of the three AI and Machine Learning electives you need: CS 345 Deep Learning.",
-          "You are taking two more electives that count toward this track this semester, CS 420 Information Retrieval and CS 430 Computer Vision, so passing both would give you the three electives you need.",
-          "If you want a backup next term, you meet every requirement for CS 450 Reinforcement Learning, and it counts toward the AI and Machine Learning track.",
-          "You also meet every requirement for CS 460 Machine Learning Operations next term, and it counts toward both the AI and Machine Learning track and the Data Science track.",
-          "Your faculty advisor gives final approval on what you register for."
+          "You earn a specialization by passing at least three electives from the same track.",
+          "You have passed one AI and Machine Learning elective, CS 345 Deep Learning, so you need two more.",
+          "You are taking CS 420 Information Retrieval and CS 430 Computer Vision this term. Your record counts both toward the AI and Machine Learning track, so passing both would give you the three electives you need.",
+          "Courses you are still taking do not count as passed until you finish them.",
+          "If you need a backup, you are eligible next term for three more AI and Machine Learning electives: CS 380 Natural Language Processing, CS 450 Reinforcement Learning and CS 460 Machine Learning Operations."
         ]
       },
       {
         "id": "personal-dev-load",
         "category": "personal",
-        "seconds": 6.1,
+        "seconds": 8.6,
         "answerable": true,
         "refusal_ok": true,
         "citations": 6,
@@ -2965,51 +3008,51 @@
         "cited": [
           "record:dev",
           "handbook:9",
-          "handbook:2.1"
+          "handbook:2.1",
+          "handbook:10"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "You are on probation, so next term (Year 3, Semester 2) you can take at most 16 credits.",
-          "The handbook caps every student on probation at 16 credits, which is lower than the normal maximum of 20 credits.",
-          "Because you are on probation, you must meet your faculty advisor before you register, and the advisor gives final approval of your registration.",
-          "Your CGPA is 3.85, and probation ends only when your CGPA is 5.0 or higher at the end of a semester."
+          "You are currently on probation, so you can register for at most 16 credits next term (Year 3, Semester 2).",
+          "This is lower than the normal limit, which lets students take up to 20 credits a semester without an overload approval.",
+          "Because you are on probation, you must meet your faculty advisor before you register, and the advisor signs off on your registration.",
+          "Your probation ends when your CGPA is 5.0 or higher at the end of a semester."
         ]
       },
       {
         "id": "personal-meera-capstone",
         "category": "personal",
-        "seconds": 10.6,
+        "seconds": 11.9,
         "answerable": true,
         "refusal_ok": true,
         "citations": 8,
         "verified": 8,
-        "statements": 6,
-        "supported": 6,
+        "statements": 5,
+        "supported": 5,
         "cited": [
           "check:CS 492",
           "record:meera",
-          "handbook:4.1",
           "handbook:7",
-          "course:CS 492",
+          "handbook:4.1",
           "handbook:4.2",
-          "handbook:6.1"
+          "course:CS 492",
+          "handbook:10"
         ],
         "source_recall": 1.0,
         "missing": [],
         "answer": [
-          "You can't register for Capstone Project II (CS 492) yet, because its prerequisite, CS 491 Capstone Project I, is still in progress for you.",
-          "The handbook says courses in progress do not count as passed for prerequisites.",
-          "CS 492 requires a pass in CS 491 in the same academic year, so you need to pass CS 491 this semester before you can take CS 492.",
-          "CS 492 is offered next term, Year 4, Semester 2. It is a 6-credit core course in timetable slot E.",
-          "A waiver of the CS 491 prerequisite is not an option, because waivers are never granted for Capstone Project II.",
-          "Your faculty advisor gives final approval on what you register for next term."
+          "CS 492 Capstone Project II is offered to you next term (Year 4, Semester 2), but only on a condition: it needs CS 491 Capstone Project I, which you are taking now. It counts only once you pass it.",
+          "The handbook says Capstone Project II needs a pass in Capstone Project I in the same academic year, and courses in progress do not count as passed.",
+          "You cannot get around this with a waiver, because waivers are never granted for Capstone Project II.",
+          "CS 492 is a 6-credit core course in timetable slot E, and it fits within your maximum load of 20 credits next term.",
+          "Your faculty advisor gives final approval on what you register for."
         ]
       },
       {
         "id": "refuse-instructor",
         "category": "refusal",
-        "seconds": 3.7,
+        "seconds": 6.4,
         "answerable": false,
         "refusal_ok": true,
         "citations": 1,
@@ -3022,13 +3065,13 @@
         "source_recall": null,
         "missing": [],
         "answer": [
-          "The catalog and handbook do not say who teaches Machine Learning this year; the CS 340 catalog entry gives only its credits, offering term, timetable slot, prerequisites, and topics, with no instructor named."
+          "The catalog and handbook don't say who teaches CS 340 Machine Learning. The CS 340 entry gives only its credits, when it is offered, its timetable slot, its prerequisites and its topics."
         ]
       },
       {
         "id": "refuse-hostel",
         "category": "refusal",
-        "seconds": 5.7,
+        "seconds": 8.9,
         "answerable": false,
         "refusal_ok": true,
         "citations": 1,
@@ -3041,13 +3084,13 @@
         "source_recall": null,
         "missing": [],
         "answer": [
-          "The catalog and handbook do not say anything about hostel fees, so I can't tell you how much the hostel costs per semester; the handbook sections I have cover only academic matters such as the program structure."
+          "The course catalog and handbook sources do not cover hostel fees, so I can't tell you how much the hostel costs per semester."
         ]
       },
       {
         "id": "refuse-quantum",
         "category": "refusal",
-        "seconds": 4.3,
+        "seconds": 4.1,
         "answerable": false,
         "refusal_ok": true,
         "citations": 1,
@@ -3060,13 +3103,13 @@
         "source_recall": null,
         "missing": [],
         "answer": [
-          "The catalog and handbook sources I have don't list any course on quantum computing, so I can't confirm that one exists; the closest course is CS 370 Theory of Computation, which covers automata and Turing machines."
+          "The catalog and handbook excerpts I have don't mention a quantum computing course, so I can't tell you whether one exists. The closest course in these excerpts is CS 370 Theory of Computation, which covers computability, not quantum computing."
         ]
       },
       {
         "id": "refuse-exam-date",
         "category": "refusal",
-        "seconds": 6.3,
+        "seconds": 5.2,
         "answerable": false,
         "refusal_ok": true,
         "citations": 1,
@@ -3079,7 +3122,7 @@
         "source_recall": null,
         "missing": [],
         "answer": [
-          "The catalog and handbook don't give a final exam date for CS 220 Database Systems. They only say it is offered in Year 2, Semester 1, in timetable slot B."
+          "The catalog and handbook do not give the final exam date for CS 220 Database Systems; the closest source only gives the semester and timetable slot when the course is offered."
         ]
       }
     ]

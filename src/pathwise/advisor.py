@@ -16,7 +16,7 @@ from pydantic import BaseModel
 from .catalog import Catalog, Student
 from .llm import LLM
 from .retrieval import Retriever
-from .rules import check_course, check_plan, progress, standing
+from .rules import check_course, check_plan, options, progress, standing
 
 
 class Source(BaseModel):
@@ -75,7 +75,8 @@ How to answer:
 - Write the answer as a list of short statements, each one a complete sentence.
 - Every statement cites at least one source. Each citation names the source id exactly as given
   and quotes a short passage (about 5 to 25 words) copied word for word from that source, which
-  directly supports the statement. Do not paraphrase inside a quote.
+  directly supports the statement. Do not paraphrase inside a quote. A quote that is real but does not
+  support its statement is a wrong citation: if no source supports a statement, leave the statement out.
 - Rule checks were computed by code from the student's record and the handbook. They are
   authoritative for eligibility, credit limits, and timetable clashes: never contradict them.
 - When a student record is given and the question is about the student ("I", "me", "my"), the answer
@@ -150,7 +151,16 @@ def check_sources(question: str, student: Student, catalog: Catalog, course_code
     """Rule checks for the courses in play: each one is computed in code and names the handbook rule it applies."""
     st = standing(student, catalog)
     term = f"Year {st.next_term[0]}, Semester {st.next_term[1]}"
-    out = []
+    # Every course offered next term, so "which electives can I take" is answered from the full list,
+    # not from whichever courses retrieval happened to find.
+    offered = []
+    for o in options(student, catalog):
+        tracks = f" ({', '.join(o['tracks'])})" if o["tracks"] else ""
+        why = " ".join(f"{i['message']} [{i['rule']}]" for i in o["issues"])
+        offered.append(f"{o['code']} {o['title']}, {o['credits']} credits, {o['kind']}{tracks}, slot {o['slot']}: "
+                       f"{o['status'].replace('_', ' ')}{', repeat' if o['repeat'] else ''}.{' ' + why if why else ''}")
+    out = [Source(id="check:options", kind="check", label=f"Rule check: courses offered to {student.name} next term",
+                  text=f"The complete list of courses offered to {student.name} in {term}. " + " ".join(offered))]
     for code in course_codes:
         c = catalog.course(code)
         if c is None:
@@ -200,7 +210,8 @@ class Advisor:
             codes = list(dict.fromkeys(self.catalog.mentions(question) + [s.id.split(":", 1)[1] for s in sources if s.kind == "course"]))
             checks = check_sources(question, student, self.catalog, codes)
             # Bring in every handbook rule a check refers to, so Claude can cite the rule itself.
-            rules = {r for c in checks for r in re.findall(r"\[(handbook:[\d.]+)\]", c.text)}
+            # Advising (handbook 10) too, since the answer names the advisor's approval when a student is deciding.
+            rules = {r for c in checks for r in re.findall(r"\[(handbook:[\d.]+)\]", c.text)} | {"handbook:10"}
             have = {s.id for s in sources}
             for chunk in self.retriever.chunks:
                 if chunk.id in rules and chunk.id not in have:

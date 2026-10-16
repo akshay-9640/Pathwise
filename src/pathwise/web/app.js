@@ -13,12 +13,20 @@ const KIND = { course: "Catalog", handbook: "Handbook", record: "Student record"
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)");
 
 let meta = null;
+let recorded = null; // the showcase replays answers recorded from the real app (body data-demo="demo.json")
 let student = "";
 let busy = false;
 
 async function init() {
-  meta = await (await fetch("/api/meta")).json();
-  $("program").textContent = `${meta.program}, ${meta.institution}`;
+  if (document.body.dataset.demo) {
+    recorded = await (await fetch(document.body.dataset.demo)).json();
+    meta = recorded.meta;
+    $("question").readOnly = true;
+    $("question").placeholder = "Pick a question below. This demo replays answers recorded from the real app.";
+  } else {
+    meta = await (await fetch("/api/meta")).json();
+  }
+  if ($("program")) $("program").textContent = `${meta.program}, ${meta.institution}`;
   renderStudents();
   $("ask").addEventListener("submit", (e) => { e.preventDefault(); ask(); });
   $("question").addEventListener("keydown", (e) => {
@@ -67,6 +75,13 @@ function pick(id) {
 async function ask() {
   const question = $("question").value.trim();
   if (busy || question.length < 3) return;
+  if (recorded) {
+    const a = recorded.answers[`${student}|${question}`];
+    $("answer").hidden = false;
+    if (a) render(a);
+    else $("answer").replaceChildren(el("p", "error", "This recorded demo only has the suggested questions. Run Pathwise locally to ask anything."));
+    return;
+  }
   busy = true;
   $("ask-btn").disabled = true;
   $("ask-btn").textContent = "Asking";

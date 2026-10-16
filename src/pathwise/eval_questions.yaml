@@ -122,6 +122,11 @@ questions:
     student: riya
     question: Am I allowed to take 24 credits next term?
     expect: [handbook:2.2, record:riya]
+  - id: personal-riya-ai-electives
+    category: personal
+    student: riya
+    question: Which AI electives can I take next semester?
+    expect: [check:options]
   - id: personal-kabir-os
     category: personal
     student: kabir

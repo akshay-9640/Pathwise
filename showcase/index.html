@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pathwise</title>
+  <meta name="description" content="A course advisor that answers from the catalog and handbook, with every statement cited and every quote verified in code.">
+  <link rel="stylesheet" href="app.css">
+  <style>
+    /* Showcase layer on top of the app's own styles. */
+    .top-row nav { display: flex; gap: 6px; }
+    .top-row nav a { color: var(--muted); text-decoration: none; font-size: 0.875rem; padding: 6px 12px; border-radius: 999px; transition: background 140ms ease, color 140ms ease; }
+    .top-row nav a:hover { background: var(--fill); color: var(--ink); }
+    .hero { padding-top: 72px; padding-bottom: 40px; }
+    .hero h1, .hero p { max-width: 760px; }
+    .hero h1 { margin: 0 0 16px; font-size: clamp(2.25rem, 5vw, 3.5rem); line-height: 1.05; letter-spacing: -0.03em; font-weight: 700; }
+    .hero h1 span { color: var(--faint); }
+    .hero p { margin: 0 0 28px; font-size: 1.1875rem; line-height: 1.55; color: var(--muted); max-width: 62ch; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn.ghost { background: var(--panel); color: var(--navy); box-shadow: inset 0 0 0 1px var(--line-strong); text-decoration: none; }
+    .btn.ghost:hover { background: var(--tint); }
+    a.btn { display: inline-block; text-decoration: none; }
+    section.block { padding: 48px 0 8px; }
+    .block > .wrap > h2 { margin: 0 0 8px; font-size: 1.75rem; line-height: 1.15; letter-spacing: -0.02em; font-weight: 700; }
+    .sub { margin: 0 0 24px; color: var(--muted); max-width: 68ch; font-size: 1rem; }
+    .recorded { margin: 0 0 4px; padding: 12px 16px; border-radius: var(--radius-sm); background: var(--tint); color: var(--navy); font-size: 0.875rem; }
+    #demo .layout { padding-top: 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .grid .card h3 { margin: 0 0 6px; font-size: 1rem; font-weight: 650; letter-spacing: -0.01em; }
+    .grid .card p { margin: 0; color: var(--muted); font-size: 0.9375rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; font-variant-numeric: tabular-nums; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+    th { color: var(--faint); font-weight: 600; font-size: 0.8125rem; }
+    td:not(:first-child), th:not(:first-child) { text-align: right; }
+    tr.best td { font-weight: 650; }
+    .two { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+    .card h3.t { margin: 0 0 12px; font-size: 1rem; font-weight: 650; }
+    .fine { margin: 12px 0 0; color: var(--faint); font-size: 0.8125rem; }
+    pre { margin: 0; padding: 16px; background: var(--fill); border-radius: var(--radius-sm); overflow-x: auto; font-size: 0.8125rem; line-height: 1.6; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    p code, li code { font-size: 0.875em; background: var(--fill); padding: 1px 5px; border-radius: 5px; }
+    .tools { margin: 0; padding-left: 18px; color: var(--muted); }
+    .tools li { margin: 4px 0; }
+    @media (max-width: 760px) { .two { grid-template-columns: minmax(0, 1fr); } .top-row nav a.hide-sm { display: none; } .hero { padding-top: 48px; } }
+  </style>
+</head>
+<body data-demo="demo.json">
+  <header class="top">
+    <div class="wrap top-row">
+      <div class="brand">
+        <span class="mark" aria-hidden="true">P</span>
+        <span class="name">Pathwise</span>
+        <span class="tag">Course advisor</span>
+      </div>
+      <nav>
+        <a href="#demo">Demo</a>
+        <a href="#evals" class="hide-sm">Evaluation</a>
+        <a href="#mcp" class="hide-sm">MCP</a>
+        <a href="https://github.com/akshay-9640/pathwise">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap hero">
+      <h1>Course advice you can check. <span>Every line.</span></h1>
+      <p>Pathwise answers students' questions from the course catalog, the student handbook, and their own record. Every statement cites its source, and every quote is checked word for word in code before it is shown.</p>
+      <div class="actions">
+        <a class="btn" href="#demo">Try the recorded demo</a>
+        <a class="btn ghost" href="https://github.com/akshay-9640/pathwise">View the code</a>
+      </div>
+    </div>
+
+    <section class="block" id="demo">
+      <div class="wrap">
+        <h2>Ask as a student</h2>
+        <p class="sub">The same interface the app uses. Pick a student, then a question. Hover a footnote or a statement to see the exact passage it rests on.</p>
+        <p class="recorded" id="recorded-note">Loading the recorded answers.</p>
+      </div>
+      <div class="wrap layout">
+        <section class="ask-col" aria-label="Ask a question">
+          <div class="card">
+            <div class="who">
+              <span class="label" id="who-label">Asking as</span>
+              <div class="segmented" id="students" role="radiogroup" aria-labelledby="who-label"></div>
+              <p class="record" id="record"></p>
+            </div>
+            <form id="ask" class="ask">
+              <label for="question" class="sr">Your question</label>
+              <textarea id="question" rows="2" maxlength="500" required></textarea>
+              <div class="ask-row">
+                <div class="chips" id="suggestions" aria-label="Suggested questions"></div>
+                <button type="submit" class="btn" id="ask-btn">Ask</button>
+              </div>
+            </form>
+          </div>
+          <div id="answer" class="card answer" hidden aria-live="polite"></div>
+        </section>
+        <aside class="src-col" aria-label="Sources">
+          <div class="card sources">
+            <div class="src-head"><h2>Sources</h2><span class="count" id="src-count"></span></div>
+            <div id="sources">
+              <div class="empty">
+                <p>Every statement in an answer links to a numbered source here, with the quoted passage highlighted.</p>
+                <p>Quotes are checked word for word against the source before they are shown. A statement without a verified quote is marked as unsupported.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="block" id="how">
+      <div class="wrap">
+        <h2>How an answer is built</h2>
+        <p class="sub">Claude writes the answer, but only from sources it is handed, and code decides what counts as supported.</p>
+        <div class="grid">
+          <div class="card"><h3>Hybrid retrieval</h3><p>Keyword search (BM25) and local embeddings, merged by rank fusion. Courses named in the question, by code, title, or abbreviation, are always included with their prerequisites.</p></div>
+          <div class="card"><h3>Rules computed in code</h3><p>Prerequisites, credit limits, overloads, probation, and timetable clashes are checked against the student's record. Each check names the handbook rule it applies.</p></div>
+          <div class="card"><h3>Cited statements</h3><p>Claude returns a list of statements. Each one cites a source by id with a short quote copied from it, or the question is declined as not covered.</p></div>
+          <div class="card"><h3>Verified quotes</h3><p>Every quote is located in its source text. Quotes that are not there are rejected, and a statement with no verified quote is shown as unsupported.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="evals">
+      <div class="wrap">
+        <h2>Evaluation</h2>
+        <p class="sub" id="eval-sub">Scores from <code>pathwise-eval</code>.</p>
+        <div class="two">
+          <div class="card">
+            <h3 class="t">Retrieval</h3>
+            <table id="retrieval"><thead><tr><th>Mode</th><th>Hit@6</th><th>Recall@6</th><th>MRR</th></tr></thead><tbody></tbody></table>
+            <p class="fine">Hybrid is the default: it matched or beat a cross-encoder reranker at lower cost.</p>
+          </div>
+          <div class="card">
+            <h3 class="t">Answers</h3>
+            <table id="answers"><thead><tr><th>Metric</th><th>Score</th></tr></thead><tbody></tbody></table>
+            <p class="fine">A small, fictional catalog, so treat these as a regression check rather than a benchmark. Quote checks catch invented quotes, not every wrong claim, which is why the set also tests answers against expected sources.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="mcp">
+      <div class="wrap">
+        <h2>Use it from Claude</h2>
+        <p class="sub">An MCP server exposes the advisor to Claude Desktop and Claude Code.</p>
+        <div class="two">
+          <div class="card">
+            <h3 class="t">Tools</h3>
+            <ul class="tools">
+              <li><code>ask</code>: a full answer with numbered sources and verified quotes</li>
+              <li><code>search_catalog</code>, <code>get_source</code>: search and read catalog and handbook sources</li>
+              <li><code>check_course</code>, <code>check_plan</code>: eligibility and plan checks with the rule behind each issue</li>
+              <li><code>student_progress</code>, <code>eligible_courses</code>, <code>list_students</code></li>
+            </ul>
+            <p class="fine">Everything except <code>ask</code> runs locally with no model call.</p>
+          </div>
+          <div class="card">
+            <h3 class="t">Run it locally</h3>
+<pre><code>git clone https://github.com/akshay-9640/pathwise
+cd pathwise && uv sync
+uv run pathwise          # web app
+uv run pathwise-mcp      # MCP server
+uv run pathwise-eval     # evaluation</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>The catalog, handbook, and students are fictional, made for this demo. The answers above were produced by the real app and are replayed unchanged from <code>demo.json</code>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    // Fill the recorded-run note and the eval tables from the same file the demo replays.
+    fetch("demo.json").then((r) => r.json()).then((d) => {
+      const n = Object.keys(d.answers).length;
+      document.getElementById("recorded-note").textContent =
+        `Recorded run: ${n} answers produced by ${d.model} through the real app on ${d.recorded}, replayed here unchanged. Only the suggested questions are available in this demo.`;
+      const e = d.evals, pct = (x) => `${Math.round(x * 100)}%`;
+      document.getElementById("eval-sub").textContent =
+        `Scores from pathwise-eval on ${e.questions} questions: named lookups, paraphrased questions, handbook rules, student-specific questions, and out-of-scope questions that should be declined.`;
+      const names = { bm25: "Keyword (BM25)", dense: "Embeddings", hybrid: "Hybrid", rerank: "Hybrid + reranker" };
+      const rb = document.querySelector("#retrieval tbody");
+      for (const [m, r] of Object.entries(e.retrieval)) {
+        const tr = document.createElement("tr");
+        if (m === "hybrid") tr.className = "best";
+        for (const v of [names[m] || m, pct(r.hit), pct(r.recall), r.mrr.toFixed(2)]) tr.append(Object.assign(document.createElement("td"), { textContent: v }));
+        rb.append(tr);
+      }
+      const ab = document.querySelector("#answers tbody");
+      const rows = [["Quotes verified word for word", e.answers.citation_rate], ["Statements with a verified quote", e.answers.supported_rate],
+                    ["Expected sources cited", e.answers.source_recall], ["Out-of-scope questions declined", e.answers.refusal_accuracy],
+                    ["Expected sources shown to Claude", e.context.recall]];
+      for (const [label, v] of rows) {
+        const tr = document.createElement("tr");
+        tr.append(Object.assign(document.createElement("td"), { textContent: label }), Object.assign(document.createElement("td"), { textContent: pct(v) }));
+        ab.append(tr);
+      }
+    });
+  </script>
+</body>
+</html>

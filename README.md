@@ -27,6 +27,10 @@ End to end with Claude: 100% of quotes verified word for word, 100% of statement
 
 The evals changed the design: hybrid search beat cross-encoder reranking, so hybrid is the default, and failures they surfaced led to prerequisite expansion, a fix for a misleading partial-plan warning, and a stricter rule to apply the student's record. The set is small and close to saturated, so treat these numbers as a regression check rather than a benchmark.
 
+## Showcase
+
+`showcase/` is a static page for Vercel. It runs the app's own interface over answers recorded from the real app (`showcase/demo.json`), so visitors can try the suggested questions with no backend or API key. Re-record with `PATHWISE_BACKEND=claude-code uv run python scripts/record_showcase.py`.
+
 ## Run it
 
 ```bash

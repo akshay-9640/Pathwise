@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo 'static showcase: the app itself runs locally'",
+  "buildCommand": "echo 'static showcase: nothing to build'",
+  "outputDirectory": "showcase"
+}

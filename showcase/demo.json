@@ -1,0 +1,3122 @@
+{
+ "recorded": "2026-10-15",
+ "model": "claude-opus-5-5",
+ "meta": {
+  "program": "B.Tech Computer Science and Engineering",
+  "institution": "Pathwise Institute of Technology (fictional)",
+  "students": [
+   {
+    "id": "riya",
+    "name": "Riya Sharma",
+    "first": "Riya",
+    "summary": "Year 3, Semester 1. CGPA 8.71. Strong student in Year 3, choosing her first electives."
+   },
+   {
+    "id": "kabir",
+    "name": "Kabir Nair",
+    "first": "Kabir",
+    "summary": "Year 2, Semester 2. CGPA 5.53. Failed MA 102 in Year 1 and is repeating it, so Operating Systems moved to next year (both meet in slot B)."
+   },
+   {
+    "id": "meera",
+    "name": "Meera Pillai",
+    "first": "Meera",
+    "summary": "Year 4, Semester 1. CGPA 8.06. Final year, doing the capstone and close to an AI and Machine Learning specialization."
+   },
+   {
+    "id": "dev",
+    "name": "Dev Rao",
+    "first": "Dev",
+    "summary": "Year 3, Semester 1. CGPA 3.85. On academic probation after failing two Year 2 courses."
+   }
+  ],
+  "suggestions": {
+   "": [
+    "Is there a course about how search engines work?",
+    "What happens if I fail a core course?",
+    "Can a prerequisite be waived, and who decides?",
+    "Who teaches Machine Learning this year?"
+   ],
+   "riya": [
+    "Can I take Deep Learning and NLP together next semester?",
+    "Am I allowed to take 24 credits next term?",
+    "Which AI electives can I take next semester?"
+   ],
+   "kabir": [
+    "Can I take Operating Systems next semester?",
+    "What happens with my failed MA 102?"
+   ],
+   "meera": [
+    "How close am I to the AI and Machine Learning specialization?",
+    "Can I start Capstone Project II next semester?"
+   ],
+   "dev": [
+    "How many credits can I take while I am on probation?",
+    "How do I get off probation?"
+   ]
+  },
+  "courses": 31,
+  "sections": 19
+ },
+ "answers": {
+  "|Is there a course about how search engines work?": {
+   "question": "Is there a course about how search engines work?",
+   "student": null,
+   "answerable": true,
+   "statements": [
+    {
+     "text": "Yes, CS 420 Information Retrieval (IR) covers how search engines index and rank documents and how to measure search quality.",
+     "citations": [
+      {
+       "source": "course:CS 420",
+       "quote": "How search engines index and rank documents, from BM25 to vector search, and how to measure search quality.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        309,
+        415
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Its topics are indexing, ranking, BM25, vector search, and evaluation of search.",
+     "citations": [
+      {
+       "source": "course:CS 420",
+       "quote": "Topics: indexing, ranking, BM25, vector search, evaluation of search.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        239,
+        307
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "CS 420 is a 3-credit elective in the Data Science and AI and Machine Learning tracks.",
+     "citations": [
+      {
+       "source": "course:CS 420",
+       "quote": "3 credits, elective (tracks: Data Science, AI and Machine Learning).",
+       "verified": true,
+       "number": 1,
+       "span": [
+        46,
+        112
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "It is offered in Year 4, Semester 1, in timetable slot B.",
+     "citations": [
+      {
+       "source": "course:CS 420",
+       "quote": "Offered in Year 4, Semester 1, timetable slot B.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        115,
+        162
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Its prerequisites are CS 220 Database Systems and MA 201 Probability and Statistics.",
+     "citations": [
+      {
+       "source": "course:CS 420",
+       "quote": "Prerequisites: CS 220 Database Systems, MA 201 Probability and Statistics.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        164,
+        237
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "You can register only after passing every prerequisite with a grade of P or better, and courses still in progress do not count as passed.",
+     "citations": [
+      {
+       "source": "handbook:4.1",
+       "quote": "A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        14,
+        145
+       ]
+      },
+      {
+       "source": "handbook:4.1",
+       "quote": "Courses in progress do not count as passed.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        147,
+        189
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "course:CS 420",
+     "kind": "course",
+     "label": "CS 420 Information Retrieval",
+     "text": "CS 420 Information Retrieval. Also called IR. 3 credits, elective (tracks: Data Science, AI and Machine Learning). Offered in Year 4, Semester 1, timetable slot B. Prerequisites: CS 220 Database Systems, MA 201 Probability and Statistics. Topics: indexing, ranking, BM25, vector search, evaluation of search. How search engines index and rank documents, from BM25 to vector search, and how to measure search quality."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    }
+   ],
+   "considered": [
+    {
+     "id": "course:CS 420",
+     "kind": "course",
+     "label": "CS 420 Information Retrieval",
+     "text": "CS 420 Information Retrieval. Also called IR. 3 credits, elective (tracks: Data Science, AI and Machine Learning). Offered in Year 4, Semester 1, timetable slot B. Prerequisites: CS 220 Database Systems, MA 201 Probability and Statistics. Topics: indexing, ranking, BM25, vector search, evaluation of search. How search engines index and rank documents, from BM25 to vector search, and how to measure search quality."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "course:CS 101",
+     "kind": "course",
+     "label": "CS 101 Programming in Python",
+     "text": "CS 101 Programming in Python. 4 credits, core. Offered in Year 1, Semester 1, timetable slot A. Prerequisites: none. Topics: variables and types, control flow, functions, lists and dictionaries, files, debugging. First programming course. Students write, test, and debug small Python programs and learn to break problems into functions."
+    },
+    {
+     "id": "handbook:6.2",
+     "kind": "handbook",
+     "label": "Handbook 6.2 Timetable clashes",
+     "text": "6.2 Timetable clashes. Each course meets in one timetable slot. A student cannot register for two courses that meet in the same slot in the same semester. When two wanted electives clash, the student must choose one; the other may be offered again the next year."
+    },
+    {
+     "id": "handbook:1",
+     "kind": "handbook",
+     "label": "Handbook 1 Program overview",
+     "text": "1 Program overview. The B.Tech in Computer Science and Engineering runs for four years, each split into two semesters. Years 1 and 2 are all core courses. From Year 3, students add electives and may earn a specialization by focusing their electives on one track. Every course in the catalog belongs to one year and one semester and is offered only in that semester."
+    },
+    {
+     "id": "course:CS 260",
+     "kind": "course",
+     "label": "CS 260 Operating Systems",
+     "text": "CS 260 Operating Systems. Also called OS. 4 credits, core. Offered in Year 2, Semester 2, timetable slot B. Prerequisites: CS 102 Data Structures, CS 230 Computer Organization. Topics: processes and threads, scheduling, synchronization, memory management, file systems. How operating systems share a machine between programs, with hands-on work on threads and memory."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 9.4
+  },
+  "|What happens if I fail a core course?": {
+   "question": "What happens if I fail a core course?",
+   "student": null,
+   "answerable": true,
+   "statements": [
+    {
+     "text": "If you fail a core course, you get a grade of F. An F counts as 0 grade points and earns no credits.",
+     "citations": [
+      {
+       "source": "handbook:3.1",
+       "quote": "F is a fail and earns no credits.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        145,
+        177
+       ]
+      },
+      {
+       "source": "handbook:3.1",
+       "quote": "Courses are graded O (10), A+ (9), A (8), B+ (7), B (6), C (5), P (4), and F (0).",
+       "verified": true,
+       "number": 1,
+       "span": [
+        29,
+        108
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "You have to retake the failed core course the next time it is offered, which is the same semester of the following year.",
+     "citations": [
+      {
+       "source": "handbook:3.3",
+       "quote": "A failed core course must be repeated the next time it is offered, which is the same semester of the following year.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        36,
+        151
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Once you pass the course on a later attempt, the new grade replaces the F in your CGPA.",
+     "citations": [
+      {
+       "source": "handbook:3.3",
+       "quote": "When a failed course is passed on a later attempt, the new grade replaces the F in the CGPA.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        153,
+        244
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Until you pass the failed course, you cannot register for any course that lists it as a prerequisite. A prerequisite counts only when it is passed with a grade of P or better.",
+     "citations": [
+      {
+       "source": "handbook:4.1",
+       "quote": "A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better.",
+       "verified": true,
+       "number": 3,
+       "span": [
+        14,
+        145
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "To graduate, you must eventually pass every core course, so a failed core course has to be cleared before you can graduate.",
+     "citations": [
+      {
+       "source": "handbook:8",
+       "quote": "To graduate, a student must pass every core course in the catalog (71 credits)",
+       "verified": true,
+       "number": 4,
+       "span": [
+        27,
+        104
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "handbook:3.1",
+     "kind": "handbook",
+     "label": "Handbook 3.1 Grades and grade points",
+     "text": "3.1 Grades and grade points. Courses are graded O (10), A+ (9), A (8), B+ (7), B (6), C (5), P (4), and F (0). A grade of P or better is a pass. F is a fail and earns no credits."
+    },
+    {
+     "id": "handbook:3.3",
+     "kind": "handbook",
+     "label": "Handbook 3.3 Failing and repeating a course",
+     "text": "3.3 Failing and repeating a course. A failed core course must be repeated the next time it is offered, which is the same semester of the following year. When a failed course is passed on a later attempt, the new grade replaces the F in the CGPA. A course that was passed cannot be repeated to improve the grade."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:8",
+     "kind": "handbook",
+     "label": "Handbook 8 Graduation requirements",
+     "text": "8 Graduation requirements. To graduate, a student must pass every core course in the catalog (71 credits), meet the elective requirement in section 5.1, earn at least 86 credits in total, and finish with a CGPA of at least 5.0."
+    }
+   ],
+   "considered": [
+    {
+     "id": "handbook:3.3",
+     "kind": "handbook",
+     "label": "Handbook 3.3 Failing and repeating a course",
+     "text": "3.3 Failing and repeating a course. A failed core course must be repeated the next time it is offered, which is the same semester of the following year. When a failed course is passed on a later attempt, the new grade replaces the F in the CGPA. A course that was passed cannot be repeated to improve the grade."
+    },
+    {
+     "id": "handbook:3.1",
+     "kind": "handbook",
+     "label": "Handbook 3.1 Grades and grade points",
+     "text": "3.1 Grades and grade points. Courses are graded O (10), A+ (9), A (8), B+ (7), B (6), C (5), P (4), and F (0). A grade of P or better is a pass. F is a fail and earns no credits."
+    },
+    {
+     "id": "handbook:6.3",
+     "kind": "handbook",
+     "label": "Handbook 6.3 Adding and dropping",
+     "text": "6.3 Adding and dropping. Courses can be added or dropped without penalty during the first two weeks of the semester. After that, a dropped course appears on the transcript as W (withdrawn) and earns no credits but does not affect the CGPA."
+    },
+    {
+     "id": "handbook:8",
+     "kind": "handbook",
+     "label": "Handbook 8 Graduation requirements",
+     "text": "8 Graduation requirements. To graduate, a student must pass every core course in the catalog (71 credits), meet the elective requirement in section 5.1, earn at least 86 credits in total, and finish with a CGPA of at least 5.0."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:4.2",
+     "kind": "handbook",
+     "label": "Handbook 4.2 Waivers",
+     "text": "4.2 Waivers. A prerequisite can be waived only by the instructor of the course together with the head of department, and only for students who show equivalent preparation. Waivers are rare and are never granted for Capstone Project II."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 8.3
+  },
+  "|Can a prerequisite be waived, and who decides?": {
+   "question": "Can a prerequisite be waived, and who decides?",
+   "student": null,
+   "answerable": true,
+   "statements": [
+    {
+     "text": "Yes, a prerequisite can be waived, but only by the course instructor and the head of department together.",
+     "citations": [
+      {
+       "source": "handbook:4.2",
+       "quote": "A prerequisite can be waived only by the instructor of the course together with the head of department",
+       "verified": true,
+       "number": 1,
+       "span": [
+        13,
+        115
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "A waiver is only available to students who show equivalent preparation.",
+     "citations": [
+      {
+       "source": "handbook:4.2",
+       "quote": "only for students who show equivalent preparation",
+       "verified": true,
+       "number": 1,
+       "span": [
+        121,
+        170
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Waivers are rare, and Capstone Project II never gets one.",
+     "citations": [
+      {
+       "source": "handbook:4.2",
+       "quote": "Waivers are rare and are never granted for Capstone Project II.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        172,
+        234
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Without a waiver, you can register for a course only after passing every prerequisite listed for it with a grade of P or better, and courses still in progress do not count as passed.",
+     "citations": [
+      {
+       "source": "handbook:4.1",
+       "quote": "A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        14,
+        145
+       ]
+      },
+      {
+       "source": "handbook:4.1",
+       "quote": "Courses in progress do not count as passed.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        147,
+        189
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "handbook:4.2",
+     "kind": "handbook",
+     "label": "Handbook 4.2 Waivers",
+     "text": "4.2 Waivers. A prerequisite can be waived only by the instructor of the course together with the head of department, and only for students who show equivalent preparation. Waivers are rare and are never granted for Capstone Project II."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    }
+   ],
+   "considered": [
+    {
+     "id": "handbook:4.2",
+     "kind": "handbook",
+     "label": "Handbook 4.2 Waivers",
+     "text": "4.2 Waivers. A prerequisite can be waived only by the instructor of the course together with the head of department, and only for students who show equivalent preparation. Waivers are rare and are never granted for Capstone Project II."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:2.3",
+     "kind": "handbook",
+     "label": "Handbook 2.3 Underload",
+     "text": "2.3 Underload. Registering for fewer than 9 credits needs approval from the head of department, usually for medical or personal reasons, and may delay graduation."
+    },
+    {
+     "id": "handbook:2.2",
+     "kind": "handbook",
+     "label": "Handbook 2.2 Overload",
+     "text": "2.2 Overload. Students with a CGPA of 8.0 or higher may request an overload of up to 24 credits in one semester. An overload needs written approval from the faculty advisor before registration closes. Students below a CGPA of 8.0 cannot overload."
+    },
+    {
+     "id": "handbook:6.3",
+     "kind": "handbook",
+     "label": "Handbook 6.3 Adding and dropping",
+     "text": "6.3 Adding and dropping. Courses can be added or dropped without penalty during the first two weeks of the semester. After that, a dropped course appears on the transcript as W (withdrawn) and earns no credits but does not affect the CGPA."
+    },
+    {
+     "id": "course:CS 230",
+     "kind": "course",
+     "label": "CS 230 Computer Organization",
+     "text": "CS 230 Computer Organization. Also called COA. 3 credits, core. Offered in Year 2, Semester 1, timetable slot C. Prerequisites: EE 101 Basic Electrical Engineering. Topics: number systems, CPU datapath, assembly, memory hierarchy, caches. How a computer executes programs, from instructions and the datapath to caches and memory."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 8.8
+  },
+  "|Who teaches Machine Learning this year?": {
+   "question": "Who teaches Machine Learning this year?",
+   "student": null,
+   "answerable": false,
+   "statements": [
+    {
+     "text": "The catalog and handbook do not say who teaches CS 340 Machine Learning this year; the course entry lists only its credits, when it is offered, its timetable slot, prerequisites and topics.",
+     "citations": [
+      {
+       "source": "course:CS 340",
+       "quote": "4 credits, core. Offered in Year 3, Semester 1, timetable slot A.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        41,
+        105
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "course:CS 340",
+     "kind": "course",
+     "label": "CS 340 Machine Learning",
+     "text": "CS 340 Machine Learning. Also called ML. 4 credits, core. Offered in Year 3, Semester 1, timetable slot A. Prerequisites: CS 250 Design and Analysis of Algorithms, MA 201 Probability and Statistics. Topics: supervised and unsupervised learning, regression, overfitting and regularization, evaluation metrics, decision trees, k-nearest neighbors. Foundations of machine learning, from linear models and evaluation to trees and nearest neighbors."
+    }
+   ],
+   "considered": [
+    {
+     "id": "course:CS 340",
+     "kind": "course",
+     "label": "CS 340 Machine Learning",
+     "text": "CS 340 Machine Learning. Also called ML. 4 credits, core. Offered in Year 3, Semester 1, timetable slot A. Prerequisites: CS 250 Design and Analysis of Algorithms, MA 201 Probability and Statistics. Topics: supervised and unsupervised learning, regression, overfitting and regularization, evaluation metrics, decision trees, k-nearest neighbors. Foundations of machine learning, from linear models and evaluation to trees and nearest neighbors."
+    },
+    {
+     "id": "course:CS 450",
+     "kind": "course",
+     "label": "CS 450 Reinforcement Learning",
+     "text": "CS 450 Reinforcement Learning. Also called RL. 3 credits, elective (tracks: AI and Machine Learning). Offered in Year 4, Semester 2, timetable slot A. Prerequisites: CS 340 Machine Learning, MA 201 Probability and Statistics. Topics: Markov decision processes, dynamic programming, Q-learning, policy gradients. Learning by trial and reward, from Markov decision processes to policy gradient methods."
+    },
+    {
+     "id": "course:CS 345",
+     "kind": "course",
+     "label": "CS 345 Deep Learning",
+     "text": "CS 345 Deep Learning. Also called DL. 4 credits, elective (tracks: AI and Machine Learning). Offered in Year 3, Semester 2, timetable slot D. Prerequisites: CS 340 Machine Learning. Topics: neural networks, backpropagation, convolutional networks, sequence models, transformers. Neural networks from backpropagation to convolutional networks and transformers, trained in PyTorch."
+    },
+    {
+     "id": "course:CS 460",
+     "kind": "course",
+     "label": "CS 460 Machine Learning Operations",
+     "text": "CS 460 Machine Learning Operations. Also called MLOps. 3 credits, elective (tracks: AI and Machine Learning, Data Science). Offered in Year 4, Semester 2, timetable slot B. Prerequisites: CS 340 Machine Learning, CS 360 Software Engineering. Topics: experiment tracking, model deployment, monitoring, data drift, ML pipelines. Taking models to production: deployment, monitoring, and keeping them accurate as data changes."
+    },
+    {
+     "id": "course:CS 380",
+     "kind": "course",
+     "label": "CS 380 Natural Language Processing",
+     "text": "CS 380 Natural Language Processing. Also called NLP. 4 credits, elective (tracks: AI and Machine Learning, Data Science). Offered in Year 3, Semester 2, timetable slot D. Prerequisites: CS 340 Machine Learning. Topics: text processing, word embeddings, language models, retrieval-augmented generation, evaluation. Language technology from text processing and embeddings to large language models and retrieval-augmented generation."
+    },
+    {
+     "id": "course:CS 430",
+     "kind": "course",
+     "label": "CS 430 Computer Vision",
+     "text": "CS 430 Computer Vision. Also called CV. 4 credits, elective (tracks: AI and Machine Learning). Offered in Year 4, Semester 1, timetable slot C. Prerequisites: CS 345 Deep Learning. Topics: image formation, feature detection, convolutional networks, object detection, segmentation. Teaching computers to understand images, from classic features to deep object detection."
+    },
+    {
+     "id": "course:CS 250",
+     "kind": "course",
+     "label": "CS 250 Design and Analysis of Algorithms",
+     "text": "CS 250 Design and Analysis of Algorithms. Also called DAA. 4 credits, core. Offered in Year 2, Semester 2, timetable slot A. Prerequisites: CS 102 Data Structures, CS 201 Discrete Mathematics. Topics: divide and conquer, greedy algorithms, dynamic programming, graph algorithms, NP-completeness. Designing algorithms and proving their correctness and running time."
+    },
+    {
+     "id": "course:MA 201",
+     "kind": "course",
+     "label": "MA 201 Probability and Statistics",
+     "text": "MA 201 Probability and Statistics. 3 credits, core. Offered in Year 2, Semester 2, timetable slot D. Prerequisites: MA 102 Engineering Mathematics II. Topics: probability, random variables, distributions, estimation, hypothesis testing, regression. Probability and statistics for computing, the mathematical base for machine learning and data courses."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 7.4
+  },
+  "riya|Can I take Deep Learning and NLP together next semester?": {
+   "question": "Can I take Deep Learning and NLP together next semester?",
+   "student": "riya",
+   "answerable": true,
+   "statements": [
+    {
+     "text": "No, you can't take CS 345 Deep Learning and CS 380 Natural Language Processing together next semester, because both meet in timetable slot D, so you have to pick one.",
+     "citations": [
+      {
+       "source": "check:plan",
+       "quote": "CS 345 Deep Learning and CS 380 Natural Language Processing both meet in slot D; choose one.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        67,
+        158
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "The handbook doesn't let a student register for two courses that meet in the same slot in the same semester.",
+     "citations": [
+      {
+       "source": "handbook:6.2",
+       "quote": "A student cannot register for two courses that meet in the same slot in the same semester.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        64,
+        153
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Whichever one you don't choose may be offered again the next year.",
+     "citations": [
+      {
+       "source": "handbook:6.2",
+       "quote": "When two wanted electives clash, the student must choose one; the other may be offered again the next year.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        155,
+        261
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "You can only take either course if you pass CS 340 Machine Learning, because CS 340 is a prerequisite for both and you are still taking it.",
+     "citations": [
+      {
+       "source": "check:options",
+       "quote": "CS 345 Deep Learning, 4 credits, elective (AI and Machine Learning), slot D: conditional. Needs CS 340 Machine Learning, which is in progress",
+       "verified": true,
+       "number": 3,
+       "span": [
+        140,
+        281
+       ]
+      },
+      {
+       "source": "check:CS 380",
+       "quote": "Needs CS 340 Machine Learning, which is in progress; it counts only once passed.",
+       "verified": true,
+       "number": 4,
+       "span": [
+        75,
+        154
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Your record shows CS 340 Machine Learning as in progress this term, and courses in progress don't count as passed.",
+     "citations": [
+      {
+       "source": "record:riya",
+       "quote": "In progress: CS 340 Machine Learning, CS 350 Compiler Design, CS 360 Software Engineering.",
+       "verified": true,
+       "number": 5,
+       "span": [
+        726,
+        815
+       ]
+      },
+      {
+       "source": "handbook:4.1",
+       "quote": "Courses in progress do not count as passed.",
+       "verified": true,
+       "number": 6,
+       "span": [
+        147,
+        189
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Deep Learning counts only toward the AI and Machine Learning track, while NLP counts toward both AI and Machine Learning and Data Science.",
+     "citations": [
+      {
+       "source": "course:CS 345",
+       "quote": "4 credits, elective (tracks: AI and Machine Learning).",
+       "verified": true,
+       "number": 7,
+       "span": [
+        38,
+        90
+       ]
+      },
+      {
+       "source": "course:CS 380",
+       "quote": "4 credits, elective (tracks: AI and Machine Learning, Data Science).",
+       "verified": true,
+       "number": 8,
+       "span": [
+        53,
+        119
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "CS 345 Deep Learning is the prerequisite for CS 430 Computer Vision, which is offered in Year 4, Semester 1.",
+     "citations": [
+      {
+       "source": "course:CS 430",
+       "quote": "Offered in Year 4, Semester 1, timetable slot C. Prerequisites: CS 345 Deep Learning.",
+       "verified": true,
+       "number": 9,
+       "span": [
+        95,
+        179
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Your faculty advisor can talk through which elective to choose and gives final approval on your registration.",
+     "citations": [
+      {
+       "source": "handbook:10",
+       "quote": "The advisor approves overloads, discusses elective choices",
+       "verified": true,
+       "number": 10,
+       "span": [
+        50,
+        108
+       ]
+      },
+      {
+       "source": "handbook:10",
+       "quote": "final approval always rests with the faculty advisor.",
+       "verified": true,
+       "number": 10,
+       "span": [
+        252,
+        304
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "check:plan",
+     "kind": "check",
+     "label": "Rule check: CS 345 + CS 380 together",
+     "text": "Taking CS 345, CS 380 together in Year 3, Semester 2 is 8 credits. CS 345 Deep Learning and CS 380 Natural Language Processing both meet in slot D; choose one. [handbook:6.2]"
+    },
+    {
+     "id": "handbook:6.2",
+     "kind": "handbook",
+     "label": "Handbook 6.2 Timetable clashes",
+     "text": "6.2 Timetable clashes. Each course meets in one timetable slot. A student cannot register for two courses that meet in the same slot in the same semester. When two wanted electives clash, the student must choose one; the other may be offered again the next year."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Riya Sharma next term",
+     "text": "The complete list of courses offered to Riya Sharma in Year 3, Semester 2. CS 370 Theory of Computation, 3 credits, core, slot A: eligible. CS 345 Deep Learning, 4 credits, elective (AI and Machine Learning), slot D: conditional. Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1] CS 375 Cloud Computing, 3 credits, elective (Systems), slot E: eligible. CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: conditional. Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1] CS 385 Computer Security, 3 credits, elective (Systems), slot F: eligible."
+    },
+    {
+     "id": "check:CS 380",
+     "kind": "check",
+     "label": "Rule check: CS 380 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 380 Natural Language Processing: Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "record:riya",
+     "kind": "record",
+     "label": "Student record: Riya Sharma",
+     "text": "Riya Sharma is in Year 3, Semester 1. Next term is Year 3, Semester 2. CGPA 8.71. Earned credits 48. On probation: no. Maximum load next term: 20 credits; may request an overload up to 24. Passed: CS 101 Programming in Python (O), MA 101 Engineering Mathematics I (A+), PH 101 Engineering Physics (A), EN 101 Technical Communication (A+), CS 102 Data Structures (O), MA 102 Engineering Mathematics II (A), EE 101 Basic Electrical Engineering (A), CS 201 Discrete Mathematics (A+), CS 220 Database Systems (O), CS 230 Computer Organization (A), CS 250 Design and Analysis of Algorithms (A+), CS 260 Operating Systems (A), CS 270 Computer Networks (B+), MA 201 Probability and Statistics (A). Failed and not yet repeated: none. In progress: CS 340 Machine Learning, CS 350 Compiler Design, CS 360 Software Engineering. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "course:CS 345",
+     "kind": "course",
+     "label": "CS 345 Deep Learning",
+     "text": "CS 345 Deep Learning. Also called DL. 4 credits, elective (tracks: AI and Machine Learning). Offered in Year 3, Semester 2, timetable slot D. Prerequisites: CS 340 Machine Learning. Topics: neural networks, backpropagation, convolutional networks, sequence models, transformers. Neural networks from backpropagation to convolutional networks and transformers, trained in PyTorch."
+    },
+    {
+     "id": "course:CS 380",
+     "kind": "course",
+     "label": "CS 380 Natural Language Processing",
+     "text": "CS 380 Natural Language Processing. Also called NLP. 4 credits, elective (tracks: AI and Machine Learning, Data Science). Offered in Year 3, Semester 2, timetable slot D. Prerequisites: CS 340 Machine Learning. Topics: text processing, word embeddings, language models, retrieval-augmented generation, evaluation. Language technology from text processing and embeddings to large language models and retrieval-augmented generation."
+    },
+    {
+     "id": "course:CS 430",
+     "kind": "course",
+     "label": "CS 430 Computer Vision",
+     "text": "CS 430 Computer Vision. Also called CV. 4 credits, elective (tracks: AI and Machine Learning). Offered in Year 4, Semester 1, timetable slot C. Prerequisites: CS 345 Deep Learning. Topics: image formation, feature detection, convolutional networks, object detection, segmentation. Teaching computers to understand images, from classic features to deep object detection."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "considered": [
+    {
+     "id": "record:riya",
+     "kind": "record",
+     "label": "Student record: Riya Sharma",
+     "text": "Riya Sharma is in Year 3, Semester 1. Next term is Year 3, Semester 2. CGPA 8.71. Earned credits 48. On probation: no. Maximum load next term: 20 credits; may request an overload up to 24. Passed: CS 101 Programming in Python (O), MA 101 Engineering Mathematics I (A+), PH 101 Engineering Physics (A), EN 101 Technical Communication (A+), CS 102 Data Structures (O), MA 102 Engineering Mathematics II (A), EE 101 Basic Electrical Engineering (A), CS 201 Discrete Mathematics (A+), CS 220 Database Systems (O), CS 230 Computer Organization (A), CS 250 Design and Analysis of Algorithms (A+), CS 260 Operating Systems (A), CS 270 Computer Networks (B+), MA 201 Probability and Statistics (A). Failed and not yet repeated: none. In progress: CS 340 Machine Learning, CS 350 Compiler Design, CS 360 Software Engineering. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Riya Sharma next term",
+     "text": "The complete list of courses offered to Riya Sharma in Year 3, Semester 2. CS 370 Theory of Computation, 3 credits, core, slot A: eligible. CS 345 Deep Learning, 4 credits, elective (AI and Machine Learning), slot D: conditional. Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1] CS 375 Cloud Computing, 3 credits, elective (Systems), slot E: eligible. CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: conditional. Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1] CS 385 Computer Security, 3 credits, elective (Systems), slot F: eligible."
+    },
+    {
+     "id": "check:CS 345",
+     "kind": "check",
+     "label": "Rule check: CS 345 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 345 Deep Learning: Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 380",
+     "kind": "check",
+     "label": "Rule check: CS 380 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 380 Natural Language Processing: Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 430",
+     "kind": "check",
+     "label": "Rule check: CS 430 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 430 Computer Vision: CS 430 is only offered in Semester 1. [handbook:1] Needs CS 345 Deep Learning (not taken yet). [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 340",
+     "kind": "check",
+     "label": "Rule check: CS 340 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 340 Machine Learning: CS 340 is in progress this semester. [handbook:4.1] CS 340 is only offered in Semester 1. [handbook:1]"
+    },
+    {
+     "id": "check:CS 450",
+     "kind": "check",
+     "label": "Rule check: CS 450 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 450 Reinforcement Learning: Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:plan",
+     "kind": "check",
+     "label": "Rule check: CS 345 + CS 380 together",
+     "text": "Taking CS 345, CS 380 together in Year 3, Semester 2 is 8 credits. CS 345 Deep Learning and CS 380 Natural Language Processing both meet in slot D; choose one. [handbook:6.2]"
+    },
+    {
+     "id": "course:CS 345",
+     "kind": "course",
+     "label": "CS 345 Deep Learning",
+     "text": "CS 345 Deep Learning. Also called DL. 4 credits, elective (tracks: AI and Machine Learning). Offered in Year 3, Semester 2, timetable slot D. Prerequisites: CS 340 Machine Learning. Topics: neural networks, backpropagation, convolutional networks, sequence models, transformers. Neural networks from backpropagation to convolutional networks and transformers, trained in PyTorch."
+    },
+    {
+     "id": "course:CS 380",
+     "kind": "course",
+     "label": "CS 380 Natural Language Processing",
+     "text": "CS 380 Natural Language Processing. Also called NLP. 4 credits, elective (tracks: AI and Machine Learning, Data Science). Offered in Year 3, Semester 2, timetable slot D. Prerequisites: CS 340 Machine Learning. Topics: text processing, word embeddings, language models, retrieval-augmented generation, evaluation. Language technology from text processing and embeddings to large language models and retrieval-augmented generation."
+    },
+    {
+     "id": "course:CS 430",
+     "kind": "course",
+     "label": "CS 430 Computer Vision",
+     "text": "CS 430 Computer Vision. Also called CV. 4 credits, elective (tracks: AI and Machine Learning). Offered in Year 4, Semester 1, timetable slot C. Prerequisites: CS 345 Deep Learning. Topics: image formation, feature detection, convolutional networks, object detection, segmentation. Teaching computers to understand images, from classic features to deep object detection."
+    },
+    {
+     "id": "course:CS 340",
+     "kind": "course",
+     "label": "CS 340 Machine Learning",
+     "text": "CS 340 Machine Learning. Also called ML. 4 credits, core. Offered in Year 3, Semester 1, timetable slot A. Prerequisites: CS 250 Design and Analysis of Algorithms, MA 201 Probability and Statistics. Topics: supervised and unsupervised learning, regression, overfitting and regularization, evaluation metrics, decision trees, k-nearest neighbors. Foundations of machine learning, from linear models and evaluation to trees and nearest neighbors."
+    },
+    {
+     "id": "course:CS 450",
+     "kind": "course",
+     "label": "CS 450 Reinforcement Learning",
+     "text": "CS 450 Reinforcement Learning. Also called RL. 3 credits, elective (tracks: AI and Machine Learning). Offered in Year 4, Semester 2, timetable slot A. Prerequisites: CS 340 Machine Learning, MA 201 Probability and Statistics. Topics: Markov decision processes, dynamic programming, Q-learning, policy gradients. Learning by trial and reward, from Markov decision processes to policy gradient methods."
+    },
+    {
+     "id": "handbook:6.1",
+     "kind": "handbook",
+     "label": "Handbook 6.1 Timeline",
+     "text": "6.1 Timeline. Registration for the next semester opens four weeks before the current semester ends and closes one week after the next semester starts."
+    },
+    {
+     "id": "handbook:1",
+     "kind": "handbook",
+     "label": "Handbook 1 Program overview",
+     "text": "1 Program overview. The B.Tech in Computer Science and Engineering runs for four years, each split into two semesters. Years 1 and 2 are all core courses. From Year 3, students add electives and may earn a specialization by focusing their electives on one track. Every course in the catalog belongs to one year and one semester and is offered only in that semester."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:6.2",
+     "kind": "handbook",
+     "label": "Handbook 6.2 Timetable clashes",
+     "text": "6.2 Timetable clashes. Each course meets in one timetable slot. A student cannot register for two courses that meet in the same slot in the same semester. When two wanted electives clash, the student must choose one; the other may be offered again the next year."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 11.2
+  },
+  "riya|Am I allowed to take 24 credits next term?": {
+   "question": "Am I allowed to take 24 credits next term?",
+   "student": "riya",
+   "answerable": true,
+   "statements": [
+    {
+     "text": "Yes. With your CGPA of 8.71, you can ask for an overload of up to 24 credits next term, which is Year 3, Semester 2.",
+     "citations": [
+      {
+       "source": "record:riya",
+       "quote": "CGPA 8.71.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        71,
+        80
+       ]
+      },
+      {
+       "source": "record:riya",
+       "quote": "Maximum load next term: 20 credits; may request an overload up to 24.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        119,
+        187
+       ]
+      },
+      {
+       "source": "handbook:2.2",
+       "quote": "Students with a CGPA of 8.0 or higher may request an overload of up to 24 credits in one semester.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        14,
+        111
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "You cannot simply register for 24 credits, though, because without an approved overload your limit is 20 credits.",
+     "citations": [
+      {
+       "source": "handbook:2.1",
+       "quote": "Students may not register for more than 20 credits in a semester without an overload approval.",
+       "verified": true,
+       "number": 3,
+       "span": [
+        69,
+        162
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "To take more than 20 credits, you need written approval from your faculty advisor before registration closes.",
+     "citations": [
+      {
+       "source": "handbook:2.2",
+       "quote": "An overload needs written approval from the faculty advisor before registration closes.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        113,
+        199
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Registration closes one week after the next semester starts.",
+     "citations": [
+      {
+       "source": "handbook:6.1",
+       "quote": "closes one week after the next semester starts",
+       "verified": true,
+       "number": 4,
+       "span": [
+        103,
+        149
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Your faculty advisor gives final approval on your registration, including any overload.",
+     "citations": [
+      {
+       "source": "handbook:10",
+       "quote": "The advisor approves overloads, discusses elective choices",
+       "verified": true,
+       "number": 5,
+       "span": [
+        50,
+        108
+       ]
+      },
+      {
+       "source": "handbook:10",
+       "quote": "final approval always rests with the faculty advisor.",
+       "verified": true,
+       "number": 5,
+       "span": [
+        252,
+        304
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "record:riya",
+     "kind": "record",
+     "label": "Student record: Riya Sharma",
+     "text": "Riya Sharma is in Year 3, Semester 1. Next term is Year 3, Semester 2. CGPA 8.71. Earned credits 48. On probation: no. Maximum load next term: 20 credits; may request an overload up to 24. Passed: CS 101 Programming in Python (O), MA 101 Engineering Mathematics I (A+), PH 101 Engineering Physics (A), EN 101 Technical Communication (A+), CS 102 Data Structures (O), MA 102 Engineering Mathematics II (A), EE 101 Basic Electrical Engineering (A), CS 201 Discrete Mathematics (A+), CS 220 Database Systems (O), CS 230 Computer Organization (A), CS 250 Design and Analysis of Algorithms (A+), CS 260 Operating Systems (A), CS 270 Computer Networks (B+), MA 201 Probability and Statistics (A). Failed and not yet repeated: none. In progress: CS 340 Machine Learning, CS 350 Compiler Design, CS 360 Software Engineering. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "handbook:2.2",
+     "kind": "handbook",
+     "label": "Handbook 2.2 Overload",
+     "text": "2.2 Overload. Students with a CGPA of 8.0 or higher may request an overload of up to 24 credits in one semester. An overload needs written approval from the faculty advisor before registration closes. Students below a CGPA of 8.0 cannot overload."
+    },
+    {
+     "id": "handbook:2.1",
+     "kind": "handbook",
+     "label": "Handbook 2.1 Normal load",
+     "text": "2.1 Normal load. A normal semester load is between 9 and 20 credits. Students may not register for more than 20 credits in a semester without an overload approval."
+    },
+    {
+     "id": "handbook:6.1",
+     "kind": "handbook",
+     "label": "Handbook 6.1 Timeline",
+     "text": "6.1 Timeline. Registration for the next semester opens four weeks before the current semester ends and closes one week after the next semester starts."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "considered": [
+    {
+     "id": "record:riya",
+     "kind": "record",
+     "label": "Student record: Riya Sharma",
+     "text": "Riya Sharma is in Year 3, Semester 1. Next term is Year 3, Semester 2. CGPA 8.71. Earned credits 48. On probation: no. Maximum load next term: 20 credits; may request an overload up to 24. Passed: CS 101 Programming in Python (O), MA 101 Engineering Mathematics I (A+), PH 101 Engineering Physics (A), EN 101 Technical Communication (A+), CS 102 Data Structures (O), MA 102 Engineering Mathematics II (A), EE 101 Basic Electrical Engineering (A), CS 201 Discrete Mathematics (A+), CS 220 Database Systems (O), CS 230 Computer Organization (A), CS 250 Design and Analysis of Algorithms (A+), CS 260 Operating Systems (A), CS 270 Computer Networks (B+), MA 201 Probability and Statistics (A). Failed and not yet repeated: none. In progress: CS 340 Machine Learning, CS 350 Compiler Design, CS 360 Software Engineering. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Riya Sharma next term",
+     "text": "The complete list of courses offered to Riya Sharma in Year 3, Semester 2. CS 370 Theory of Computation, 3 credits, core, slot A: eligible. CS 345 Deep Learning, 4 credits, elective (AI and Machine Learning), slot D: conditional. Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1] CS 375 Cloud Computing, 3 credits, elective (Systems), slot E: eligible. CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: conditional. Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1] CS 385 Computer Security, 3 credits, elective (Systems), slot F: eligible."
+    },
+    {
+     "id": "handbook:2.2",
+     "kind": "handbook",
+     "label": "Handbook 2.2 Overload",
+     "text": "2.2 Overload. Students with a CGPA of 8.0 or higher may request an overload of up to 24 credits in one semester. An overload needs written approval from the faculty advisor before registration closes. Students below a CGPA of 8.0 cannot overload."
+    },
+    {
+     "id": "handbook:2.1",
+     "kind": "handbook",
+     "label": "Handbook 2.1 Normal load",
+     "text": "2.1 Normal load. A normal semester load is between 9 and 20 credits. Students may not register for more than 20 credits in a semester without an overload approval."
+    },
+    {
+     "id": "handbook:6.1",
+     "kind": "handbook",
+     "label": "Handbook 6.1 Timeline",
+     "text": "6.1 Timeline. Registration for the next semester opens four weeks before the current semester ends and closes one week after the next semester starts."
+    },
+    {
+     "id": "handbook:5.1",
+     "kind": "handbook",
+     "label": "Handbook 5.1 Elective requirement",
+     "text": "5.1 Elective requirement. Every student must pass at least four elective courses totaling at least 13 credits. Electives are offered in Year 3 Semester 2 and in Year 4."
+    },
+    {
+     "id": "handbook:3.3",
+     "kind": "handbook",
+     "label": "Handbook 3.3 Failing and repeating a course",
+     "text": "3.3 Failing and repeating a course. A failed core course must be repeated the next time it is offered, which is the same semester of the following year. When a failed course is passed on a later attempt, the new grade replaces the F in the CGPA. A course that was passed cannot be repeated to improve the grade."
+    },
+    {
+     "id": "handbook:6.2",
+     "kind": "handbook",
+     "label": "Handbook 6.2 Timetable clashes",
+     "text": "6.2 Timetable clashes. Each course meets in one timetable slot. A student cannot register for two courses that meet in the same slot in the same semester. When two wanted electives clash, the student must choose one; the other may be offered again the next year."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 10.0
+  },
+  "riya|Which AI electives can I take next semester?": {
+   "question": "Which AI electives can I take next semester?",
+   "student": "riya",
+   "answerable": true,
+   "statements": [
+    {
+     "text": "Riya, two AI and Machine Learning electives are offered to you next term (Year 3, Semester 2): CS 345 Deep Learning and CS 380 Natural Language Processing.",
+     "citations": [
+      {
+       "source": "check:options",
+       "quote": "CS 345 Deep Learning, 4 credits, elective (AI and Machine Learning), slot D: conditional.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        140,
+        228
+       ]
+      },
+      {
+       "source": "check:options",
+       "quote": "CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: conditional.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        399,
+        515
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "You can't take either one yet. Both need CS 340 Machine Learning, which you are taking now, and it counts only once you pass it.",
+     "citations": [
+      {
+       "source": "check:CS 345",
+       "quote": "Needs CS 340 Machine Learning, which is in progress; it counts only once passed.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        61,
+        140
+       ]
+      },
+      {
+       "source": "record:riya",
+       "quote": "In progress: CS 340 Machine Learning, CS 350 Compiler Design, CS 360 Software Engineering.",
+       "verified": true,
+       "number": 3,
+       "span": [
+        726,
+        815
+       ]
+      },
+      {
+       "source": "handbook:4.1",
+       "quote": "Courses in progress do not count as passed.",
+       "verified": true,
+       "number": 4,
+       "span": [
+        147,
+        189
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "CS 345 and CS 380 are both in timetable slot D.",
+     "citations": [
+      {
+       "source": "check:options",
+       "quote": "CS 345 Deep Learning, 4 credits, elective (AI and Machine Learning), slot D",
+       "verified": true,
+       "number": 1,
+       "span": [
+        140,
+        215
+       ]
+      },
+      {
+       "source": "check:options",
+       "quote": "CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D",
+       "verified": true,
+       "number": 1,
+       "span": [
+        399,
+        502
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "CS 380 also counts toward the Data Science track, because an elective can count toward every track it belongs to.",
+     "citations": [
+      {
+       "source": "handbook:5.2",
+       "quote": "each elective counts once toward the elective requirement but may count toward every track it belongs to.",
+       "verified": true,
+       "number": 5,
+       "span": [
+        235,
+        339
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "You can't take CS 430 Computer Vision or CS 420 Information Retrieval next term, because both are offered only in Semester 1. CS 430 also needs CS 345 Deep Learning, which you haven't taken.",
+     "citations": [
+      {
+       "source": "check:CS 430",
+       "quote": "CS 430 is only offered in Semester 1. [handbook:1] Needs CS 345 Deep Learning (not taken yet).",
+       "verified": true,
+       "number": 6,
+       "span": [
+        63,
+        155
+       ]
+      },
+      {
+       "source": "check:CS 420",
+       "quote": "CS 420 is only offered in Semester 1.",
+       "verified": true,
+       "number": 7,
+       "span": [
+        69,
+        105
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "CS 450 Reinforcement Learning is a Year 4, Semester 2 course. It also needs CS 340 Machine Learning, which you are still taking.",
+     "citations": [
+      {
+       "source": "course:CS 450",
+       "quote": "Offered in Year 4, Semester 2, timetable slot A.",
+       "verified": true,
+       "number": 8,
+       "span": [
+        102,
+        149
+       ]
+      },
+      {
+       "source": "check:CS 450",
+       "quote": "Needs CS 340 Machine Learning, which is in progress; it counts only once passed.",
+       "verified": true,
+       "number": 9,
+       "span": [
+        70,
+        149
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Your faculty advisor gives final approval on what you register for.",
+     "citations": [
+      {
+       "source": "handbook:10",
+       "quote": "final approval always rests with the faculty advisor.",
+       "verified": true,
+       "number": 10,
+       "span": [
+        252,
+        304
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Riya Sharma next term",
+     "text": "The complete list of courses offered to Riya Sharma in Year 3, Semester 2. CS 370 Theory of Computation, 3 credits, core, slot A: eligible. CS 345 Deep Learning, 4 credits, elective (AI and Machine Learning), slot D: conditional. Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1] CS 375 Cloud Computing, 3 credits, elective (Systems), slot E: eligible. CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: conditional. Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1] CS 385 Computer Security, 3 credits, elective (Systems), slot F: eligible."
+    },
+    {
+     "id": "check:CS 345",
+     "kind": "check",
+     "label": "Rule check: CS 345 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 345 Deep Learning: Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "record:riya",
+     "kind": "record",
+     "label": "Student record: Riya Sharma",
+     "text": "Riya Sharma is in Year 3, Semester 1. Next term is Year 3, Semester 2. CGPA 8.71. Earned credits 48. On probation: no. Maximum load next term: 20 credits; may request an overload up to 24. Passed: CS 101 Programming in Python (O), MA 101 Engineering Mathematics I (A+), PH 101 Engineering Physics (A), EN 101 Technical Communication (A+), CS 102 Data Structures (O), MA 102 Engineering Mathematics II (A), EE 101 Basic Electrical Engineering (A), CS 201 Discrete Mathematics (A+), CS 220 Database Systems (O), CS 230 Computer Organization (A), CS 250 Design and Analysis of Algorithms (A+), CS 260 Operating Systems (A), CS 270 Computer Networks (B+), MA 201 Probability and Statistics (A). Failed and not yet repeated: none. In progress: CS 340 Machine Learning, CS 350 Compiler Design, CS 360 Software Engineering. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:5.2",
+     "kind": "handbook",
+     "label": "Handbook 5.2 Specialization tracks",
+     "text": "5.2 Specialization tracks. Passing at least three electives from the same track earns a specialization noted on the transcript. The tracks are AI and Machine Learning, Data Science, and Systems. Some electives count toward two tracks; each elective counts once toward the elective requirement but may count toward every track it belongs to."
+    },
+    {
+     "id": "check:CS 430",
+     "kind": "check",
+     "label": "Rule check: CS 430 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 430 Computer Vision: CS 430 is only offered in Semester 1. [handbook:1] Needs CS 345 Deep Learning (not taken yet). [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 420",
+     "kind": "check",
+     "label": "Rule check: CS 420 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 420 Information Retrieval: CS 420 is only offered in Semester 1. [handbook:1]"
+    },
+    {
+     "id": "course:CS 450",
+     "kind": "course",
+     "label": "CS 450 Reinforcement Learning",
+     "text": "CS 450 Reinforcement Learning. Also called RL. 3 credits, elective (tracks: AI and Machine Learning). Offered in Year 4, Semester 2, timetable slot A. Prerequisites: CS 340 Machine Learning, MA 201 Probability and Statistics. Topics: Markov decision processes, dynamic programming, Q-learning, policy gradients. Learning by trial and reward, from Markov decision processes to policy gradient methods."
+    },
+    {
+     "id": "check:CS 450",
+     "kind": "check",
+     "label": "Rule check: CS 450 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 450 Reinforcement Learning: Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "considered": [
+    {
+     "id": "record:riya",
+     "kind": "record",
+     "label": "Student record: Riya Sharma",
+     "text": "Riya Sharma is in Year 3, Semester 1. Next term is Year 3, Semester 2. CGPA 8.71. Earned credits 48. On probation: no. Maximum load next term: 20 credits; may request an overload up to 24. Passed: CS 101 Programming in Python (O), MA 101 Engineering Mathematics I (A+), PH 101 Engineering Physics (A), EN 101 Technical Communication (A+), CS 102 Data Structures (O), MA 102 Engineering Mathematics II (A), EE 101 Basic Electrical Engineering (A), CS 201 Discrete Mathematics (A+), CS 220 Database Systems (O), CS 230 Computer Organization (A), CS 250 Design and Analysis of Algorithms (A+), CS 260 Operating Systems (A), CS 270 Computer Networks (B+), MA 201 Probability and Statistics (A). Failed and not yet repeated: none. In progress: CS 340 Machine Learning, CS 350 Compiler Design, CS 360 Software Engineering. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Riya Sharma next term",
+     "text": "The complete list of courses offered to Riya Sharma in Year 3, Semester 2. CS 370 Theory of Computation, 3 credits, core, slot A: eligible. CS 345 Deep Learning, 4 credits, elective (AI and Machine Learning), slot D: conditional. Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1] CS 375 Cloud Computing, 3 credits, elective (Systems), slot E: eligible. CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: conditional. Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1] CS 385 Computer Security, 3 credits, elective (Systems), slot F: eligible."
+    },
+    {
+     "id": "check:CS 345",
+     "kind": "check",
+     "label": "Rule check: CS 345 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 345 Deep Learning: Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 450",
+     "kind": "check",
+     "label": "Rule check: CS 450 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 450 Reinforcement Learning: Needs CS 340 Machine Learning, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 430",
+     "kind": "check",
+     "label": "Rule check: CS 430 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 430 Computer Vision: CS 430 is only offered in Semester 1. [handbook:1] Needs CS 345 Deep Learning (not taken yet). [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 420",
+     "kind": "check",
+     "label": "Rule check: CS 420 for Riya Sharma",
+     "text": "For Riya Sharma in Year 3, Semester 2, CS 420 Information Retrieval: CS 420 is only offered in Semester 1. [handbook:1]"
+    },
+    {
+     "id": "handbook:5.2",
+     "kind": "handbook",
+     "label": "Handbook 5.2 Specialization tracks",
+     "text": "5.2 Specialization tracks. Passing at least three electives from the same track earns a specialization noted on the transcript. The tracks are AI and Machine Learning, Data Science, and Systems. Some electives count toward two tracks; each elective counts once toward the elective requirement but may count toward every track it belongs to."
+    },
+    {
+     "id": "course:CS 345",
+     "kind": "course",
+     "label": "CS 345 Deep Learning",
+     "text": "CS 345 Deep Learning. Also called DL. 4 credits, elective (tracks: AI and Machine Learning). Offered in Year 3, Semester 2, timetable slot D. Prerequisites: CS 340 Machine Learning. Topics: neural networks, backpropagation, convolutional networks, sequence models, transformers. Neural networks from backpropagation to convolutional networks and transformers, trained in PyTorch."
+    },
+    {
+     "id": "course:CS 450",
+     "kind": "course",
+     "label": "CS 450 Reinforcement Learning",
+     "text": "CS 450 Reinforcement Learning. Also called RL. 3 credits, elective (tracks: AI and Machine Learning). Offered in Year 4, Semester 2, timetable slot A. Prerequisites: CS 340 Machine Learning, MA 201 Probability and Statistics. Topics: Markov decision processes, dynamic programming, Q-learning, policy gradients. Learning by trial and reward, from Markov decision processes to policy gradient methods."
+    },
+    {
+     "id": "course:CS 430",
+     "kind": "course",
+     "label": "CS 430 Computer Vision",
+     "text": "CS 430 Computer Vision. Also called CV. 4 credits, elective (tracks: AI and Machine Learning). Offered in Year 4, Semester 1, timetable slot C. Prerequisites: CS 345 Deep Learning. Topics: image formation, feature detection, convolutional networks, object detection, segmentation. Teaching computers to understand images, from classic features to deep object detection."
+    },
+    {
+     "id": "handbook:5.1",
+     "kind": "handbook",
+     "label": "Handbook 5.1 Elective requirement",
+     "text": "5.1 Elective requirement. Every student must pass at least four elective courses totaling at least 13 credits. Electives are offered in Year 3 Semester 2 and in Year 4."
+    },
+    {
+     "id": "course:CS 420",
+     "kind": "course",
+     "label": "CS 420 Information Retrieval",
+     "text": "CS 420 Information Retrieval. Also called IR. 3 credits, elective (tracks: Data Science, AI and Machine Learning). Offered in Year 4, Semester 1, timetable slot B. Prerequisites: CS 220 Database Systems, MA 201 Probability and Statistics. Topics: indexing, ranking, BM25, vector search, evaluation of search. How search engines index and rank documents, from BM25 to vector search, and how to measure search quality."
+    },
+    {
+     "id": "handbook:1",
+     "kind": "handbook",
+     "label": "Handbook 1 Program overview",
+     "text": "1 Program overview. The B.Tech in Computer Science and Engineering runs for four years, each split into two semesters. Years 1 and 2 are all core courses. From Year 3, students add electives and may earn a specialization by focusing their electives on one track. Every course in the catalog belongs to one year and one semester and is offered only in that semester."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 12.8
+  },
+  "kabir|Can I take Operating Systems next semester?": {
+   "question": "Can I take Operating Systems next semester?",
+   "student": "kabir",
+   "answerable": true,
+   "statements": [
+    {
+     "text": "No, you can't take CS 260 Operating Systems next semester, because you will be in Year 3, Semester 1 and CS 260 is only offered in Semester 2.",
+     "citations": [
+      {
+       "source": "check:CS 260",
+       "quote": "For Kabir Nair in Year 3, Semester 1, CS 260 Operating Systems: CS 260 is only offered in Semester 2.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        0,
+        100
+       ]
+      },
+      {
+       "source": "record:kabir",
+       "quote": "Next term is Year 3, Semester 1.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        37,
+        68
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "In the catalog, CS 260 is a 4-credit core course in Year 2, Semester 2, and every course is offered only in its listed semester.",
+     "citations": [
+      {
+       "source": "course:CS 260",
+       "quote": "4 credits, core. Offered in Year 2, Semester 2, timetable slot B.",
+       "verified": true,
+       "number": 3,
+       "span": [
+        42,
+        106
+       ]
+      },
+      {
+       "source": "handbook:1",
+       "quote": "Every course in the catalog belongs to one year and one semester and is offered only in that semester.",
+       "verified": true,
+       "number": 4,
+       "span": [
+        263,
+        364
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "You have already passed both CS 260 prerequisites, CS 102 Data Structures and CS 230 Computer Organization, so the only thing stopping you next semester is that CS 260 isn't offered then.",
+     "citations": [
+      {
+       "source": "course:CS 260",
+       "quote": "Prerequisites: CS 102 Data Structures, CS 230 Computer Organization.",
+       "verified": true,
+       "number": 3,
+       "span": [
+        108,
+        175
+       ]
+      },
+      {
+       "source": "record:kabir",
+       "quote": "CS 102 Data Structures (B), EE 101 Basic Electrical Engineering (B+), CS 201 Discrete Mathematics (C), CS 220 Database Systems (B+), CS 230 Computer Organization (B)",
+       "verified": true,
+       "number": 2,
+       "span": [
+        303,
+        467
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Until you pass CS 260, you can't take the electives that require it, including CS 410 Distributed Systems, CS 440 Big Data Systems and CS 375 Cloud Computing.",
+     "citations": [
+      {
+       "source": "check:CS 410",
+       "quote": "Needs CS 260 Operating Systems (not taken yet).",
+       "verified": true,
+       "number": 5,
+       "span": [
+        66,
+        111
+       ]
+      },
+      {
+       "source": "check:CS 440",
+       "quote": "For Kabir Nair in Year 3, Semester 1, CS 440 Big Data Systems: Needs CS 260 Operating Systems (not taken yet).",
+       "verified": true,
+       "number": 6,
+       "span": [
+        0,
+        108
+       ]
+      },
+      {
+       "source": "check:CS 375",
+       "quote": "Needs CS 260 Operating Systems (not taken yet).",
+       "verified": true,
+       "number": 7,
+       "span": [
+        113,
+        158
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Your faculty advisor gives final approval on what you register for.",
+     "citations": [
+      {
+       "source": "handbook:10",
+       "quote": "final approval always rests with the faculty advisor.",
+       "verified": true,
+       "number": 8,
+       "span": [
+        252,
+        304
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "check:CS 260",
+     "kind": "check",
+     "label": "Rule check: CS 260 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, CS 260 Operating Systems: CS 260 is only offered in Semester 2. [handbook:1]"
+    },
+    {
+     "id": "record:kabir",
+     "kind": "record",
+     "label": "Student record: Kabir Nair",
+     "text": "Kabir Nair is in Year 2, Semester 2. Next term is Year 3, Semester 1. CGPA 5.53. Earned credits 30. On probation: no. Maximum load next term: 20 credits. Passed: CS 101 Programming in Python (B+), MA 101 Engineering Mathematics I (C), PH 101 Engineering Physics (B), EN 101 Technical Communication (A), CS 102 Data Structures (B), EE 101 Basic Electrical Engineering (B+), CS 201 Discrete Mathematics (C), CS 220 Database Systems (B+), CS 230 Computer Organization (B). Failed and not yet repeated: MA 102 Engineering Mathematics II. In progress: CS 250 Design and Analysis of Algorithms, CS 270 Computer Networks, MA 102 Engineering Mathematics II. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "course:CS 260",
+     "kind": "course",
+     "label": "CS 260 Operating Systems",
+     "text": "CS 260 Operating Systems. Also called OS. 4 credits, core. Offered in Year 2, Semester 2, timetable slot B. Prerequisites: CS 102 Data Structures, CS 230 Computer Organization. Topics: processes and threads, scheduling, synchronization, memory management, file systems. How operating systems share a machine between programs, with hands-on work on threads and memory."
+    },
+    {
+     "id": "handbook:1",
+     "kind": "handbook",
+     "label": "Handbook 1 Program overview",
+     "text": "1 Program overview. The B.Tech in Computer Science and Engineering runs for four years, each split into two semesters. Years 1 and 2 are all core courses. From Year 3, students add electives and may earn a specialization by focusing their electives on one track. Every course in the catalog belongs to one year and one semester and is offered only in that semester."
+    },
+    {
+     "id": "check:CS 410",
+     "kind": "check",
+     "label": "Rule check: CS 410 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, CS 410 Distributed Systems: Needs CS 260 Operating Systems (not taken yet). [handbook:4.1] Needs CS 270 Computer Networks, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 440",
+     "kind": "check",
+     "label": "Rule check: CS 440 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, CS 440 Big Data Systems: Needs CS 260 Operating Systems (not taken yet). [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 375",
+     "kind": "check",
+     "label": "Rule check: CS 375 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, CS 375 Cloud Computing: CS 375 is only offered in Semester 2. [handbook:1] Needs CS 260 Operating Systems (not taken yet). [handbook:4.1] Needs CS 270 Computer Networks, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "considered": [
+    {
+     "id": "record:kabir",
+     "kind": "record",
+     "label": "Student record: Kabir Nair",
+     "text": "Kabir Nair is in Year 2, Semester 2. Next term is Year 3, Semester 1. CGPA 5.53. Earned credits 30. On probation: no. Maximum load next term: 20 credits. Passed: CS 101 Programming in Python (B+), MA 101 Engineering Mathematics I (C), PH 101 Engineering Physics (B), EN 101 Technical Communication (A), CS 102 Data Structures (B), EE 101 Basic Electrical Engineering (B+), CS 201 Discrete Mathematics (C), CS 220 Database Systems (B+), CS 230 Computer Organization (B). Failed and not yet repeated: MA 102 Engineering Mathematics II. In progress: CS 250 Design and Analysis of Algorithms, CS 270 Computer Networks, MA 102 Engineering Mathematics II. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Kabir Nair next term",
+     "text": "The complete list of courses offered to Kabir Nair in Year 3, Semester 1. CS 340 Machine Learning, 4 credits, core, slot A: blocked. Needs CS 250 Design and Analysis of Algorithms, which is in progress; it counts only once passed. [handbook:4.1] Needs MA 201 Probability and Statistics (not taken yet). [handbook:4.1] CS 350 Compiler Design, 3 credits, core, slot B: conditional. Needs CS 250 Design and Analysis of Algorithms, which is in progress; it counts only once passed. [handbook:4.1] CS 360 Software Engineering, 3 credits, core, slot C: eligible."
+    },
+    {
+     "id": "check:CS 260",
+     "kind": "check",
+     "label": "Rule check: CS 260 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, CS 260 Operating Systems: CS 260 is only offered in Semester 2. [handbook:1]"
+    },
+    {
+     "id": "check:CS 410",
+     "kind": "check",
+     "label": "Rule check: CS 410 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, CS 410 Distributed Systems: Needs CS 260 Operating Systems (not taken yet). [handbook:4.1] Needs CS 270 Computer Networks, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 440",
+     "kind": "check",
+     "label": "Rule check: CS 440 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, CS 440 Big Data Systems: Needs CS 260 Operating Systems (not taken yet). [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 375",
+     "kind": "check",
+     "label": "Rule check: CS 375 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, CS 375 Cloud Computing: CS 375 is only offered in Semester 2. [handbook:1] Needs CS 260 Operating Systems (not taken yet). [handbook:4.1] Needs CS 270 Computer Networks, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 230",
+     "kind": "check",
+     "label": "Rule check: CS 230 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, CS 230 Computer Organization: CS 230 is already passed and cannot be repeated to improve the grade. [handbook:3.3]"
+    },
+    {
+     "id": "check:CS 102",
+     "kind": "check",
+     "label": "Rule check: CS 102 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, CS 102 Data Structures: CS 102 is already passed and cannot be repeated to improve the grade. [handbook:3.3] CS 102 is only offered in Semester 2. [handbook:1]"
+    },
+    {
+     "id": "course:CS 260",
+     "kind": "course",
+     "label": "CS 260 Operating Systems",
+     "text": "CS 260 Operating Systems. Also called OS. 4 credits, core. Offered in Year 2, Semester 2, timetable slot B. Prerequisites: CS 102 Data Structures, CS 230 Computer Organization. Topics: processes and threads, scheduling, synchronization, memory management, file systems. How operating systems share a machine between programs, with hands-on work on threads and memory."
+    },
+    {
+     "id": "course:CS 410",
+     "kind": "course",
+     "label": "CS 410 Distributed Systems",
+     "text": "CS 410 Distributed Systems. 3 credits, elective (tracks: Systems). Offered in Year 4, Semester 1, timetable slot A. Prerequisites: CS 260 Operating Systems, CS 270 Computer Networks. Topics: replication, consensus, consistency models, fault tolerance. Building systems that keep working across many machines and partial failures."
+    },
+    {
+     "id": "handbook:6.1",
+     "kind": "handbook",
+     "label": "Handbook 6.1 Timeline",
+     "text": "6.1 Timeline. Registration for the next semester opens four weeks before the current semester ends and closes one week after the next semester starts."
+    },
+    {
+     "id": "course:CS 440",
+     "kind": "course",
+     "label": "CS 440 Big Data Systems",
+     "text": "CS 440 Big Data Systems. 3 credits, elective (tracks: Data Science, Systems). Offered in Year 4, Semester 1, timetable slot D. Prerequisites: CS 220 Database Systems, CS 260 Operating Systems. Topics: distributed storage, batch processing, stream processing, data warehouses. Storing and processing data too large for one machine, with batch and streaming pipelines."
+    },
+    {
+     "id": "course:CS 375",
+     "kind": "course",
+     "label": "CS 375 Cloud Computing",
+     "text": "CS 375 Cloud Computing. 3 credits, elective (tracks: Systems). Offered in Year 3, Semester 2, timetable slot E. Prerequisites: CS 260 Operating Systems, CS 270 Computer Networks. Topics: virtualization, containers, cloud services, serverless, cost and scaling. Running software in the cloud with containers, managed services, and serverless functions."
+    },
+    {
+     "id": "course:CS 230",
+     "kind": "course",
+     "label": "CS 230 Computer Organization",
+     "text": "CS 230 Computer Organization. Also called COA. 3 credits, core. Offered in Year 2, Semester 1, timetable slot C. Prerequisites: EE 101 Basic Electrical Engineering. Topics: number systems, CPU datapath, assembly, memory hierarchy, caches. How a computer executes programs, from instructions and the datapath to caches and memory."
+    },
+    {
+     "id": "course:CS 102",
+     "kind": "course",
+     "label": "CS 102 Data Structures",
+     "text": "CS 102 Data Structures. Also called DSA. 4 credits, core. Offered in Year 1, Semester 2, timetable slot A. Prerequisites: CS 101 Programming in Python. Topics: arrays, linked lists, stacks and queues, trees, hashing, graphs, complexity. Core data structures, their costs, and how to choose between them, implemented in Python."
+    },
+    {
+     "id": "handbook:1",
+     "kind": "handbook",
+     "label": "Handbook 1 Program overview",
+     "text": "1 Program overview. The B.Tech in Computer Science and Engineering runs for four years, each split into two semesters. Years 1 and 2 are all core courses. From Year 3, students add electives and may earn a specialization by focusing their electives on one track. Every course in the catalog belongs to one year and one semester and is offered only in that semester."
+    },
+    {
+     "id": "handbook:3.3",
+     "kind": "handbook",
+     "label": "Handbook 3.3 Failing and repeating a course",
+     "text": "3.3 Failing and repeating a course. A failed core course must be repeated the next time it is offered, which is the same semester of the following year. When a failed course is passed on a later attempt, the new grade replaces the F in the CGPA. A course that was passed cannot be repeated to improve the grade."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 10.7
+  },
+  "kabir|What happens with my failed MA 102?": {
+   "question": "What happens with my failed MA 102?",
+   "student": "kabir",
+   "answerable": true,
+   "statements": [
+    {
+     "text": "Your record shows you failed MA 102 Engineering Mathematics II and are repeating it this semester.",
+     "citations": [
+      {
+       "source": "record:kabir",
+       "quote": "Failed and not yet repeated: MA 102 Engineering Mathematics II. In progress: CS 250 Design and Analysis of Algorithms, CS 270 Computer Networks, MA 102 Engineering Mathematics II.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        470,
+        648
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "That follows the handbook rule: a failed core course must be repeated the next time it is offered, and MA 102 is offered only in Semester 2.",
+     "citations": [
+      {
+       "source": "handbook:3.3",
+       "quote": "A failed core course must be repeated the next time it is offered, which is the same semester of the following year.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        36,
+        151
+       ]
+      },
+      {
+       "source": "check:MA 102",
+       "quote": "MA 102 is in progress this semester. [handbook:4.1] MA 102 is only offered in Semester 2.",
+       "verified": true,
+       "number": 3,
+       "span": [
+        73,
+        161
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Until you pass MA 102, the F stays in your CGPA, which is currently 5.53.",
+     "citations": [
+      {
+       "source": "handbook:3.2",
+       "quote": "including failed attempts until they are replaced by a pass",
+       "verified": true,
+       "number": 4,
+       "span": [
+        137,
+        196
+       ]
+      },
+      {
+       "source": "record:kabir",
+       "quote": "CGPA 5.53. Earned credits 30.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        70,
+        98
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "If you pass MA 102 on this attempt, the new grade will replace the F in your CGPA.",
+     "citations": [
+      {
+       "source": "handbook:3.3",
+       "quote": "When a failed course is passed on a later attempt, the new grade replaces the F in the CGPA.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        153,
+        244
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "MA 102 is a prerequisite for MA 201 Probability and Statistics, and a course in progress counts only once it is passed.",
+     "citations": [
+      {
+       "source": "check:MA 201",
+       "quote": "Needs MA 102 Engineering Mathematics II, which is in progress; it counts only once passed.",
+       "verified": true,
+       "number": 5,
+       "span": [
+        124,
+        213
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "MA 201 is offered only in Semester 2, so you cannot take it next term (Year 3, Semester 1).",
+     "citations": [
+      {
+       "source": "check:MA 201",
+       "quote": "MA 201 Probability and Statistics: MA 201 is only offered in Semester 2.",
+       "verified": true,
+       "number": 5,
+       "span": [
+        38,
+        109
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Because you have not passed MA 201, CS 340 Machine Learning is blocked for you next term.",
+     "citations": [
+      {
+       "source": "check:options",
+       "quote": "CS 340 Machine Learning, 4 credits, core, slot A: blocked.",
+       "verified": true,
+       "number": 6,
+       "span": [
+        74,
+        131
+       ]
+      },
+      {
+       "source": "check:options",
+       "quote": "Needs MA 201 Probability and Statistics (not taken yet).",
+       "verified": true,
+       "number": 6,
+       "span": [
+        246,
+        300
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "record:kabir",
+     "kind": "record",
+     "label": "Student record: Kabir Nair",
+     "text": "Kabir Nair is in Year 2, Semester 2. Next term is Year 3, Semester 1. CGPA 5.53. Earned credits 30. On probation: no. Maximum load next term: 20 credits. Passed: CS 101 Programming in Python (B+), MA 101 Engineering Mathematics I (C), PH 101 Engineering Physics (B), EN 101 Technical Communication (A), CS 102 Data Structures (B), EE 101 Basic Electrical Engineering (B+), CS 201 Discrete Mathematics (C), CS 220 Database Systems (B+), CS 230 Computer Organization (B). Failed and not yet repeated: MA 102 Engineering Mathematics II. In progress: CS 250 Design and Analysis of Algorithms, CS 270 Computer Networks, MA 102 Engineering Mathematics II. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "handbook:3.3",
+     "kind": "handbook",
+     "label": "Handbook 3.3 Failing and repeating a course",
+     "text": "3.3 Failing and repeating a course. A failed core course must be repeated the next time it is offered, which is the same semester of the following year. When a failed course is passed on a later attempt, the new grade replaces the F in the CGPA. A course that was passed cannot be repeated to improve the grade."
+    },
+    {
+     "id": "check:MA 102",
+     "kind": "check",
+     "label": "Rule check: MA 102 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, MA 102 Engineering Mathematics II: MA 102 is in progress this semester. [handbook:4.1] MA 102 is only offered in Semester 2. [handbook:1]"
+    },
+    {
+     "id": "handbook:3.2",
+     "kind": "handbook",
+     "label": "Handbook 3.2 CGPA",
+     "text": "3.2 CGPA. The cumulative grade point average (CGPA) is the credit-weighted average of grade points over all graded courses taken so far, including failed attempts until they are replaced by a pass."
+    },
+    {
+     "id": "check:MA 201",
+     "kind": "check",
+     "label": "Rule check: MA 201 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, MA 201 Probability and Statistics: MA 201 is only offered in Semester 2. [handbook:1] Needs MA 102 Engineering Mathematics II, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Kabir Nair next term",
+     "text": "The complete list of courses offered to Kabir Nair in Year 3, Semester 1. CS 340 Machine Learning, 4 credits, core, slot A: blocked. Needs CS 250 Design and Analysis of Algorithms, which is in progress; it counts only once passed. [handbook:4.1] Needs MA 201 Probability and Statistics (not taken yet). [handbook:4.1] CS 350 Compiler Design, 3 credits, core, slot B: conditional. Needs CS 250 Design and Analysis of Algorithms, which is in progress; it counts only once passed. [handbook:4.1] CS 360 Software Engineering, 3 credits, core, slot C: eligible."
+    }
+   ],
+   "considered": [
+    {
+     "id": "record:kabir",
+     "kind": "record",
+     "label": "Student record: Kabir Nair",
+     "text": "Kabir Nair is in Year 2, Semester 2. Next term is Year 3, Semester 1. CGPA 5.53. Earned credits 30. On probation: no. Maximum load next term: 20 credits. Passed: CS 101 Programming in Python (B+), MA 101 Engineering Mathematics I (C), PH 101 Engineering Physics (B), EN 101 Technical Communication (A), CS 102 Data Structures (B), EE 101 Basic Electrical Engineering (B+), CS 201 Discrete Mathematics (C), CS 220 Database Systems (B+), CS 230 Computer Organization (B). Failed and not yet repeated: MA 102 Engineering Mathematics II. In progress: CS 250 Design and Analysis of Algorithms, CS 270 Computer Networks, MA 102 Engineering Mathematics II. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Kabir Nair next term",
+     "text": "The complete list of courses offered to Kabir Nair in Year 3, Semester 1. CS 340 Machine Learning, 4 credits, core, slot A: blocked. Needs CS 250 Design and Analysis of Algorithms, which is in progress; it counts only once passed. [handbook:4.1] Needs MA 201 Probability and Statistics (not taken yet). [handbook:4.1] CS 350 Compiler Design, 3 credits, core, slot B: conditional. Needs CS 250 Design and Analysis of Algorithms, which is in progress; it counts only once passed. [handbook:4.1] CS 360 Software Engineering, 3 credits, core, slot C: eligible."
+    },
+    {
+     "id": "check:MA 102",
+     "kind": "check",
+     "label": "Rule check: MA 102 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, MA 102 Engineering Mathematics II: MA 102 is in progress this semester. [handbook:4.1] MA 102 is only offered in Semester 2. [handbook:1]"
+    },
+    {
+     "id": "check:MA 201",
+     "kind": "check",
+     "label": "Rule check: MA 201 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, MA 201 Probability and Statistics: MA 201 is only offered in Semester 2. [handbook:1] Needs MA 102 Engineering Mathematics II, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:MA 101",
+     "kind": "check",
+     "label": "Rule check: MA 101 for Kabir Nair",
+     "text": "For Kabir Nair in Year 3, Semester 1, MA 101 Engineering Mathematics I: MA 101 is already passed and cannot be repeated to improve the grade. [handbook:3.3]"
+    },
+    {
+     "id": "course:MA 102",
+     "kind": "course",
+     "label": "MA 102 Engineering Mathematics II",
+     "text": "MA 102 Engineering Mathematics II. 4 credits, core. Offered in Year 1, Semester 2, timetable slot B. Prerequisites: MA 101 Engineering Mathematics I. Topics: multivariable calculus, differential equations, linear algebra, eigenvalues. Multivariable calculus, differential equations, and the linear algebra used later in machine learning."
+    },
+    {
+     "id": "handbook:3.3",
+     "kind": "handbook",
+     "label": "Handbook 3.3 Failing and repeating a course",
+     "text": "3.3 Failing and repeating a course. A failed core course must be repeated the next time it is offered, which is the same semester of the following year. When a failed course is passed on a later attempt, the new grade replaces the F in the CGPA. A course that was passed cannot be repeated to improve the grade."
+    },
+    {
+     "id": "course:MA 201",
+     "kind": "course",
+     "label": "MA 201 Probability and Statistics",
+     "text": "MA 201 Probability and Statistics. 3 credits, core. Offered in Year 2, Semester 2, timetable slot D. Prerequisites: MA 102 Engineering Mathematics II. Topics: probability, random variables, distributions, estimation, hypothesis testing, regression. Probability and statistics for computing, the mathematical base for machine learning and data courses."
+    },
+    {
+     "id": "handbook:3.2",
+     "kind": "handbook",
+     "label": "Handbook 3.2 CGPA",
+     "text": "3.2 CGPA. The cumulative grade point average (CGPA) is the credit-weighted average of grade points over all graded courses taken so far, including failed attempts until they are replaced by a pass."
+    },
+    {
+     "id": "course:MA 101",
+     "kind": "course",
+     "label": "MA 101 Engineering Mathematics I",
+     "text": "MA 101 Engineering Mathematics I. 4 credits, core. Offered in Year 1, Semester 1, timetable slot B. Prerequisites: none. Topics: limits, differentiation, integration, sequences and series, matrices. Single-variable calculus and an introduction to matrices for engineering students."
+    },
+    {
+     "id": "handbook:3.1",
+     "kind": "handbook",
+     "label": "Handbook 3.1 Grades and grade points",
+     "text": "3.1 Grades and grade points. Courses are graded O (10), A+ (9), A (8), B+ (7), B (6), C (5), P (4), and F (0). A grade of P or better is a pass. F is a fail and earns no credits."
+    },
+    {
+     "id": "handbook:1",
+     "kind": "handbook",
+     "label": "Handbook 1 Program overview",
+     "text": "1 Program overview. The B.Tech in Computer Science and Engineering runs for four years, each split into two semesters. Years 1 and 2 are all core courses. From Year 3, students add electives and may earn a specialization by focusing their electives on one track. Every course in the catalog belongs to one year and one semester and is offered only in that semester."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 9.5
+  },
+  "meera|How close am I to the AI and Machine Learning specialization?": {
+   "question": "How close am I to the AI and Machine Learning specialization?",
+   "student": "meera",
+   "answerable": true,
+   "statements": [
+    {
+     "text": "To earn a specialization, you must pass at least three electives from the same track, and AI and Machine Learning is one of the tracks.",
+     "citations": [
+      {
+       "source": "handbook:5.2",
+       "quote": "Passing at least three electives from the same track earns a specialization noted on the transcript.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        27,
+        126
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "So far you have passed one AI and Machine Learning elective, CS 345. You are taking two more this term, CS 420 and CS 430.",
+     "citations": [
+      {
+       "source": "record:meera",
+       "quote": "AI and Machine Learning needs 3 electives, passed CS 345, in progress CS 420, CS 430",
+       "verified": true,
+       "number": 2,
+       "span": [
+        1093,
+        1177
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Courses in progress don't count until you pass them. If you pass both CS 420 and CS 430 this term, you will have the three electives the track requires.",
+     "citations": [
+      {
+       "source": "handbook:4.1",
+       "quote": "Courses in progress do not count as passed.",
+       "verified": true,
+       "number": 3,
+       "span": [
+        147,
+        189
+       ]
+      },
+      {
+       "source": "handbook:5.2",
+       "quote": "Passing at least three electives from the same track earns a specialization noted on the transcript.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        27,
+        126
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "If you need another AI and Machine Learning elective next term, you are eligible for three: CS 380 Natural Language Processing, CS 450 Reinforcement Learning and CS 460 Machine Learning Operations.",
+     "citations": [
+      {
+       "source": "check:options",
+       "quote": "CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: eligible.",
+       "verified": true,
+       "number": 4,
+       "span": [
+        240,
+        353
+       ]
+      },
+      {
+       "source": "check:options",
+       "quote": "CS 450 Reinforcement Learning, 3 credits, elective (AI and Machine Learning), slot A: eligible.",
+       "verified": true,
+       "number": 4,
+       "span": [
+        355,
+        449
+       ]
+      },
+      {
+       "source": "check:options",
+       "quote": "CS 460 Machine Learning Operations, 3 credits, elective (AI and Machine Learning, Data Science), slot B: eligible.",
+       "verified": true,
+       "number": 4,
+       "span": [
+        451,
+        564
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "If you decide to register for any of these electives, your faculty advisor gives final approval.",
+     "citations": [
+      {
+       "source": "handbook:10",
+       "quote": "final approval always rests with the faculty advisor.",
+       "verified": true,
+       "number": 5,
+       "span": [
+        252,
+        304
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "handbook:5.2",
+     "kind": "handbook",
+     "label": "Handbook 5.2 Specialization tracks",
+     "text": "5.2 Specialization tracks. Passing at least three electives from the same track earns a specialization noted on the transcript. The tracks are AI and Machine Learning, Data Science, and Systems. Some electives count toward two tracks; each elective counts once toward the elective requirement but may count toward every track it belongs to."
+    },
+    {
+     "id": "record:meera",
+     "kind": "record",
+     "label": "Student record: Meera Pillai",
+     "text": "Meera Pillai is in Year 4, Semester 1. Next term is Year 4, Semester 2. CGPA 8.06. Earned credits 71. On probation: no. Maximum load next term: 20 credits; may request an overload up to 24. Passed: CS 101 Programming in Python (A), MA 101 Engineering Mathematics I (A), PH 101 Engineering Physics (B+), EN 101 Technical Communication (O), CS 102 Data Structures (A+), MA 102 Engineering Mathematics II (B+), EE 101 Basic Electrical Engineering (A), CS 201 Discrete Mathematics (A), CS 220 Database Systems (A+), CS 230 Computer Organization (B+), CS 250 Design and Analysis of Algorithms (A), CS 260 Operating Systems (B+), CS 270 Computer Networks (A), MA 201 Probability and Statistics (A+), CS 340 Machine Learning (O), CS 350 Compiler Design (B+), CS 360 Software Engineering (A), CS 370 Theory of Computation (B+), CS 345 Deep Learning (A+), CS 385 Computer Security (A), CS 375 Cloud Computing (B+). Failed and not yet repeated: none. In progress: CS 491 Capstone Project I, CS 420 Information Retrieval, CS 430 Computer Vision. Electives passed: 3 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed CS 345, in progress CS 420, CS 430; Systems needs 3 electives, passed CS 375, CS 385, in progress none; Data Science needs 3 electives, passed none, in progress CS 420."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Meera Pillai next term",
+     "text": "The complete list of courses offered to Meera Pillai in Year 4, Semester 2. CS 492 Capstone Project II, 6 credits, core, slot E: conditional. Needs CS 491 Capstone Project I, which is in progress; it counts only once passed. [handbook:4.1] CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: eligible. CS 450 Reinforcement Learning, 3 credits, elective (AI and Machine Learning), slot A: eligible. CS 460 Machine Learning Operations, 3 credits, elective (AI and Machine Learning, Data Science), slot B: eligible. CS 499 Industry Internship, 6 credits, elective, slot F: eligible."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "considered": [
+    {
+     "id": "record:meera",
+     "kind": "record",
+     "label": "Student record: Meera Pillai",
+     "text": "Meera Pillai is in Year 4, Semester 1. Next term is Year 4, Semester 2. CGPA 8.06. Earned credits 71. On probation: no. Maximum load next term: 20 credits; may request an overload up to 24. Passed: CS 101 Programming in Python (A), MA 101 Engineering Mathematics I (A), PH 101 Engineering Physics (B+), EN 101 Technical Communication (O), CS 102 Data Structures (A+), MA 102 Engineering Mathematics II (B+), EE 101 Basic Electrical Engineering (A), CS 201 Discrete Mathematics (A), CS 220 Database Systems (A+), CS 230 Computer Organization (B+), CS 250 Design and Analysis of Algorithms (A), CS 260 Operating Systems (B+), CS 270 Computer Networks (A), MA 201 Probability and Statistics (A+), CS 340 Machine Learning (O), CS 350 Compiler Design (B+), CS 360 Software Engineering (A), CS 370 Theory of Computation (B+), CS 345 Deep Learning (A+), CS 385 Computer Security (A), CS 375 Cloud Computing (B+). Failed and not yet repeated: none. In progress: CS 491 Capstone Project I, CS 420 Information Retrieval, CS 430 Computer Vision. Electives passed: 3 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed CS 345, in progress CS 420, CS 430; Systems needs 3 electives, passed CS 375, CS 385, in progress none; Data Science needs 3 electives, passed none, in progress CS 420."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Meera Pillai next term",
+     "text": "The complete list of courses offered to Meera Pillai in Year 4, Semester 2. CS 492 Capstone Project II, 6 credits, core, slot E: conditional. Needs CS 491 Capstone Project I, which is in progress; it counts only once passed. [handbook:4.1] CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: eligible. CS 450 Reinforcement Learning, 3 credits, elective (AI and Machine Learning), slot A: eligible. CS 460 Machine Learning Operations, 3 credits, elective (AI and Machine Learning, Data Science), slot B: eligible. CS 499 Industry Internship, 6 credits, elective, slot F: eligible."
+    },
+    {
+     "id": "check:CS 340",
+     "kind": "check",
+     "label": "Rule check: CS 340 for Meera Pillai",
+     "text": "For Meera Pillai in Year 4, Semester 2, CS 340 Machine Learning: CS 340 is already passed and cannot be repeated to improve the grade. [handbook:3.3] CS 340 is only offered in Semester 1. [handbook:1]"
+    },
+    {
+     "id": "check:CS 345",
+     "kind": "check",
+     "label": "Rule check: CS 345 for Meera Pillai",
+     "text": "For Meera Pillai in Year 4, Semester 2, CS 345 Deep Learning: CS 345 is already passed and cannot be repeated to improve the grade. [handbook:3.3]"
+    },
+    {
+     "id": "check:CS 460",
+     "kind": "check",
+     "label": "Rule check: CS 460 for Meera Pillai",
+     "text": "Meera Pillai meets every requirement for CS 460 Machine Learning Operations in Year 4, Semester 2."
+    },
+    {
+     "id": "check:CS 450",
+     "kind": "check",
+     "label": "Rule check: CS 450 for Meera Pillai",
+     "text": "Meera Pillai meets every requirement for CS 450 Reinforcement Learning in Year 4, Semester 2."
+    },
+    {
+     "id": "check:CS 380",
+     "kind": "check",
+     "label": "Rule check: CS 380 for Meera Pillai",
+     "text": "Meera Pillai meets every requirement for CS 380 Natural Language Processing in Year 4, Semester 2."
+    },
+    {
+     "id": "check:CS 250",
+     "kind": "check",
+     "label": "Rule check: CS 250 for Meera Pillai",
+     "text": "For Meera Pillai in Year 4, Semester 2, CS 250 Design and Analysis of Algorithms: CS 250 is already passed and cannot be repeated to improve the grade. [handbook:3.3]"
+    },
+    {
+     "id": "check:MA 201",
+     "kind": "check",
+     "label": "Rule check: MA 201 for Meera Pillai",
+     "text": "For Meera Pillai in Year 4, Semester 2, MA 201 Probability and Statistics: MA 201 is already passed and cannot be repeated to improve the grade. [handbook:3.3]"
+    },
+    {
+     "id": "course:CS 340",
+     "kind": "course",
+     "label": "CS 340 Machine Learning",
+     "text": "CS 340 Machine Learning. Also called ML. 4 credits, core. Offered in Year 3, Semester 1, timetable slot A. Prerequisites: CS 250 Design and Analysis of Algorithms, MA 201 Probability and Statistics. Topics: supervised and unsupervised learning, regression, overfitting and regularization, evaluation metrics, decision trees, k-nearest neighbors. Foundations of machine learning, from linear models and evaluation to trees and nearest neighbors."
+    },
+    {
+     "id": "handbook:5.2",
+     "kind": "handbook",
+     "label": "Handbook 5.2 Specialization tracks",
+     "text": "5.2 Specialization tracks. Passing at least three electives from the same track earns a specialization noted on the transcript. The tracks are AI and Machine Learning, Data Science, and Systems. Some electives count toward two tracks; each elective counts once toward the elective requirement but may count toward every track it belongs to."
+    },
+    {
+     "id": "course:CS 345",
+     "kind": "course",
+     "label": "CS 345 Deep Learning",
+     "text": "CS 345 Deep Learning. Also called DL. 4 credits, elective (tracks: AI and Machine Learning). Offered in Year 3, Semester 2, timetable slot D. Prerequisites: CS 340 Machine Learning. Topics: neural networks, backpropagation, convolutional networks, sequence models, transformers. Neural networks from backpropagation to convolutional networks and transformers, trained in PyTorch."
+    },
+    {
+     "id": "course:CS 460",
+     "kind": "course",
+     "label": "CS 460 Machine Learning Operations",
+     "text": "CS 460 Machine Learning Operations. Also called MLOps. 3 credits, elective (tracks: AI and Machine Learning, Data Science). Offered in Year 4, Semester 2, timetable slot B. Prerequisites: CS 340 Machine Learning, CS 360 Software Engineering. Topics: experiment tracking, model deployment, monitoring, data drift, ML pipelines. Taking models to production: deployment, monitoring, and keeping them accurate as data changes."
+    },
+    {
+     "id": "course:CS 450",
+     "kind": "course",
+     "label": "CS 450 Reinforcement Learning",
+     "text": "CS 450 Reinforcement Learning. Also called RL. 3 credits, elective (tracks: AI and Machine Learning). Offered in Year 4, Semester 2, timetable slot A. Prerequisites: CS 340 Machine Learning, MA 201 Probability and Statistics. Topics: Markov decision processes, dynamic programming, Q-learning, policy gradients. Learning by trial and reward, from Markov decision processes to policy gradient methods."
+    },
+    {
+     "id": "course:CS 380",
+     "kind": "course",
+     "label": "CS 380 Natural Language Processing",
+     "text": "CS 380 Natural Language Processing. Also called NLP. 4 credits, elective (tracks: AI and Machine Learning, Data Science). Offered in Year 3, Semester 2, timetable slot D. Prerequisites: CS 340 Machine Learning. Topics: text processing, word embeddings, language models, retrieval-augmented generation, evaluation. Language technology from text processing and embeddings to large language models and retrieval-augmented generation."
+    },
+    {
+     "id": "course:CS 250",
+     "kind": "course",
+     "label": "CS 250 Design and Analysis of Algorithms",
+     "text": "CS 250 Design and Analysis of Algorithms. Also called DAA. 4 credits, core. Offered in Year 2, Semester 2, timetable slot A. Prerequisites: CS 102 Data Structures, CS 201 Discrete Mathematics. Topics: divide and conquer, greedy algorithms, dynamic programming, graph algorithms, NP-completeness. Designing algorithms and proving their correctness and running time."
+    },
+    {
+     "id": "course:MA 201",
+     "kind": "course",
+     "label": "MA 201 Probability and Statistics",
+     "text": "MA 201 Probability and Statistics. 3 credits, core. Offered in Year 2, Semester 2, timetable slot D. Prerequisites: MA 102 Engineering Mathematics II. Topics: probability, random variables, distributions, estimation, hypothesis testing, regression. Probability and statistics for computing, the mathematical base for machine learning and data courses."
+    },
+    {
+     "id": "handbook:1",
+     "kind": "handbook",
+     "label": "Handbook 1 Program overview",
+     "text": "1 Program overview. The B.Tech in Computer Science and Engineering runs for four years, each split into two semesters. Years 1 and 2 are all core courses. From Year 3, students add electives and may earn a specialization by focusing their electives on one track. Every course in the catalog belongs to one year and one semester and is offered only in that semester."
+    },
+    {
+     "id": "handbook:3.3",
+     "kind": "handbook",
+     "label": "Handbook 3.3 Failing and repeating a course",
+     "text": "3.3 Failing and repeating a course. A failed core course must be repeated the next time it is offered, which is the same semester of the following year. When a failed course is passed on a later attempt, the new grade replaces the F in the CGPA. A course that was passed cannot be repeated to improve the grade."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 9.3
+  },
+  "meera|Can I start Capstone Project II next semester?": {
+   "question": "Can I start Capstone Project II next semester?",
+   "student": "meera",
+   "answerable": true,
+   "statements": [
+    {
+     "text": "Yes, but only if you pass CS 491 Capstone Project I this semester. CS 492 Capstone Project II is offered to you next term only on that condition.",
+     "citations": [
+      {
+       "source": "check:CS 492",
+       "quote": "Needs CS 491 Capstone Project I, which is in progress; it counts only once passed.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        68,
+        149
+       ]
+      },
+      {
+       "source": "check:options",
+       "quote": "CS 492 Capstone Project II, 6 credits, core, slot E: conditional.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        76,
+        140
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Your record shows CS 491 Capstone Project I as in progress for you this semester, Year 4, Semester 1.",
+     "citations": [
+      {
+       "source": "record:meera",
+       "quote": "In progress: CS 491 Capstone Project I, CS 420 Information Retrieval, CS 430 Computer Vision.",
+       "verified": true,
+       "number": 3,
+       "span": [
+        941,
+        1033
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Capstone Project II requires a pass in Capstone Project I in the same academic year, and courses in progress do not count as passed.",
+     "citations": [
+      {
+       "source": "handbook:7",
+       "quote": "Capstone Project II (CS 492) needs a pass in Capstone Project I in the same academic year.",
+       "verified": true,
+       "number": 4,
+       "span": [
+        168,
+        257
+       ]
+      },
+      {
+       "source": "handbook:4.1",
+       "quote": "Courses in progress do not count as passed.",
+       "verified": true,
+       "number": 5,
+       "span": [
+        147,
+        189
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "You cannot get this prerequisite waived, because waivers are never granted for Capstone Project II.",
+     "citations": [
+      {
+       "source": "handbook:4.2",
+       "quote": "Waivers are rare and are never granted for Capstone Project II.",
+       "verified": true,
+       "number": 6,
+       "span": [
+        172,
+        234
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "CS 492 is a 6-credit core course offered in Year 4, Semester 2, in timetable slot E.",
+     "citations": [
+      {
+       "source": "course:CS 492",
+       "quote": "6 credits, core. Offered in Year 4, Semester 2, timetable slot E.",
+       "verified": true,
+       "number": 7,
+       "span": [
+        50,
+        114
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Your faculty advisor gives final approval on what you register for.",
+     "citations": [
+      {
+       "source": "handbook:10",
+       "quote": "final approval always rests with the faculty advisor.",
+       "verified": true,
+       "number": 8,
+       "span": [
+        252,
+        304
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "check:CS 492",
+     "kind": "check",
+     "label": "Rule check: CS 492 for Meera Pillai",
+     "text": "For Meera Pillai in Year 4, Semester 2, CS 492 Capstone Project II: Needs CS 491 Capstone Project I, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Meera Pillai next term",
+     "text": "The complete list of courses offered to Meera Pillai in Year 4, Semester 2. CS 492 Capstone Project II, 6 credits, core, slot E: conditional. Needs CS 491 Capstone Project I, which is in progress; it counts only once passed. [handbook:4.1] CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: eligible. CS 450 Reinforcement Learning, 3 credits, elective (AI and Machine Learning), slot A: eligible. CS 460 Machine Learning Operations, 3 credits, elective (AI and Machine Learning, Data Science), slot B: eligible. CS 499 Industry Internship, 6 credits, elective, slot F: eligible."
+    },
+    {
+     "id": "record:meera",
+     "kind": "record",
+     "label": "Student record: Meera Pillai",
+     "text": "Meera Pillai is in Year 4, Semester 1. Next term is Year 4, Semester 2. CGPA 8.06. Earned credits 71. On probation: no. Maximum load next term: 20 credits; may request an overload up to 24. Passed: CS 101 Programming in Python (A), MA 101 Engineering Mathematics I (A), PH 101 Engineering Physics (B+), EN 101 Technical Communication (O), CS 102 Data Structures (A+), MA 102 Engineering Mathematics II (B+), EE 101 Basic Electrical Engineering (A), CS 201 Discrete Mathematics (A), CS 220 Database Systems (A+), CS 230 Computer Organization (B+), CS 250 Design and Analysis of Algorithms (A), CS 260 Operating Systems (B+), CS 270 Computer Networks (A), MA 201 Probability and Statistics (A+), CS 340 Machine Learning (O), CS 350 Compiler Design (B+), CS 360 Software Engineering (A), CS 370 Theory of Computation (B+), CS 345 Deep Learning (A+), CS 385 Computer Security (A), CS 375 Cloud Computing (B+). Failed and not yet repeated: none. In progress: CS 491 Capstone Project I, CS 420 Information Retrieval, CS 430 Computer Vision. Electives passed: 3 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed CS 345, in progress CS 420, CS 430; Systems needs 3 electives, passed CS 375, CS 385, in progress none; Data Science needs 3 electives, passed none, in progress CS 420."
+    },
+    {
+     "id": "handbook:7",
+     "kind": "handbook",
+     "label": "Handbook 7 Capstone project",
+     "text": "7 Capstone project. The capstone is a year-long team project in Year 4. Capstone Project I (CS 491) needs Software Engineering (CS 360) and at least 70 earned credits. Capstone Project II (CS 492) needs a pass in Capstone Project I in the same academic year."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:4.2",
+     "kind": "handbook",
+     "label": "Handbook 4.2 Waivers",
+     "text": "4.2 Waivers. A prerequisite can be waived only by the instructor of the course together with the head of department, and only for students who show equivalent preparation. Waivers are rare and are never granted for Capstone Project II."
+    },
+    {
+     "id": "course:CS 492",
+     "kind": "course",
+     "label": "CS 492 Capstone Project II",
+     "text": "CS 492 Capstone Project II. Also called capstone. 6 credits, core. Offered in Year 4, Semester 2, timetable slot E. Prerequisites: CS 491 Capstone Project I. Topics: implementation, evaluation, deployment, final report. Second half of the capstone: finish, evaluate, and present the project with a final report."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "considered": [
+    {
+     "id": "record:meera",
+     "kind": "record",
+     "label": "Student record: Meera Pillai",
+     "text": "Meera Pillai is in Year 4, Semester 1. Next term is Year 4, Semester 2. CGPA 8.06. Earned credits 71. On probation: no. Maximum load next term: 20 credits; may request an overload up to 24. Passed: CS 101 Programming in Python (A), MA 101 Engineering Mathematics I (A), PH 101 Engineering Physics (B+), EN 101 Technical Communication (O), CS 102 Data Structures (A+), MA 102 Engineering Mathematics II (B+), EE 101 Basic Electrical Engineering (A), CS 201 Discrete Mathematics (A), CS 220 Database Systems (A+), CS 230 Computer Organization (B+), CS 250 Design and Analysis of Algorithms (A), CS 260 Operating Systems (B+), CS 270 Computer Networks (A), MA 201 Probability and Statistics (A+), CS 340 Machine Learning (O), CS 350 Compiler Design (B+), CS 360 Software Engineering (A), CS 370 Theory of Computation (B+), CS 345 Deep Learning (A+), CS 385 Computer Security (A), CS 375 Cloud Computing (B+). Failed and not yet repeated: none. In progress: CS 491 Capstone Project I, CS 420 Information Retrieval, CS 430 Computer Vision. Electives passed: 3 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed CS 345, in progress CS 420, CS 430; Systems needs 3 electives, passed CS 375, CS 385, in progress none; Data Science needs 3 electives, passed none, in progress CS 420."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Meera Pillai next term",
+     "text": "The complete list of courses offered to Meera Pillai in Year 4, Semester 2. CS 492 Capstone Project II, 6 credits, core, slot E: conditional. Needs CS 491 Capstone Project I, which is in progress; it counts only once passed. [handbook:4.1] CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: eligible. CS 450 Reinforcement Learning, 3 credits, elective (AI and Machine Learning), slot A: eligible. CS 460 Machine Learning Operations, 3 credits, elective (AI and Machine Learning, Data Science), slot B: eligible. CS 499 Industry Internship, 6 credits, elective, slot F: eligible."
+    },
+    {
+     "id": "check:CS 492",
+     "kind": "check",
+     "label": "Rule check: CS 492 for Meera Pillai",
+     "text": "For Meera Pillai in Year 4, Semester 2, CS 492 Capstone Project II: Needs CS 491 Capstone Project I, which is in progress; it counts only once passed. [handbook:4.1]"
+    },
+    {
+     "id": "check:CS 491",
+     "kind": "check",
+     "label": "Rule check: CS 491 for Meera Pillai",
+     "text": "For Meera Pillai in Year 4, Semester 2, CS 491 Capstone Project I: CS 491 is in progress this semester. [handbook:4.1] CS 491 is only offered in Semester 1. [handbook:1]"
+    },
+    {
+     "id": "check:CS 360",
+     "kind": "check",
+     "label": "Rule check: CS 360 for Meera Pillai",
+     "text": "For Meera Pillai in Year 4, Semester 2, CS 360 Software Engineering: CS 360 is already passed and cannot be repeated to improve the grade. [handbook:3.3] CS 360 is only offered in Semester 1. [handbook:1]"
+    },
+    {
+     "id": "course:CS 492",
+     "kind": "course",
+     "label": "CS 492 Capstone Project II",
+     "text": "CS 492 Capstone Project II. Also called capstone. 6 credits, core. Offered in Year 4, Semester 2, timetable slot E. Prerequisites: CS 491 Capstone Project I. Topics: implementation, evaluation, deployment, final report. Second half of the capstone: finish, evaluate, and present the project with a final report."
+    },
+    {
+     "id": "handbook:7",
+     "kind": "handbook",
+     "label": "Handbook 7 Capstone project",
+     "text": "7 Capstone project. The capstone is a year-long team project in Year 4. Capstone Project I (CS 491) needs Software Engineering (CS 360) and at least 70 earned credits. Capstone Project II (CS 492) needs a pass in Capstone Project I in the same academic year."
+    },
+    {
+     "id": "handbook:4.2",
+     "kind": "handbook",
+     "label": "Handbook 4.2 Waivers",
+     "text": "4.2 Waivers. A prerequisite can be waived only by the instructor of the course together with the head of department, and only for students who show equivalent preparation. Waivers are rare and are never granted for Capstone Project II."
+    },
+    {
+     "id": "course:CS 491",
+     "kind": "course",
+     "label": "CS 491 Capstone Project I",
+     "text": "CS 491 Capstone Project I. Also called capstone. 4 credits, core. Offered in Year 4, Semester 1, timetable slot E. Prerequisites: CS 360 Software Engineering. Also needs at least 70 earned credits. Topics: problem definition, research, design, prototyping. First half of the year-long team capstone: define a real problem, research it, and build a working prototype."
+    },
+    {
+     "id": "handbook:6.1",
+     "kind": "handbook",
+     "label": "Handbook 6.1 Timeline",
+     "text": "6.1 Timeline. Registration for the next semester opens four weeks before the current semester ends and closes one week after the next semester starts."
+    },
+    {
+     "id": "course:CS 360",
+     "kind": "course",
+     "label": "CS 360 Software Engineering",
+     "text": "CS 360 Software Engineering. 3 credits, core. Offered in Year 3, Semester 1, timetable slot C. Prerequisites: CS 220 Database Systems. Topics: requirements, design patterns, testing, version control, agile delivery. Building software in teams: requirements, design, testing, and delivery on a semester project."
+    },
+    {
+     "id": "handbook:1",
+     "kind": "handbook",
+     "label": "Handbook 1 Program overview",
+     "text": "1 Program overview. The B.Tech in Computer Science and Engineering runs for four years, each split into two semesters. Years 1 and 2 are all core courses. From Year 3, students add electives and may earn a specialization by focusing their electives on one track. Every course in the catalog belongs to one year and one semester and is offered only in that semester."
+    },
+    {
+     "id": "handbook:3.3",
+     "kind": "handbook",
+     "label": "Handbook 3.3 Failing and repeating a course",
+     "text": "3.3 Failing and repeating a course. A failed core course must be repeated the next time it is offered, which is the same semester of the following year. When a failed course is passed on a later attempt, the new grade replaces the F in the CGPA. A course that was passed cannot be repeated to improve the grade."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 7.2
+  },
+  "dev|How many credits can I take while I am on probation?": {
+   "question": "How many credits can I take while I am on probation?",
+   "student": "dev",
+   "answerable": true,
+   "statements": [
+    {
+     "text": "You are on probation, so you can take at most 16 credits next term (Year 3, Semester 2).",
+     "citations": [
+      {
+       "source": "record:dev",
+       "quote": "On probation: yes. Maximum load next term: 16 credits.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        97,
+        150
+       ]
+      },
+      {
+       "source": "handbook:9",
+       "quote": "A student on probation may register for at most 16 credits and must meet the faculty advisor before registering.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        116,
+        227
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "The 16-credit limit is lower than the usual maximum, because students not on probation can normally take up to 20 credits.",
+     "citations": [
+      {
+       "source": "handbook:2.1",
+       "quote": "A normal semester load is between 9 and 20 credits.",
+       "verified": true,
+       "number": 3,
+       "span": [
+        17,
+        67
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Before you register, you must meet your faculty advisor, who signs off on registration for students on probation and gives final approval.",
+     "citations": [
+      {
+       "source": "handbook:9",
+       "quote": "must meet the faculty advisor before registering",
+       "verified": true,
+       "number": 2,
+       "span": [
+        179,
+        227
+       ]
+      },
+      {
+       "source": "handbook:10",
+       "quote": "signs off on the registration of students on probation",
+       "verified": true,
+       "number": 4,
+       "span": [
+        114,
+        168
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Your CGPA is 3.85, and your probation ends once your CGPA is 5.0 or higher at the end of a semester.",
+     "citations": [
+      {
+       "source": "record:dev",
+       "quote": "CGPA 3.85.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        67,
+        76
+       ]
+      },
+      {
+       "source": "handbook:9",
+       "quote": "Probation ends when the CGPA is 5.0 or higher at the end of a semester.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        229,
+        299
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "record:dev",
+     "kind": "record",
+     "label": "Student record: Dev Rao",
+     "text": "Dev Rao is in Year 3, Semester 1. Next term is Year 3, Semester 2. CGPA 3.85. Earned credits 41. On probation: yes. Maximum load next term: 16 credits. Passed: CS 101 Programming in Python (C), MA 101 Engineering Mathematics I (P), PH 101 Engineering Physics (C), EN 101 Technical Communication (B), CS 102 Data Structures (P), MA 102 Engineering Mathematics II (P), EE 101 Basic Electrical Engineering (C), CS 201 Discrete Mathematics (P), CS 220 Database Systems (C), CS 230 Computer Organization (P), CS 260 Operating Systems (P), CS 270 Computer Networks (C). Failed and not yet repeated: CS 250 Design and Analysis of Algorithms, MA 201 Probability and Statistics. In progress: CS 360 Software Engineering. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "handbook:9",
+     "kind": "handbook",
+     "label": "Handbook 9 Academic standing",
+     "text": "9 Academic standing. A student whose CGPA falls below 5.0 at the end of a semester is placed on academic probation. A student on probation may register for at most 16 credits and must meet the faculty advisor before registering. Probation ends when the CGPA is 5.0 or higher at the end of a semester."
+    },
+    {
+     "id": "handbook:2.1",
+     "kind": "handbook",
+     "label": "Handbook 2.1 Normal load",
+     "text": "2.1 Normal load. A normal semester load is between 9 and 20 credits. Students may not register for more than 20 credits in a semester without an overload approval."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "considered": [
+    {
+     "id": "record:dev",
+     "kind": "record",
+     "label": "Student record: Dev Rao",
+     "text": "Dev Rao is in Year 3, Semester 1. Next term is Year 3, Semester 2. CGPA 3.85. Earned credits 41. On probation: yes. Maximum load next term: 16 credits. Passed: CS 101 Programming in Python (C), MA 101 Engineering Mathematics I (P), PH 101 Engineering Physics (C), EN 101 Technical Communication (B), CS 102 Data Structures (P), MA 102 Engineering Mathematics II (P), EE 101 Basic Electrical Engineering (C), CS 201 Discrete Mathematics (P), CS 220 Database Systems (C), CS 230 Computer Organization (P), CS 260 Operating Systems (P), CS 270 Computer Networks (C). Failed and not yet repeated: CS 250 Design and Analysis of Algorithms, MA 201 Probability and Statistics. In progress: CS 360 Software Engineering. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Dev Rao next term",
+     "text": "The complete list of courses offered to Dev Rao in Year 3, Semester 2. CS 250 Design and Analysis of Algorithms, 4 credits, core, slot A: eligible, repeat. MA 201 Probability and Statistics, 3 credits, core, slot D: eligible, repeat. CS 370 Theory of Computation, 3 credits, core, slot A: eligible. CS 345 Deep Learning, 4 credits, elective (AI and Machine Learning), slot D: blocked. Needs CS 340 Machine Learning (not taken yet). [handbook:4.1] CS 375 Cloud Computing, 3 credits, elective (Systems), slot E: eligible. CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: blocked. Needs CS 340 Machine Learning (not taken yet). [handbook:4.1] CS 385 Computer Security, 3 credits, elective (Systems), slot F: eligible."
+    },
+    {
+     "id": "check:CS 410",
+     "kind": "check",
+     "label": "Rule check: CS 410 for Dev Rao",
+     "text": "For Dev Rao in Year 3, Semester 2, CS 410 Distributed Systems: CS 410 is only offered in Semester 1. [handbook:1]"
+    },
+    {
+     "id": "handbook:9",
+     "kind": "handbook",
+     "label": "Handbook 9 Academic standing",
+     "text": "9 Academic standing. A student whose CGPA falls below 5.0 at the end of a semester is placed on academic probation. A student on probation may register for at most 16 credits and must meet the faculty advisor before registering. Probation ends when the CGPA is 5.0 or higher at the end of a semester."
+    },
+    {
+     "id": "handbook:2.1",
+     "kind": "handbook",
+     "label": "Handbook 2.1 Normal load",
+     "text": "2.1 Normal load. A normal semester load is between 9 and 20 credits. Students may not register for more than 20 credits in a semester without an overload approval."
+    },
+    {
+     "id": "handbook:8",
+     "kind": "handbook",
+     "label": "Handbook 8 Graduation requirements",
+     "text": "8 Graduation requirements. To graduate, a student must pass every core course in the catalog (71 credits), meet the elective requirement in section 5.1, earn at least 86 credits in total, and finish with a CGPA of at least 5.0."
+    },
+    {
+     "id": "handbook:5.1",
+     "kind": "handbook",
+     "label": "Handbook 5.1 Elective requirement",
+     "text": "5.1 Elective requirement. Every student must pass at least four elective courses totaling at least 13 credits. Electives are offered in Year 3 Semester 2 and in Year 4."
+    },
+    {
+     "id": "course:CS 410",
+     "kind": "course",
+     "label": "CS 410 Distributed Systems",
+     "text": "CS 410 Distributed Systems. 3 credits, elective (tracks: Systems). Offered in Year 4, Semester 1, timetable slot A. Prerequisites: CS 260 Operating Systems, CS 270 Computer Networks. Topics: replication, consensus, consistency models, fault tolerance. Building systems that keep working across many machines and partial failures."
+    },
+    {
+     "id": "handbook:6.3",
+     "kind": "handbook",
+     "label": "Handbook 6.3 Adding and dropping",
+     "text": "6.3 Adding and dropping. Courses can be added or dropped without penalty during the first two weeks of the semester. After that, a dropped course appears on the transcript as W (withdrawn) and earns no credits but does not affect the CGPA."
+    },
+    {
+     "id": "handbook:1",
+     "kind": "handbook",
+     "label": "Handbook 1 Program overview",
+     "text": "1 Program overview. The B.Tech in Computer Science and Engineering runs for four years, each split into two semesters. Years 1 and 2 are all core courses. From Year 3, students add electives and may earn a specialization by focusing their electives on one track. Every course in the catalog belongs to one year and one semester and is offered only in that semester."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 7.2
+  },
+  "dev|How do I get off probation?": {
+   "question": "How do I get off probation?",
+   "student": "dev",
+   "answerable": true,
+   "statements": [
+    {
+     "text": "Probation ends once your CGPA is 5.0 or higher at the end of a semester.",
+     "citations": [
+      {
+       "source": "handbook:9",
+       "quote": "Probation ends when the CGPA is 5.0 or higher at the end of a semester.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        229,
+        299
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Your CGPA is 3.85 and you are on probation, so you need to raise your CGPA to at least 5.0 by the end of a semester to get off probation.",
+     "citations": [
+      {
+       "source": "record:dev",
+       "quote": "CGPA 3.85. Earned credits 41. On probation: yes.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        67,
+        114
+       ]
+      },
+      {
+       "source": "handbook:9",
+       "quote": "A student whose CGPA falls below 5.0 at the end of a semester is placed on academic probation.",
+       "verified": true,
+       "number": 1,
+       "span": [
+        21,
+        114
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "While you are on probation, you can register for at most 16 credits next term.",
+     "citations": [
+      {
+       "source": "record:dev",
+       "quote": "Maximum load next term: 16 credits.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        116,
+        150
+       ]
+      },
+      {
+       "source": "handbook:9",
+       "quote": "A student on probation may register for at most 16 credits",
+       "verified": true,
+       "number": 1,
+       "span": [
+        116,
+        174
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "Before you register, you must meet your faculty advisor, who signs off on registration for students on probation and gives final approval.",
+     "citations": [
+      {
+       "source": "handbook:9",
+       "quote": "must meet the faculty advisor before registering",
+       "verified": true,
+       "number": 1,
+       "span": [
+        179,
+        227
+       ]
+      },
+      {
+       "source": "handbook:10",
+       "quote": "signs off on the registration of students on probation",
+       "verified": true,
+       "number": 3,
+       "span": [
+        114,
+        168
+       ]
+      },
+      {
+       "source": "handbook:10",
+       "quote": "final approval always rests with the faculty advisor.",
+       "verified": true,
+       "number": 3,
+       "span": [
+        252,
+        304
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "You have two failed core courses that you have not yet repeated, CS 250 Design and Analysis of Algorithms and MA 201 Probability and Statistics, and you are eligible to repeat both next term.",
+     "citations": [
+      {
+       "source": "record:dev",
+       "quote": "Failed and not yet repeated: CS 250 Design and Analysis of Algorithms, MA 201 Probability and Statistics.",
+       "verified": true,
+       "number": 2,
+       "span": [
+        564,
+        668
+       ]
+      },
+      {
+       "source": "check:options",
+       "quote": "CS 250 Design and Analysis of Algorithms, 4 credits, core, slot A: eligible, repeat. MA 201 Probability and Statistics, 3 credits, core, slot D: eligible, repeat.",
+       "verified": true,
+       "number": 4,
+       "span": [
+        71,
+        232
+       ]
+      }
+     ],
+     "supported": true
+    },
+    {
+     "text": "You must pass every core course to graduate, and you also need a CGPA of at least 5.0 to graduate.",
+     "citations": [
+      {
+       "source": "handbook:8",
+       "quote": "a student must pass every core course in the catalog (71 credits)",
+       "verified": true,
+       "number": 5,
+       "span": [
+        40,
+        104
+       ]
+      },
+      {
+       "source": "handbook:8",
+       "quote": "finish with a CGPA of at least 5.0.",
+       "verified": true,
+       "number": 5,
+       "span": [
+        192,
+        226
+       ]
+      }
+     ],
+     "supported": true
+    }
+   ],
+   "sources": [
+    {
+     "id": "handbook:9",
+     "kind": "handbook",
+     "label": "Handbook 9 Academic standing",
+     "text": "9 Academic standing. A student whose CGPA falls below 5.0 at the end of a semester is placed on academic probation. A student on probation may register for at most 16 credits and must meet the faculty advisor before registering. Probation ends when the CGPA is 5.0 or higher at the end of a semester."
+    },
+    {
+     "id": "record:dev",
+     "kind": "record",
+     "label": "Student record: Dev Rao",
+     "text": "Dev Rao is in Year 3, Semester 1. Next term is Year 3, Semester 2. CGPA 3.85. Earned credits 41. On probation: yes. Maximum load next term: 16 credits. Passed: CS 101 Programming in Python (C), MA 101 Engineering Mathematics I (P), PH 101 Engineering Physics (C), EN 101 Technical Communication (B), CS 102 Data Structures (P), MA 102 Engineering Mathematics II (P), EE 101 Basic Electrical Engineering (C), CS 201 Discrete Mathematics (P), CS 220 Database Systems (C), CS 230 Computer Organization (P), CS 260 Operating Systems (P), CS 270 Computer Networks (C). Failed and not yet repeated: CS 250 Design and Analysis of Algorithms, MA 201 Probability and Statistics. In progress: CS 360 Software Engineering. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Dev Rao next term",
+     "text": "The complete list of courses offered to Dev Rao in Year 3, Semester 2. CS 250 Design and Analysis of Algorithms, 4 credits, core, slot A: eligible, repeat. MA 201 Probability and Statistics, 3 credits, core, slot D: eligible, repeat. CS 370 Theory of Computation, 3 credits, core, slot A: eligible. CS 345 Deep Learning, 4 credits, elective (AI and Machine Learning), slot D: blocked. Needs CS 340 Machine Learning (not taken yet). [handbook:4.1] CS 375 Cloud Computing, 3 credits, elective (Systems), slot E: eligible. CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: blocked. Needs CS 340 Machine Learning (not taken yet). [handbook:4.1] CS 385 Computer Security, 3 credits, elective (Systems), slot F: eligible."
+    },
+    {
+     "id": "handbook:8",
+     "kind": "handbook",
+     "label": "Handbook 8 Graduation requirements",
+     "text": "8 Graduation requirements. To graduate, a student must pass every core course in the catalog (71 credits), meet the elective requirement in section 5.1, earn at least 86 credits in total, and finish with a CGPA of at least 5.0."
+    }
+   ],
+   "considered": [
+    {
+     "id": "record:dev",
+     "kind": "record",
+     "label": "Student record: Dev Rao",
+     "text": "Dev Rao is in Year 3, Semester 1. Next term is Year 3, Semester 2. CGPA 3.85. Earned credits 41. On probation: yes. Maximum load next term: 16 credits. Passed: CS 101 Programming in Python (C), MA 101 Engineering Mathematics I (P), PH 101 Engineering Physics (C), EN 101 Technical Communication (B), CS 102 Data Structures (P), MA 102 Engineering Mathematics II (P), EE 101 Basic Electrical Engineering (C), CS 201 Discrete Mathematics (P), CS 220 Database Systems (C), CS 230 Computer Organization (P), CS 260 Operating Systems (P), CS 270 Computer Networks (C). Failed and not yet repeated: CS 250 Design and Analysis of Algorithms, MA 201 Probability and Statistics. In progress: CS 360 Software Engineering. Electives passed: 0 of 4 needed. Specialization progress: AI and Machine Learning needs 3 electives, passed none, in progress none; Data Science needs 3 electives, passed none, in progress none; Systems needs 3 electives, passed none, in progress none."
+    },
+    {
+     "id": "check:options",
+     "kind": "check",
+     "label": "Rule check: courses offered to Dev Rao next term",
+     "text": "The complete list of courses offered to Dev Rao in Year 3, Semester 2. CS 250 Design and Analysis of Algorithms, 4 credits, core, slot A: eligible, repeat. MA 201 Probability and Statistics, 3 credits, core, slot D: eligible, repeat. CS 370 Theory of Computation, 3 credits, core, slot A: eligible. CS 345 Deep Learning, 4 credits, elective (AI and Machine Learning), slot D: blocked. Needs CS 340 Machine Learning (not taken yet). [handbook:4.1] CS 375 Cloud Computing, 3 credits, elective (Systems), slot E: eligible. CS 380 Natural Language Processing, 4 credits, elective (AI and Machine Learning, Data Science), slot D: blocked. Needs CS 340 Machine Learning (not taken yet). [handbook:4.1] CS 385 Computer Security, 3 credits, elective (Systems), slot F: eligible."
+    },
+    {
+     "id": "handbook:9",
+     "kind": "handbook",
+     "label": "Handbook 9 Academic standing",
+     "text": "9 Academic standing. A student whose CGPA falls below 5.0 at the end of a semester is placed on academic probation. A student on probation may register for at most 16 credits and must meet the faculty advisor before registering. Probation ends when the CGPA is 5.0 or higher at the end of a semester."
+    },
+    {
+     "id": "handbook:10",
+     "kind": "handbook",
+     "label": "Handbook 10 Advising",
+     "text": "10 Advising. Every student has a faculty advisor. The advisor approves overloads, discusses elective choices, and signs off on the registration of students on probation. The Pathwise advisor tool gives guidance from this handbook and the catalog only; final approval always rests with the faculty advisor."
+    },
+    {
+     "id": "handbook:6.3",
+     "kind": "handbook",
+     "label": "Handbook 6.3 Adding and dropping",
+     "text": "6.3 Adding and dropping. Courses can be added or dropped without penalty during the first two weeks of the semester. After that, a dropped course appears on the transcript as W (withdrawn) and earns no credits but does not affect the CGPA."
+    },
+    {
+     "id": "handbook:2.3",
+     "kind": "handbook",
+     "label": "Handbook 2.3 Underload",
+     "text": "2.3 Underload. Registering for fewer than 9 credits needs approval from the head of department, usually for medical or personal reasons, and may delay graduation."
+    },
+    {
+     "id": "handbook:8",
+     "kind": "handbook",
+     "label": "Handbook 8 Graduation requirements",
+     "text": "8 Graduation requirements. To graduate, a student must pass every core course in the catalog (71 credits), meet the elective requirement in section 5.1, earn at least 86 credits in total, and finish with a CGPA of at least 5.0."
+    },
+    {
+     "id": "handbook:4.1",
+     "kind": "handbook",
+     "label": "Handbook 4.1 The rule",
+     "text": "4.1 The rule. A student may register for a course only after passing every prerequisite listed for it in the catalog, with a grade of P or better. Courses in progress do not count as passed. Some courses also require a minimum number of earned credits, shown in the catalog."
+    }
+   ],
+   "citation_rate": 1.0,
+   "seconds": 10.5
+  }
+ },
+ "evals": {
+  "k": 6,
+  "questions": 36,
+  "model": "claude-opus-5-5, claude-code CLI, hybrid retrieval",
+  "retrieval": {
+   "bm25": {
+    "hit": 0.968,
+    "recall": 0.952,
+    "mrr": 0.825
+   },
+   "dense": {
+    "hit": 1.0,
+    "recall": 0.989,
+    "mrr": 0.944
+   },
+   "hybrid": {
+    "hit": 1.0,
+    "recall": 0.989,
+    "mrr": 0.919
+   },
+   "rerank": {
+    "hit": 0.968,
+    "recall": 0.968,
+    "mrr": 0.903
+   }
+  },
+  "context": {
+   "recall": 1.0,
+   "avg_sources": 8.156
+  },
+  "answers": {
+   "citation_rate": 1.0,
+   "supported_rate": 1.0,
+   "source_recall": 1.0,
+   "refusal_accuracy": 1.0,
+   "errors": 0
+  }
+ }
+}
